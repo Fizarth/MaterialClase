@@ -1,0 +1,295 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{graphicx}
+
+\begin{document}
+
+    \section{Límites y continuidad}
+
+        \begin{itemize}
+            \item Definición de límite y propiedades
+                \[\lim_{x \to a}f(x)=L \]
+                Cuando me acerco mucho al punto "a" en el eje de la X, la función se acerca mucho a L en el eje de la Y.
+
+                Límites laterales:  A veces hay que distinguir si nos acercamos mucho por la derecha $\lim_{x \to a^+}f(x)$ o por la izquierda $\lim_{x \to a^-}f(x)$.
+
+                El límite, si existe, es único y cumple que:
+                \[\lim_{x \to a}f(x)=L \Leftrightarrow  \lim_{x \to a^+}f(x) = \lim_{x \to a^-}f(x)\]
+
+                Límites al infinito: En un polinomio el término que manda es el de mayor grado
+
+                Propiedades:
+                
+                Sean: $\lim_{x \to a}f(x)=A$ y $\lim_{x \to a}g(x) = B$
+                \begin{enumerate}
+                    \item $\lim_{x \to a}[k \cdot f(x)]=k \cdot A$
+                    \item $\lim_{x \to a}[f(x) \pm g(x)]=A \pm B$
+                    \item $\lim_{x \to a}[f(x) \cdot g(x)]=A \cdot B$
+                    \item $\lim_{x \to a}\dfrac{f(x)}{g(x)} = \dfrac{A}{B}, B\neq 0$
+                    \item $\lim_{x \to a}\sqrt[n]{f(x)} = \sqrt[n]{A}$, si existe $\sqrt[n]{A}$
+                    \item $\lim_{x \to a}[f(x)^{g(x)} ]=A^B$, si $A^B$ es determinado
+                \end{enumerate}
+
+            \item Indeterminaciones
+            
+                Vamos a recordar primero algunas operaciones:
+
+                \includegraphics[scale=0.9]{../img/Límites1.png}
+
+                \begin{itemize}
+                    \item \textbf{Indeterminación $\dfrac{0}{0}$}
+                    
+                        Polinomios: Simplificar la fracción (Factorizo polinomios)
+
+                        Ejemplo: $\lim_{x \to 3}\dfrac{x^2-6-x}{x^2-3x} = \dfrac{0}{0}$ Indeterminación 
+                        
+                        $\lim_{x \to 3}\dfrac{(x-3)(x+2)}{x(x-3)} = \lim_{x \to 3} \dfrac{x+2}{x}= \dfrac{3+2}{3} = \dfrac{5}{3}$
+
+                        Con raíces: Multiplicar el numerador y el denominador por el conjugado
+
+                        Ejemplo: $\lim_{x \to 1}\dfrac{\sqrt{x+3}-2}{x^2-3x+2} = \dfrac{0}{0}$ Indeterminación 
+
+                        $\lim_{x \to 1}\dfrac{(\sqrt{x+3}-2)(\sqrt{x+3}+2)}{(x^2-3x+2)(\sqrt{x+3}+2)} = \lim_{x \to 1}\dfrac{x+3-4}{(x^2-3x+2)(\sqrt{x+3}+2)} = \dfrac{0}{0} $ Indeterminación
+
+                        $\lim_{x \to 1}\dfrac{(x-1)}{(x-1)(x-2)(\sqrt{x+3}+2)} = \dfrac{1}{-1 \cdot 4} = \dfrac{-1}{4} $
+
+                    \item \textbf{Indeterminación $\dfrac{\infty}{\infty}$}
+                    
+                        Hay que dividir todos los términos por la x de mayor exponente.
+                        
+                        Ejemplo: $\lim_{x \to +\infty}\dfrac{x^2-2x}{2x^3-100} = \dfrac{\infty}{\infty}$ Indeterminación
+
+                        $\lim_{x \to +\infty} \dfrac{\dfrac{x^2}{x^3}-\dfrac{2x}{x^3}}{\dfrac{2x^3}{x^3}-\dfrac{100}{x^3}} = \dfrac{0-0}{2-0} = \dfrac{0}{2} = 0 $
+
+                        Ejemplo: $\lim_{x \to +\infty}\dfrac{\sqrt{4x^2-3}-3x}{x-3} = \dfrac{\infty}{\infty}$ Indeterminación.
+
+                        $\lim_{x \to +\infty}\dfrac{\dfrac{\sqrt{4x^2-3}}{x}+\dfrac{3x}{x}}{\dfrac{x}{x}-\dfrac{3}{x}} = \dfrac{\sqrt{4}+3}{1} = 5$
+
+                    \item \textbf{Indeterminación $\infty - \infty$}
+                    
+                        Aparecen raíces: Multiplicar y dividir por el conjugado
+                        Sin raíces: Realizar la operación que aparece.
+
+                        Ejemplo: $\lim_{x \to +\infty}(\sqrt{x-1}-\sqrt{x}) = \infty - \infty$ Indeterminación
+
+                        $\lim_{x \to +\infty} \dfrac{(\sqrt{x-1}-\sqrt{x})\cdot (\sqrt{x-1}+\sqrt{x})}{(\sqrt{x-1}+\sqrt{x})} = \lim_{x \to +\infty} \dfrac{x-1-x}{(\sqrt{x-1}+\sqrt{x})}  =$
+                        
+                        $ \lim_{x \to +\infty} \dfrac{-1}{(\sqrt{x-1}+\sqrt{x})} = \dfrac{-1}{\infty} $
+                \end{itemize}
+
+            \item Continuidad de una función
+            
+                Cuando soy capaz de repasar el trazo sin levantar el lápiz del papel.
+
+                \includegraphics[scale=0.5]{../img/Límites2.png}
+
+                Una función f(x) es continua en un punto x=a si cumple:
+
+                \begin{enumerate}
+                    \item $\exists f(a) \rightarrow $ Al sustituir x=a en la función, me da un valor real.
+                    \item $\exists \lim_{x \to a} f(x) \rightarrow$ Existen los límites laterales
+                    \item $f(a)=\lim_{x \to a} f(x) $
+                \end{enumerate}
+
+                f(x) continua en x=a $\Leftrightarrow$ f(a) = $\lim_{x \to a} f(x) =L$
+
+                En caso contrario, la función será discontinua (o no será continua) en x=a.
+
+                ¡Recuerda! Son continuas las funciones:
+
+                \begin{itemize}
+                    \item Polinómicas
+                    \item Exponenciales
+                    \item Logarítmicas
+                    \item Racionales: Menos los valores que anulan el denominador
+                    \item Radicales: Solo donde el radicando es $\geq 0$
+                \end{itemize}
+
+
+                Funciones definidas a trozos: $f(x) = \begin{cases}
+                            1 & \text{si } x < 0\\
+                            x+1  & \text{si } 0<x<1\\
+                            x^2-2x  & \text{si } x \geq 1.
+                            \end{cases}$
+                    \begin{enumerate}
+                        \item Ver si las funciones definidas en sus "trozos" son o no son continuas.
+                        \begin{enumerate}
+                            \item continúa, ya que sus "trozos" son funciones continúa (polinomios)
+                        \end{enumerate}
+                        \item Estudiar la continuidad en los valores que la función se divide a trozos.
+                        \begin{enumerate}
+                            \item x=0: no es continua 
+                            \item x=1 no es continua
+                        \end{enumerate}
+                        \item Agrupamos las continuidades del paso 1 y 2
+                        \begin{itemize}
+                            \item f(x) es continua $\forall x \in \mathbb{R}-\{0,1\}$
+                        \end{itemize}
+                    \end{enumerate}
+
+                Tipos de discontinuidad: 
+
+                \begin{itemize}
+                    \item Discontinuidad evitable
+                    \item Discontinuidad inevitable
+                    \begin{itemize}
+                        \item salto finito
+                        \item salto infinito
+                    \end{itemize}
+                \end{itemize}
+
+                
+            \item Asíntotas
+            
+                Son rectas a las que se pega la función. Hay tres tipos: verticales, horizontales y oblicuas.
+
+                \begin{itemize}
+                    \item Asíntotas verticales: $f(x)$ tiene A.V. en x=a $\Leftrightarrow$ $\lim_{x \to a}f(x) = \pm \infty$
+                        \begin{enumerate}
+                            \item Buscar los puntos que no están en el dominio
+                            \item Calcular $\lim_{x \to a}f(x)$, si sale un número no tiene asíntota vertical, si sale $\pm  \infty$ tiene asíntota vertical en x=a
+                        \end{enumerate}
+                    \item Asíntota horizontal: $f(x)$ tiene A.H. en y =a $\Leftrightarrow$ $\lim_{x \to \pm \infty}f(x)=a$
+                        \begin{enumerate}
+                            \item Calcular $\lim_{x \to \pm \infty}f(x)$ Si da $\pm \infty$ no tiene A.H. si da un número (a), tiene asíntota horizontal en y =a 
+                        \end{enumerate}
+                    \item Asíntota oblicua: $y = mx + n $ \\
+                        El grado del numerador - grado de denominador = 1
+                        \begin{itemize}
+                            \item División de polinomios: El cociente es la asíntota
+                            \item $m = \lim_{x \to \infty}\dfrac{f(x)}{x}$ y $n=\lim_{x \to \infty}(f(x))-mx$
+                        \end{itemize}
+
+                    IMPORTANTE: Si hay A. Horizontal no hay A. Oblicua.
+                \end{itemize}
+        \end{itemize}
+
+    \section{Ejercicios}
+
+    \begin{enumerate}
+        \item Calcula a
+            \begin{multicols}{2}
+                \begin{enumerate}
+                    \item $\lim_{x \to 3}\dfrac{ax^2-9a}{x^2-2x-3}=1$
+                    \item $\lim_{x \to \infty}(\sqrt{x^2+ax+1}-x)=2$
+                \end{enumerate}
+            \end{multicols}
+        \item Indica los puntos de discontinuidad de cada una de las siguientes funciones. 
+            \begin{multicols}{3}
+                \begin{enumerate}
+                    \item $f(x)=x^3+8$
+                    \item $f(x)=\dfrac{x}{x^3+8}$
+                    \item $f(x)=\dfrac{x}{x^2-8}$
+                    \item $f(x)=\dfrac{x}{x^2+8}$
+                    \item $f(x)=\sqrt{x^3-8}$
+                    \item $f(x)=\sqrt{x^4}$
+                    \item $f(x)=\dfrac{x}{\sqrt{x^2+4}}$
+                    \item $f(x)=\dfrac{x}{\sqrt{x^2-2x}}$
+                    \item $f(x)=e^{x-2}$
+                    \item $f(x)=e^{\dfrac{1}{x}}$
+                    \item $f(x)=log(5x-6)$
+                    \item $f(x)=\dfrac{1}{x^2+2}$
+                    \item $f(x)=tan(2x)$
+                    \item $f(x)=sin \dfrac{1}{x-1}$
+                    \item $f(x)=cos(2x-1)$
+                    \item $f(x)= \dfrac{2-sin x}{2+ cos x}$
+                \end{enumerate}
+            \end{multicols}
+        \item Estudia la continuidad y di que tipo de discontinuidad en cada caso.
+            \begin{multicols}{2}
+                \begin{enumerate}
+                    \item $f(x) = \begin{cases}
+                            3x-x^2 & \text{si } x \leq 3\\
+                            x-3  & \text{si } 3<x<6\\
+                            0  & \text{si } x \geq 6.
+                            \end{cases}$ %Continua en todos menos el 6
+
+                    \item $f(x) = \begin{cases}
+                            e^{1-x^2} & \text{si } x \leq -1\\
+                            \dfrac{-1}{x}  & \text{si } x>-1
+                            \end{cases}$ %continua en todos menos el 0
+                    \item $f(x) = \begin{cases}
+                            x^2   & \text{si } x \leq 1\\
+                            x-1  & \text{si } x>1
+                            \end{cases}$ 
+                    \item $f(x) = \begin{cases}
+                            1-x^2   & \text{si } x \leq 1\\
+                            x-1  & \text{si } x>1
+                            \end{cases}$
+                    \item $f(x) = \begin{cases}
+                            cos(x)   & \text{si } x \leq 0\\
+                            x+1  & \text{si } x>0
+                            \end{cases}$
+                    \item $f(x) = \begin{cases}
+                            \dfrac{1}{x-1}   & \text{si } x \leq 0\\
+                            sin(x)  & \text{si } x>0
+                            \end{cases}$
+                    \item $f(x) = \begin{cases}
+                            e^{x-1}   & \text{si } x \leq 1\\
+                            \dfrac{-1}{x-2}  & \text{si } x>1
+                            \end{cases}$
+                    \item $f(x) = \begin{cases}
+                            1-x   & \text{si } x \leq 1\\
+                            ln(2-x)  & \text{si } x>1
+                            \end{cases}$
+
+                \end{enumerate} 
+            \end{multicols}
+        \item Halla el valor de a y b para que la función f(x) sea continúa.
+                \begin{multicols}{2}
+                    \begin{enumerate}
+                        \item $f(x) = \begin{cases}
+                            x^2+x & \text{si } x < -1\\
+                            3x-a  & \text{si } x\geq -1
+                            \end{cases}$
+                        
+                        \item $f(x) = \begin{cases}
+                            e^x & \text{si } x \leq 0\\
+                            2x+a  & \text{si } x>0
+                            \end{cases}$
+                        \item $f(x) = \begin{cases}
+                            x-a & \text{si } x < -2\\
+                            x^2 +x+b  & \text{si } -2 \leq x <1 \\
+                            \dfrac{1}{x+1} & \text{si }x \geq 1
+                            \end{cases}$
+                        \item $f(x) = \begin{cases}
+                            x^2 & \text{si } x \leq 1\\
+                            2x+a  & \text{si } x<1
+                            \end{cases}$
+                        \item $f(x) = \begin{cases}
+                            e^{ax} & \text{si } x \leq 0\\
+                            2a+sin(x)  & \text{si } x>0
+                            \end{cases}$
+                        \item $f(x) = \begin{cases}
+                            a+ln(1-x) & \text{si } x <0\\
+                            x^2e^{-x}  & \text{si } x\geq 0
+                            \end{cases}$
+                    \end{enumerate}
+                \end{multicols}
+        \item Halla para qué valores de "a" la función  $f(x) = \begin{cases}
+                            x^2 & \text{si } x \leq a\\
+                            a+2  & \text{si } x>a
+                            \end{cases}$
+
+    \end{enumerate}
+
+    \section{Videos de refuerzo}
+
+        \begin{itemize}
+            \item Ejercicios de límites: https://www.youtube.com/watch?v=YnWo7noYDyQ
+            \item Tipos de discontinuidad: https://www.youtube.com/watch?v=raDNa4Q8QkQ
+            \item Ejercicios de continuidad: https://www.youtube.com/watch?v=7ZYPMfwp47k
+            \item Ejercicios de continuidad: https://www.youtube.com/watch?v=uIyliInYZek
+            \item Indeterminación $\dfrac{0}{0}$ : https://www.youtube.com/watch?v=MKjHcw3ooUc
+            \item Indeterminación $\dfrac{0}{0}$: https://www.youtube.com/watch?v=HFnvI-ZTm2E
+            \item Indeterminación $\dfrac{\infty}{\infty}$: https://www.youtube.com/watch?v=y26Uv5jpvWc
+            \item Indeterminación $\infty - \infty$: https://www.youtube.com/watch?v=OFA5P-FrqvY
+            \item Regla de l'Hopital : https://www.youtube.com/watch?v=iCjRT0lYqPE
+            \item Lista de reproducción: https://www.youtube.com/playlist?list=PLwCiNw1sXMSDRxTynmzWuH4wVZSFmSdv7
+        \end{itemize}
+
+
+\end{document}
