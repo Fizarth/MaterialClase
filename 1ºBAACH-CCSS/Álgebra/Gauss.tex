@@ -1,0 +1,169 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{array}
+\usepackage{multicol}
+
+\begin{document}
+    \section{Gauss}
+        La idea principal es hacer unos cambios en el sistema para convertirlo en un sistema escalonado. 
+
+        La transformación de un sistema a otro se consigue mediante las transformaciones de Gauss. Obteniendo así un sistema equivalente.
+
+        \begin{enumerate}
+            \item Un sistema no cambia si sus ecuaciones se cambian de orden. 
+            \item Un sistema no cambia si una ecuación se multiplica por un número distinto de 0. 
+            \item Un sistema no cambia si una ecuación se sustituye por ella misma más la suma o resta de otra.
+        \end{enumerate}
+
+        Así pues resolvamos el sistema paso a paso: 
+
+        $\left \{\begin{array}{rr}
+            5x+y+7z & = 11 \\
+            2x-5y+3z & = 4 \\
+            x-2y+z & = 3
+        \end{array}
+        \right .$   
+        EN forma de matriz sería:
+        $   \begin{pmatrix}
+                5 & 1 & 1 & 11\\
+                2 & -5 & 3 & 4\\
+                1 & -2 & 1 & 3
+            \end{pmatrix} .$
+     
+
+        Lo primero vamos a darle a cada fila un nombre , yo suelo darle $F_1, F_2, F_3$ de fila/función 1,2 o 3. También se suele utilizar $E_1, E_2, E_3$ de ecuación. 
+
+        \begin{enumerate}
+            \item Mi primer paso es hacer cero en la esquina inferior izquierda: 
+            
+            $F_3= F_2 -2F_3 = (2x-5y+3z=4)+(-2x+4y-2z=-6) = -y+z=-2$ 
+
+            Así pues ahora la fila 3 la sustituimos.
+
+            $\left \{\begin{array}{rr}
+                5x+y+7z & = 11 \\
+                2x-5y+3z & = 4 \\
+                -y+z & = -2
+            \end{array}
+            \right .$
+            $ \rightarrow  \begin{pmatrix}
+                5 & 1 & 1 & 11\\
+                2 & -5 & 3 & 4\\
+                0 & -1 & 1 & -2
+            \end{pmatrix} .$
+
+            \item Ahora mi objetivo es seguir forando un triangulo de nulos en la parte inferior.  Ahora mismo solo puedo operar con $F_1$ ya que $F_3$ no tiene término x. 
+            
+            $F_2= (-2)F_1+5F_2 = (-10z-2y-14z=-22)+(10x-25y+15z=20) = -27y+z=-2$
+
+            $\left \{\begin{array}{rr}
+                5x+y+7z & = 11 \\
+                -27y+z & = -2 \\
+                -y+z & = -2
+            \end{array}
+            \right .$
+            $ \rightarrow  \begin{pmatrix}
+                5 & 1 & 1 & 11\\
+                0 & -27 & 1 & -2\\
+                0 & -1 & 1 & -2
+            \end{pmatrix} .$
+
+            \item Ahora quiero que en una de las 2 se me quede solo una ingnita para poder resolver el sistema. Me doy cuenta de que la z en este caso es el más fácil. Asique voy a quitar la z.
+            
+            $F_3= F2 + (-1)F3= (-27y+z=-2)+(y-z=2)= -26y= 0 $
+
+            El sistema quedaría 
+
+
+            $\left \{\begin{array}{rr}
+                5x+y+7z & = 11 \\
+                -27y+z & = -2 \\
+                -26y & = 0
+            \end{array}
+            \right .$
+            $ \rightarrow  \begin{pmatrix}
+                5 & 1 & 1 & 11\\
+                0 & -27 & 1 & -2\\
+                0 & -26 & 0 & 0
+            \end{pmatrix} .$
+
+            Ahora puedo resolverlo on sustituuciones consecutivas.
+
+            Solución: x=5 ,y=0, z=-2
+
+
+
+        \end{enumerate}
+
+        Cuando tiene una solución para cada una de las incognitas es un sistema compatible determinado (S.C.D.)
+
+        Que un sistema sea compatible indeterminado significa que una de las ecuaciones es redundante, que depende linealmente de las otras. En definitiva, que faltan datos para concretar la solución; por eso se da en función de una de las incógnitas.
+
+        Que un sistema sea incompatible indica que sus ecuaciones son contradictorias. 
+
+        Observciones
+        \begin{itemize}
+            \item No es necesario que el sistema quede triangular; lo importante es dejar una ecuación con una sola incognita (las otras se eliminan sumando o restando). A partir de esa ecuación se hará la difusión. 
+            \item . Las transformaciones de Gauss se facilitan si se busca una incógnita con coeficiente 1 o -1: a partir de ese 1 es fácil calcular el doble o el triple, y sumar o restar según convenga
+        \end{itemize}
+
+    \section{Ejercicios}
+
+    \begin{enumerate}
+        \item Resuelve los siguientes sistemas:
+        \begin{multicols}{3}
+            \begin{enumerate}
+                \item  $\left \{\begin{array}{rr}
+                x-3y+z & = 1 \\
+                2x+y-z & = 2 \\
+                3x-2y-2z & = 5
+                \end{array}
+                \right .$
+
+                (S: x= 5/7, y=-3/7, z=-1)
+                \item  $\left \{\begin{array}{rr}
+                2x-y+z & = 3 \\
+                x+2y+z & = 1 \\
+                4x+2y-3z & = 11
+                \end{array}
+                \right .$
+
+                (x=2, y=0, z=-1)
+                \item $\left \{\begin{array}{rr}
+                x-2y+z & = 8 \\
+                2x-y-2z & = 3 \\
+                -x+z=0 & = 11
+                \end{array}
+                \right .$
+
+                (x=1, y=-3, z=1)
+            \end{enumerate}
+        \end{multicols}
+        \item Resuelve el siguiente sistema:
+        \begin{enumerate}
+            \item $\left \{\begin{array}{rr}
+                2x+y-z & = 0 \\
+                x+y+2z & = 0 \\
+                x+2y+7z & = 0
+                \end{array}
+                \right .$
+
+                (x=3t, y=-5t, z=t)
+        \end{enumerate}
+        \item En los grupos A, B y C, del Grado de Economía de una universidad hay matriculados un total de 350 alumnos. El número de matriculados en el grupo A coincide con los del grupo B más el doble de los del grupo C. Los alumnos matriculados en el grupo B más el doble de los del grupo A superan en 250 al quíntuplo de los del grupo C. Calcula el número de alumnos que hay matriculados en cada grupo.
+        (Solución: en el A:200, B: 100 y C:50)
+        \item Una empresa ha gastado 33500 € en la compra de un total de 55 ordenadores portátiles de tres clases A, B y C, cuyos costes por unidad son de 900 €, 600 € y 500 € respectivamente. Sabiendo que la cantidad invertida en los de tipo A ha sido las tres cuartas partes que la invertida en los de tipo B, averiguar cuántos aparatos ha comprado de cada clase.
+        (Solución: A:10, B:20, C:25)
+        \item La suma de las edades de una madre y sus dos hijos es de 60 años. Dentro de 10 años la suma de las edades de los hijos será la actual de la madre. Por último, cuando nació el pequeño, la edad de la madre era 8 veces la del hijo mayor. ¿Cuántos años tiene cada uno de los hijos? (Solución: la madre: 40 años y los hijos 12 y 8 años)
+        \item  En una reunión familiar hay 40 personas. La suma del número de hombres y de mujeres triplica el número de niños. El número de mujeres excede en 6 a la suma del número de hombres más el número de niños. ¿Cuántos hombres, mujeres y niños hay en la reunión? (Solución: 7 hombres, 23 mujeres y 10 niños)
+        \item . Un agricultor compra semillas de garbanzos a 1,30 € el kilo, de alubias a 1,20 € el kilo y de lentejas a 0,80 € el kilo. En total compra 45 kilos de semillas y paga por ellas 43 €. Sabiendo que el peso de las lentejas es el doble que lo que pesan, conjuntamente, los garbanzos y las alubias, calcular qué cantidad de semillas ha comprado de cada legumbre. (Solución: 10 kg de garbanzos, 5kg de alubias, 30kg de lentejas)
+        \item Tres grupos de personas desayunan en una cafetería. El primer grupo toma 2 cafés, 1 refresco y 3 dulces, por lo que pagan 8,40 €; el segundo grupo toma 4 cafés, 1 refresco y 5 dulces, por lo que pagan 13,80 €; el tercer grupo toma 1 café, 2 refrescos y 2 dulces, por lo que pagan 7,50 €. ¿Cuánto cuesta cada cosa? (Solución: 1.50€ un café, 1.80€ un refresco, 1.20 un dulce)
+        \item En la fabricación de cierta marca de chocolate se emplea leche, cacao y almendras, siendo la proporción de leche doble que la de cacao y almendras juntas. Los precios de cada kilogramo de los ingredientes son: leche, 0,80 euros; cacao, 4 euros; almendras, 13 euros. En un día se fabrican 9000 kilos de ese chocolate, con un coste total de 25800 euros. ¿Cuántos kg se utilizan de cada ingrediente? (Solución: 6000kg de leche, 2000kg de cacao y 1000kg de almendras.)
+
+
+    \end{enumerate}
+
+
+
+\end{document}
