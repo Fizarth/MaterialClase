@@ -1,0 +1,189 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{array}
+\usepackage{multicol}
+
+\begin{document}
+\section*{Ecuaciones}
+    Una \textbf{ecuación} es una propuesta de igualdad que se cumple solo para algunos valores de la incógnita, y en algunos casos para ninguno.
+
+    Las \textbf{soluciones} de una ecuación son los valores que hacen cierta la igualdad.
+
+    \textbf{Resolver} una ecuación es hallar su solución (o soluciones) o llegar a la conclusión de que no tiene.
+
+    \subsection*{Ecuaciones de primer grado} 
+        Una ecuación de primer grado es aquella que solo aparecen expresiones algebraicas de grado 1. Después de simplificarla llegaremos a una igualdad tipo: $ax+b=0$ 
+
+        Pasos: 
+        \begin{enumerate}
+            \item Quitar denominadores
+            \item Quitar paréntesis
+            \item Reducir cada miembro 
+            \item Despejar la incógnita
+            \item Comprobar si el valor obtenido cumple la igualdad.
+        \end{enumerate}
+
+        Ejemplo: $\dfrac{3(x+1)}{4}-2=2x-\dfrac{5(x-1)}{3}$
+        \begin{enumerate}
+            \item mcm(4,3) = 12
+            
+            $3 \cdot 3(x+1) -24 =24x - 4 \cdot 5 (x-1)$
+            \item $9x+9-24=24x-20x+20$
+            \item $9x-15=4x+20$
+            
+            $9x-4x = 20+15$
+
+            $5x=35$
+            \item $x=\dfrac{35}{5}$
+            
+            $x=7$
+            \item $\dfrac{3(7+1)}{4}-2=\dfrac{3 \cdot 8}{4}-2  =6-2=4$
+            
+            $2 \cdot n 7-\dfrac{7(7-1)}{3} = 14 - \dfrac{5 \cdot 6}{3}=14-10=4$
+        \end{enumerate}
+
+        Existen expresiones como: 
+         \begin{itemize}
+            \item $4x-6=4(x+3) \rightarrow 4x-6 = 4x+12 \rightarrow 0 \cdot x = 18$ La cual \textbf{no} tiene solución. 
+            \item $4x-6=4(x-2)+2 \rightarrow 4x-6=4x-6 \rightarrow 0 \cdot x = 0$ La cual tiene \textbf{infinitas} soluciones.
+         \end{itemize}
+
+    \subsection*{Ecuaciones de segundo grado}
+
+         Las ecuaciones de segundo grado son de la forma: $ax^2 +bx +c = 0$ y se resuelven con la siguiente formula : $ x= \dfrac{-b  \pm \sqrt{b^2-4ac}}{2a}$ 
+         \begin{itemize}
+            \item Si $b^2-4ac >0$ hay dos soluciones.
+            \item Si $b^2-4ac =0$ hay una solución.
+            \item $b^2-4ac <0$ no hay ninguna solución.
+         \end{itemize}
+
+         Ejemplo: $5x^2+3x-2=0 \rightarrow x=\dfrac{-3 \pm \sqrt{3^2-4 \cdot 5  \cdot (-2)}}{2 \cdot 5} = \dfrac{-3 \pm  \sqrt{9+40}}{10} \rightarrow x_1 = \dfrac{2}{5}$ y $  x_2 = -1$ 
+
+         \subsubsection*{Ecuaciones incompletas}
+         \begin{itemize}
+            \item Si $b=0$ despejamos directamente $x^2$
+
+                Ejemplo: $3x^2-48=0 \rightarrow 3x^2 = 48 \rightarrow x^2 = 16 \rightarrow x= \pm \sqrt{16} \rightarrow x = \pm 4$
+            \item Si $c=0$ factorizamos sacando factor común.
+            
+                Ejemplo: $2x^2-x=0 \rightarrow x(2x-1)=0 \rightarrow x_1 = 0$ y $ 2x-1 =0 \rightarrow x_2= \dfrac{1}{2}$
+         \end{itemize}
+
+        \subsubsection*{Pasos para resolver una ecuación de segundo grado}.
+            \begin{enumerate}
+                \item Quitar los denominadores, si los hay.
+                \item Quitar paréntesis, si los hay. 
+                \item Reducir a la forma $ax+bx+c=0$ 
+                \item Resolver con la fórmula o con el resto de recursos que conoces.
+            \end{enumerate}
+
+    \subsection*{Otros tipos de ecuaciones}
+        \subsubsection*{Ecuaciones factorizadas}
+
+            Aparece como producto de factores y para que el producto sea cero es necesario que uno de los factores sea cero.
+
+            Ejemplo: $x(x-1)(x^2-5x+6)=0$
+            \begin{itemize}
+                \item $x_1 =0$
+                \item $x-1 = 0 \rightarrow x_2 = 1$
+                \item $x^2-5x+6=0 \rightarrow x_3 = 2$ y $x_4=3$
+                
+                La ecuación tiene 4 soluciones.
+            \end{itemize}
+        \subsubsection*{Ecuaciones con x en el denominador}
+
+            Habrá que suprimir los denominadores.
+
+            Ejemplo: $\dfrac{8}{x}-3 = \dfrac{5}{x+3}$ 
+            \begin{itemize}
+                \item Para suprimir los denominadores, haciendo el mínimo común múltiplo.
+                
+                $8 \cdot (x+3) - 3 \cdot x \cdot (x+3) = 5x$
+
+                $-3x^2-6x+24=0$
+
+                $x^2+2x-8=0$
+
+                $x=\dfrac{-2 \pm \sqrt{4+32}}{2} = \dfrac{-2 \pm 6}{2} \rightarrow x_1 = 2$ y $x_2=-4$
+                \item Es necesario comprobar las soluciones. 
+                
+                $\dfrac{8}{2}-3=\dfrac{5}{2+3}$
+
+                $\dfrac{8}{-4}-3=\dfrac{5}{-4+3}$
+
+                Por lo tanto, tiene dos soluciones.
+            \end{itemize}
+        \subsubsection*{Ecuaciones con radicales}
+            Resolvamos la ecuación: $\sqrt{x^2+5}+1=2x$
+            \begin{enumerate}
+                \item Aislamos el radical en un miembro, pasando al otro lado lo demás.
+                
+                $\sqrt{x^2+5}=2x-1$
+                \item Elevamos al cuadrado los dos miembros.
+                
+                $(\sqrt{x^2+5})^2 = (2x-1)^2$
+
+                $x^2+5=4x^2-4x+1$ 
+                \item Reducimos la ecuación a la forma general y la resolvemos.
+                
+                $3x^2-4x-4=0$ 
+
+                $x=\dfrac{4 \pm \sqrt{16+48}}{6} = \dfrac{4 \pm 8}{6} \rightarrow x_1=2$ y $x_2=-2/3$
+
+                \item Será necesario comprobar las soluciones, ya que, al elevar al cuadrado pueden aparecer soluciones que en realidad no son.
+                
+                $\sqrt{2^2+5}+1 = 2 \cdot 2$ 
+
+                $\sqrt{(-2/3)^2+5}+1  \neq 2(-2/3)$ 
+
+                En este casa x=2 es solución, pero $x=\dfrac{-2}{3}$ no lo es.
+            \end{enumerate}
+\newpage
+\section*{Ejercicios}
+    \begin{enumerate}
+        \item Resolver las siguientes ecuaciones de primer grado
+            \begin{enumerate}
+                \item $5x-4(2x+3)=5(x-1)-8x$ (no tiene solución) $\vspace{3cm}$
+                \item $7+6(3x-2)=15x-(5-3x)$ (da igual el valor de x) $\vspace{3cm}$
+                \item $\dfrac{3-x}{2}-\dfrac{2(x-2)}{3}=4-\dfrac{7(2x-1)}{9}$ $\vspace{3cm}$
+            \end{enumerate}         
+        \item El sueldo de un cajero del supermercado, aumentado en su tercera parte y 80€, se iguala con el de su encargada, que gana 1700€ ¿Cuánto gana el cajero? (1215€) $\vspace{5cm}$
+        \item Una porción de pizza cuesta 40 céntimos más  que un bote de refresco. Por tres botes de refresco y cuatro porciones de pizza, hemos pagado 10€. ¿Cuánto cuesta cada bote y cuánto cada porción? (refresco 1.20€ y pizza 1.60€)$\vspace{5cm}$
+        \item Entre mi hermano y yo tenemos ahorrados 248€, y si yo le diera 13 ambos tendríamos lo mismo. ¿Cuánto tenemos cada uno? $\vspace{5cm}$
+        \item Una bodega tiene dos tipos de vino, uno de calidad superior, a 5€/L, y otro de calidad inferior, a 3.60€/L ¿Cuántos litros del primero debe añadir a un barril que contiene 100 litros del segundo, para que la mezcla resulte a 4€/L? $\vspace{5cm}$
+        \item Una camisa y una falda costaban lo mismo antes de las rebajas. Ahora he comprado ambas prendas por 99€, con una rebaja del 20\% en la camisa y 15\% en la falda. ¿Cuánto costaba cada prenda antes de la rebaja? $\vspace{5cm}$
+        \item Multiplicando la edad de Laura por la que tenía el año pasado, obtenemos 240. ¿Cuantos años tiene Laura? (16 años)$\vspace{5cm}$
+        \item Una escalera está apoyada en la pared, alcanzando una altura igual a 2.4 veces la separación entre su apoyo inferior y la pared, y 20 cm menor que la propia longitud de la escalera. ¿Cuánto mide la escalera? (2.60m) $\vspace{5cm}$
+        \item Una finca rectangular con una superficie de $28hm^2$ está rodeada por una valla de 22hm de longitud. ¿Cuáles son las dimensiones de la finca? (7hm y 4hm) $\vspace{5cm}$
+        \item Un inversor deposita en el banco 10.000€ a un cierto porcentaje. Al cabo de un año, añade 20.000€ y mantiene todo el capital al mismo porcentaje. Al finalizar el segundo año le devuelven 32.025€. ¿A qué porcentaje impuso su capital? (5\%)$\vspace{5cm}$
+        \item Ecuaciones: 
+            \begin{enumerate}
+                \item $x(x-1)(x^2-5x+6)=0$ (x= 0,1,2,3) $\vspace{5cm}$
+                \item $\dfrac{8}{x}-3=\dfrac{5}{x+3}$ (x=2,-4) $\vspace{5cm}$
+                \item $\sqrt{x^2+5}+1=2x$ (x=2) $\vspace{5cm}$
+                \item $9(2-3x)+\dfrac{4}{5}(x-3)=4x-\dfrac{7-3x}{5}$ (x=85/154) $\vspace{5cm}$
+                \item $6-(8-4(3x-\dfrac{3}{7}))=2x-\dfrac{5-9x}{7}$ (x=21/61) $\vspace{5cm}$
+                \item $\dfrac{1-2x^2}{3x}-\dfrac{2}{5} = \dfrac{4x-2}{15}$ (x=0.47 o x=-0.75) $\vspace{5cm}$
+            \end{enumerate} 
+        \item Comprueba que la solución de $\dfrac{x-1}{2}-\dfrac{x+1}{3}=\dfrac{1}{6}$ es x=6 $\vspace{5cm}$
+        \item Resuelve las ecuaciones de segundo grado incompletas.
+        \begin{multicols}{2}
+            \begin{enumerate}
+                \item $^2+6x=0$ (x=0 y x=-6) $\vspace{3cm}$
+                \item $3x^2+18x=0$ (x=0 y x=-6) 
+                \item $5x^2-180=0$ (x=6, x=-6) $\vspace{3cm}$
+                \item $5x^2-10x=0$ (x=0, x=2) 
+            \end{enumerate}
+            
+        \end{multicols}$\vspace{3cm}$
+        \item Calcula las dimensiones de un rectángulo sabiendo que su perímetro es 30cm y que su base es doble que su altura. (altura 5cm y base 10 cm) $\vspace{5cm}$
+        \item Con motivo de la jubilación de un empleado, varios compañeros deciden regalarle, como recuerdo, un reloj que cuesta 240€. Al conocer la idea se apuntan otros cuatro más y, así tocan todos a 10€ menos. ¿Cuántos participan finalmente en la compra de regalo? $\vspace{5cm}$
+        \item Para salvar el desnivel de un metro, se ha construido una rampa que es 10cm más larga que su proyección horizontal. ¿Cuál es la longitud de la rampa?
+        
+            
+       
+    \end{enumerate}
+
+    
+\end{document}
