@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.30)  2 DEC 2025 08:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.5)  4 DEC 2025 09:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/fires/Documents/workspaces/MaterialClase/1ºBAACH-CCSS/Álgebra/Gauss.tex
-(c:/Users/fires/Documents/workspaces/MaterialClase/1ºBAACH-CCSS/Álgebra/Gauss.tex
+**c:/Users/Usuario/Documents/workspaces/MaterialClase/1ºBAACH-CCSS/Álgebra/Gauss.tex
+(c:/Users/Usuario/Documents/workspaces/MaterialClase/1ºBAACH-CCSS/Álgebra/Gauss.tex
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-09-10>
+L3 programming layer <2024-08-16>
 (c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2024/02/08 v1.4n Standard LaTeX document class
 (c:/texlive/2024/texmf-dist/tex/latex/base/size12.clo
@@ -272,17 +272,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [4] (build/Gauss.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-09-10>
+L3 programming layer <2024-08-16>
  ***********
  ) 
 Here is how much of TeX's memory you used:
  2506 strings out of 473579
- 36341 string characters out of 5732263
- 444054 words of memory out of 5000000
+ 36347 string characters out of 5732264
+ 1944960 words of memory out of 5000000
  25414 multiletter control sequences out of 15000+600000
  563657 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,7n,65p,602b,320s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,7n,65p,604b,320s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
 Output written on build/Gauss.pdf (4 pages, 80761 bytes).
 PDF statistics:

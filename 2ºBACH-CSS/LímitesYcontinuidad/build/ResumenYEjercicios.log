@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.30)  27 NOV 2025 15:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.5)  5 DEC 2025 09:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/fires/Documents/workspaces/Material/2ºBACH-CSS/LímitesYcontinuidad/ResumenYEjercicios.tex
-(c:/Users/fires/Documents/workspaces/Material/2ºBACH-CSS/LímitesYcontinuidad/ResumenYEjercicios.tex
+**c:/Users/Usuario/Documents/workspaces/MaterialClase/2ºBACH-CSS/LímitesYcontinuidad/ResumenYEjercicios.tex
+(c:/Users/Usuario/Documents/workspaces/MaterialClase/2ºBACH-CSS/LímitesYcontinuidad/ResumenYEjercicios.tex
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-09-10>
+L3 programming layer <2024-08-16>
 (c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2024/02/08 v1.4n Standard LaTeX document class
 (c:/texlive/2024/texmf-dist/tex/latex/base/size12.clo
@@ -321,11 +321,22 @@ Package pdftex.def Info: ../img/Límites2.png  used on input line 87.
 
 
 [2 <../img/Límites2.png>]
+<../img/Limites 3.png, id=26, 790.955pt x 253.44687pt>
+File: ../img/Limites 3.png Graphic file (type png)
+<use ../img/Limites 3.png>
+Package pdftex.def Info: ../img/Limites 3.png  used on input line 168.
+(pdftex.def)             Requested size: 514.11467pt x 164.73851pt.
+
+Overfull \hbox (31.33974pt too wide) in paragraph at lines 168--169
+[] 
+ []
+
+
 
 [3]
 
-[4]
-Overfull \hbox (98.4802pt too wide) in paragraph at lines 291--292
+[4 <../img/Limites 3.png>]
+Overfull \hbox (98.4802pt too wide) in paragraph at lines 292--293
 []\OT1/cmr/m/n/12 Lista de re-pro-ducci^^Son: https://www.youtube.com/playlist?list=PLwCiNw1sXMSDRxTynmzWuH4wVZSFmSdv7 
  []
 
@@ -334,22 +345,22 @@ Overfull \hbox (98.4802pt too wide) in paragraph at lines 291--292
 [5] (build/ResumenYEjercicios.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-09-10>
+L3 programming layer <2024-08-16>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3314 strings out of 473579
- 48546 string characters out of 5732263
- 467087 words of memory out of 5000000
- 26193 multiletter control sequences out of 15000+600000
+ 3321 strings out of 473579
+ 48755 string characters out of 5732264
+ 1946960 words of memory out of 5000000
+ 26200 multiletter control sequences out of 15000+600000
  563964 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,10n,65p,313b,332s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,10n,65p,320b,330s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on build/ResumenYEjercicios.pdf (5 pages, 249118 bytes).
+Output written on build/ResumenYEjercicios.pdf (5 pages, 351884 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
+ 93 PDF objects out of 1000 (max. 8388607)
  53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
