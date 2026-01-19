@@ -1,8 +1,8 @@
-PWD c:/Users/fires/Documents/workspaces/MaterialClase/1ºBAACH-CCSS/Álgebra
+PWD c:/Users/Usuario/Documents/workspaces/MaterialClase/1ºBAACH-CCSS/Álgebra
 INPUT c:/texlive/2024/texmf.cnf
 INPUT c:/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/fires/Documents/workspaces/MaterialClase/1ºBAACH-CCSS/Álgebra/Gauss.tex
+INPUT c:/Users/Usuario/Documents/workspaces/MaterialClase/1ºBAACH-CCSS/Álgebra/Gauss.tex
 OUTPUT build/Gauss.log
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/article.cls

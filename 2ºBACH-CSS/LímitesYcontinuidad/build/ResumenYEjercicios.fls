@@ -1,8 +1,16 @@
+<<<<<<< HEAD
+PWD c:/Users/Usuario/Documents/workspaces/MaterialClase/2ºBACH-CSS/LímitesYcontinuidad
+INPUT c:/texlive/2024/texmf.cnf
+INPUT c:/texlive/2024/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT c:/Users/Usuario/Documents/workspaces/MaterialClase/2ºBACH-CSS/LímitesYcontinuidad/ResumenYEjercicios.tex
+=======
 PWD c:/Users/fires/Documents/workspaces/MaterialClase/2ºBACH-CSS/LímitesYcontinuidad
 INPUT c:/texlive/2024/texmf.cnf
 INPUT c:/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
 INPUT c:/Users/fires/Documents/workspaces/MaterialClase/2ºBACH-CSS/LímitesYcontinuidad/ResumenYEjercicios.tex
+>>>>>>> 455e8234db745be3e9304fa5b3bce74d483c59f0
 OUTPUT build/ResumenYEjercicios.log
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -103,6 +111,11 @@ INPUT ../img/Límites2.png
 INPUT ../img/Límites2.png
 INPUT ../img/Límites2.png
 INPUT ../img/Límites2.png
+INPUT ../img/Limites 3.png
+INPUT ../img/Limites 3.png
+INPUT ../img/Limites 3.png
+INPUT ../img/Limites 3.png
+INPUT ../img/Limites 3.png
 INPUT build/ResumenYEjercicios.aux
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
