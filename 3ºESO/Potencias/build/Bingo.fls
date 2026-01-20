@@ -1,8 +1,8 @@
-PWD c:/Users/fires/Documents/workspaces/Material/3ºESO/Potencias
+PWD c:/Users/Usuario/Documents/workspaces/MaterialClase/3ºESO/Potencias
 INPUT c:/texlive/2024/texmf.cnf
 INPUT c:/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/fires/Documents/workspaces/Material/3ºESO/Potencias/Bingo.tex
+INPUT c:/Users/Usuario/Documents/workspaces/MaterialClase/3ºESO/Potencias/Bingo.tex
 OUTPUT build/Bingo.log
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
