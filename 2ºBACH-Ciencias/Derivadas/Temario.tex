@@ -1,0 +1,259 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{setspace}
+
+
+\begin{document}
+    \section*{Derivadas}
+        \subsection*{Definición de derivada.}
+
+            En el estudio de las funciones, uno de los conceptos fundamentales del Cálculo es el de \textbf{derivada}. La derivada permite analizar cómo varía una magnitud respecto a otra y resulta esencial para describir fenómenos de cambio en Física, Economía o Biología. En Matemáticas, la derivada de una función en un punto mide la \textbf{variación instantánea} de la función en dicho punto. 
+
+            \vspace{5mm} 
+            \underbar{\textbf{Idea intuitiva de derivada}} 
+
+
+            De manera intuitiva, la derivada indica qué tan rápido cambia el valor de una función cuando la variable independiente sufre una pequeña variación. Por ejemplo, si una función representa la posición de un móvil en función del tiempo, su derivada representa la velocidad del móvil.
+
+            Si consideramos dos puntos de una función $f(x)$, $x=a$ y $x=a+h$, la razón
+
+            \[
+            \frac{f(a+h)-f(a)}{h}
+            \]
+
+            mide la \textbf{variación media} de la función entre esos dos puntos.
+
+            \paragraph{Ejemplo 1}
+            Sea $f(x)=x^2$. Si tomamos $a=1$ y $h=0{,}5$, se tiene:
+
+            \[
+            \frac{f(1{,}5)-f(1)}{0{,}5}=\frac{2{,}25-1}{0{,}5}=2{,}5.
+            \]
+
+            Este valor representa la pendiente de la recta secante entre los puntos de la curva correspondientes a $x=1$ y $x=1{,}5$.
+
+            \subsection*{Definición de derivada en un punto}
+
+            Sea $f(x)$ una función definida en un entorno del punto $x=a$. Se define la \textbf{derivada de $f$ en el punto $a$}, y se denota por $f'(a)$, como el límite
+
+            \[
+            f'(a)=\lim_{h \to 0} \frac{f(a+h)-f(a)}{h},
+            \]
+
+            siempre que dicho límite exista y sea finito. Este límite recibe el nombre de \textbf{límite incremental}. Si existe, se dice que la función es derivable en el punto $a$.
+
+            \paragraph{Ejemplo 2}
+            Calculemos la derivada de $f(x)=x^2$ en el punto $x=1$:
+
+            \[
+            \begin{aligned}
+            f'(1) &= \lim_{h \to 0} \frac{(1+h)^2-1^2}{h} \
+            &= \lim_{h \to 0} \frac{1+2h+h^2-1}{h} \
+            &= \lim_{h \to 0} \frac{2h+h^2}{h} \
+            &= \lim_{h \to 0} (2+h)=2.
+            \end{aligned}
+            \]
+
+            Por tanto, la pendiente de la recta tangente a la curva $y=x^2$ en el punto $x=1$ es $2$.
+
+            \subsection*{Función derivada}
+
+            Si una función es derivable en todos los puntos de un intervalo, se puede definir una nueva función llamada \textbf{función derivada}, que asigna a cada valor de $x$ su derivada:
+
+            \[
+            f'(x)=\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}.
+            \]
+
+            \paragraph{Ejemplo 3}
+            Para la función $f(x)=x^2$, aplicando la definición anterior se obtiene:
+
+            [
+            f'(x)=2x.
+            ]
+
+            Esto significa que la pendiente de la recta tangente depende del punto considerado.
+
+            \subsection*{Interpretación geométrica de la derivada}
+
+            Desde el punto de vista geométrico, la derivada representa la pendiente de la recta tangente a la gráfica de una función en un punto. Si se consideran dos puntos de la curva, la recta que los une es una \textbf{recta secante}. Al acercarse uno de los puntos al otro, la recta secante se aproxima a una recta límite llamada \textbf{recta tangente}.
+
+            La pendiente de dicha recta tangente coincide con el valor de la derivada:
+
+            \[
+            f'(a)=m_{\text{tangente}}.
+            \]
+
+            \includegraphics[scale=0.5]{Img/derivadas 01.png}
+
+            \subsection*{Significado del signo de la derivada}
+
+            El signo de la derivada proporciona información sobre el comportamiento de la función:
+
+            \begin{itemize}
+            \item Si $f'(a)>0$, la función es creciente en el entorno del punto $a$.
+            \item Si $f'(a)<0$, la función es decreciente en el entorno del punto $a$.
+            \item Si $f'(a)=0$, la recta tangente es horizontal y el punto puede corresponder a un máximo, un mínimo o un punto de inflexión.
+            \end{itemize}
+
+
+            El estudio de la derivada permite analizar no solo si una función crece o decrece, sino también localizar puntos en los que la función alcanza valores extremos, es decir, \textbf{máximos} y \textbf{mínimos}.
+
+            \vspace{5mm} 
+            \textbf{\underbar{Máximos y mínimos}}
+
+            Sea $f(x)$ una función derivable en un intervalo. Se dice que:
+
+            \begin{itemize}
+            \item $f$ tiene un \textbf{máximo relativo} en $x=a$ si el valor $f(a)$ es mayor que los valores de la función en puntos cercanos a $a$.
+            \item $f$ tiene un \textbf{mínimo relativo} en $x=a$ si el valor $f(a)$ es menor que los valores de la función en puntos cercanos a $a$.
+            \end{itemize}
+
+            En los puntos donde la función presenta un máximo o un mínimo relativo, si la derivada existe, se cumple que:
+
+            \[
+            f'(a)=0.
+            \]
+
+            A estos puntos se les llama \textbf{puntos críticos}.
+
+            \vspace{5mm} 
+            \textbf{\underbar{Criterio del cambio de signo}}
+
+            El signo de la derivada permite clasificar los puntos críticos:
+
+            \begin{itemize}
+            \item Si $f'(x)$ cambia de positivo a negativo al pasar por $a$, la función tiene un máximo relativo en $a$.
+            \item Si $f'(x)$ cambia de negativo a positivo al pasar por $a$, la función tiene un mínimo relativo en $a$.
+            \item Si no hay cambio de signo, el punto no corresponde a un extremo.
+            \end{itemize}
+
+            \textbf{Ejemplo 4}: Consideremos la función $f(x)=x^2-4x+3$.
+
+            Calculamos su derivada:
+            \[
+            f'(x)=2x-4.
+            \]
+
+            Igualando a cero:
+            \[
+            2x-4=0 \quad \Rightarrow \quad x=2.
+            \]
+
+            Estudiando el signo de la derivada:
+            \begin{itemize}
+            \item Si $x<2$, $f'(x)<0$ (función decreciente).
+            \item Si $x>2$, $f'(x)>0$ (función creciente).
+            \end{itemize}
+
+            Por tanto, la función tiene un \textbf{mínimo relativo} en $x=2$.
+
+\subsection*{Problemas de optimización}
+
+Los \textbf{problemas de optimización} consisten en encontrar el valor máximo o mínimo de una magnitud en una situación real. Para resolverlos se siguen, en general, los siguientes pasos:
+
+\begin{enumerate}
+  \item Expresar la magnitud a optimizar mediante una función.
+  \item Calcular la derivada de dicha función.
+  \item Hallar los puntos críticos resolviendo $f'(x)=0$.
+  \item Comprobar en qué puntos se alcanza el máximo o el mínimo.
+\end{enumerate}
+
+\paragraph{Ejemplo de optimización}
+
+Un rectángulo tiene perímetro $20$ m. ¿Cuáles deben ser sus dimensiones para que el área sea máxima?
+
+Sea $x$ la longitud de uno de los lados. Entonces el otro lado mide $10-x$ y el área es:
+\[
+A(x)=x(10-x)=10x-x^2.
+\]
+
+Derivamos:
+\[
+A'(x)=10-2x.
+\]
+
+Igualando a cero:
+\[
+10-2x=0 \Rightarrow x=5.
+\]
+
+Por tanto, el área máxima se obtiene cuando el rectángulo es un cuadrado de lado $5$ m.
+
+    \subsection*{Teorema de Lagrange (Teorema del Valor Medio)}
+
+        El \textbf{Teorema de Lagrange}, también conocido como \textbf{Teorema del Valor Medio}, relaciona el crecimiento global de una función en un intervalo con el valor de su derivada en algún punto interior de dicho intervalo.
+
+        \vspace{5mm}
+
+        \textbf{\underbar{Enunciado del teorema}}
+
+Sea $f(x)$ una función que cumple las siguientes condiciones:
+\begin{itemize}
+  \item Es continua en el intervalo cerrado $[a,b]$.
+  \item Es derivable en el intervalo abierto $(a,b)$.
+\end{itemize}
+
+Entonces, existe al menos un punto $c \\in (a,b)$ tal que:
+
+\[
+f'(c)=\\frac{f(b)-f(a)}{b-a}.
+\]
+
+\subsection*{Interpretación geométrica}
+
+Geométricamente, el Teorema de Lagrange afirma que existe al menos un punto $c$ en el intervalo $(a,b)$ en el que la recta tangente a la gráfica de la función es paralela a la recta secante que une los puntos $(a,f(a))$ y $(b,f(b))$.
+
+Es decir, la pendiente de la recta tangente en $x=c$ coincide con la pendiente de la recta secante en el intervalo $[a,b]$.
+
+\subsection*{Ejemplo}
+
+Sea la función $f(x)=x^2$ definida en el intervalo $[1,3]$.
+
+\begin{itemize}
+  \item $f(x)$ es continua en $[1,3]$ por ser un polinomio.
+  \item $f(x)$ es derivable en $(1,3)$.
+\end{itemize}
+
+Por tanto, se puede aplicar el Teorema de Lagrange.
+
+Calculamos la pendiente de la recta secante:
+
+\[
+\\frac{f(3)-f(1)}{3-1}=\\frac{9-1}{2}=4.
+\]
+
+Derivamos la función:
+\[
+f'(x)=2x.
+\]
+
+Buscamos el punto $c$ tal que:
+\[
+2c=4 \\Rightarrow c=2.
+\]
+
+Por tanto, existe un punto $x=2$ en el que la pendiente de la recta tangente coincide con la pendiente de la recta secante del intervalo.
+
+\subsection*{Aplicaciones del teorema}
+
+El Teorema de Lagrange se utiliza, entre otras aplicaciones, para:
+\begin{itemize}
+  \item Justificar la existencia de máximos y mínimos.
+  \item Estudiar el crecimiento y decrecimiento de funciones.
+  \item Resolver problemas de tipo cinemático, interpretando la derivada como velocidad.
+\end{itemize}
+
+
+
+            \subsection*{Conclusión}
+
+            La derivada es una herramienta fundamental para el estudio del comportamiento de las funciones. Su definición mediante límites y su interpretación geométrica como pendiente de la recta tangente permiten describir con precisión los procesos de cambio, constituyendo uno de los pilares del Cálculo en 2º de Bachillerato.
+
+
+
+\end{document}
