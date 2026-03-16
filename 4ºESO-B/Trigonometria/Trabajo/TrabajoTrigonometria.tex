@@ -13,13 +13,99 @@
 
     Habitualmente la enseñanza de la trigonometría se justifica mediante situaciones que se pueden modelar con triángulos rectángulos y en las que se necesita conocer la medida de algunos de sus lados, pero que no son accesibles para medir directamente, como alturas de montañas, pirámides o en Astronomía. 
 
-    \subsubsection*{Guía de Fórmulas}
+    \subsection*{Guía de Fórmulas}
 
-    Teorema de Tales: $\dfrac{\text{Altura del edificio}}{\text{Sombra del edificio}} =  \dfrac{\text{Altura del objeto}}{\text{Sombra del objeto}}$ 
+    \textbf{1. Razones trigonométricas en triángulos rectángulos}
 
-    $tan(\alpha) = \dfrac{altura}{distancia}$
+    \[
+    \sin(\theta)=\frac{\text{cateto opuesto}}{\text{hipotenusa}}
+    \]
 
-    \subsubsection*{Descripción del trabajo}
+    El seno de un ángulo en un triángulo rectángulo se define como el cociente entre el cateto opuesto y la hipotenusa. Permite calcular alturas cuando se conoce el ángulo y la longitud del lado inclinado.
+
+    \[
+    \cos(\theta)=\frac{\text{cateto adyacente}}{\text{hipotenusa}}
+    \]
+
+    El coseno de un ángulo es la razón entre el cateto adyacente y la hipotenusa. Se utiliza para relacionar distancias horizontales con la longitud de la hipotenusa.
+
+    \[
+    \tan(\theta)=\frac{\text{cateto opuesto}}{\text{cateto adyacente}}
+    \]
+
+    La tangente relaciona el cateto opuesto con el cateto adyacente. Es especialmente útil para calcular la altura de un objeto cuando se conoce la distancia horizontal y el ángulo de elevación.
+
+    \vspace{0.3cm}
+
+    \textbf{2. Cálculo de la altura mediante trigonometría}
+
+    \[
+    h=d\cdot\tan(\theta)
+    \]
+
+    Si \(d\) es la distancia horizontal al edificio y \(\theta\) el ángulo de elevación, la altura \(h\) se obtiene multiplicando la distancia por la tangente del ángulo. Este es el método más directo para calcular alturas inaccesibles.
+
+    \[
+    h=L\sin(\theta)
+    \]
+
+    Cuando se conoce la distancia inclinada \(L\) hasta la parte superior del edificio, la altura puede calcularse multiplicando esa distancia por el seno del ángulo. Este método utiliza la relación entre la hipotenusa y el cateto opuesto.
+
+    \[
+    d=L\cos(\theta)
+    \]
+
+    El coseno permite calcular la distancia horizontal a partir de la hipotenusa y el ángulo de elevación. Puede utilizarse para comprobar resultados obtenidos mediante otros procedimientos trigonométricos.
+
+    \vspace{0.3cm}
+
+    \textbf{3. Comprobación mediante el Teorema de Tales}
+
+    \[
+    \frac{h_1}{d_1}=\frac{h_2}{d_2}
+    \]
+
+    El Teorema de Tales establece que dos triángulos semejantes mantienen proporciones iguales entre sus lados correspondientes. Esto permite calcular la altura de un objeto comparándolo con otro de altura conocida.
+
+    \vspace{0.3cm}
+
+    \textbf{4. Conversión de grados a radianes}
+
+    \[
+    \theta_{\text{rad}}=\theta_{\text{deg}}\cdot\frac{\pi}{180}
+    \]
+
+    Esta fórmula permite transformar una medida angular expresada en grados a radianes. Es necesaria porque muchas funciones trigonométricas y cálculos matemáticos utilizan el sistema de radianes.
+
+    \[
+    \pi \ \text{rad}=180^\circ
+    \]
+
+    Esta equivalencia relaciona los dos sistemas de medida angular más utilizados. Surge de la definición del radián basada en la longitud del arco de una circunferencia.
+
+    \[
+    \theta=\frac{s}{r}
+    \]
+
+    Un radián se define como el ángulo central que abarca un arco de longitud igual al radio de la circunferencia. En la fórmula, \(s\) representa la longitud del arco y \(r\) el radio.
+
+    \vspace{0.3cm}
+
+    \textbf{5. Cálculo del error porcentual}
+
+    \[
+    \text{Error \%}=\frac{|V_{\text{experimental}}-V_{\text{real}}|}{V_{\text{real}}}\cdot100
+    \]
+
+    El error porcentual mide la diferencia relativa entre un valor obtenido experimentalmente y el valor real o de referencia. Permite evaluar la precisión de las mediciones realizadas.
+
+    \[
+    h=d\cdot\tan(\theta\pm1^\circ)
+    \]
+
+    Esta expresión permite analizar cómo cambia la altura calculada si el ángulo medido tiene un posible error de \(\pm1^\circ\). Sirve para estudiar la sensibilidad del resultado ante pequeñas variaciones en la medición.
+
+    \subsection*{Descripción del trabajo}
         En grupos de 3/4 alumnos deberemos calcular las dimensiones del instituto y presentar una memoria estructurada.
 
 
@@ -73,7 +159,8 @@
 
 
 
-    \subsubsection*{¿Qué hay que entregar?}
+
+    \subsection*{¿Qué hay que entregar?}
 
     \begin{enumerate}
         \item Datos del grupo (integrantes, fecha, objeto medido)
@@ -85,7 +172,7 @@
         \item Reflexión final: ¿Ha sido preciso el método? ¿Qué posibles errores pueden aparecer? ¿Cómo mejoraríamos la medición?
     \end{enumerate}
 
-    \subsubsection*{¿Qué se evaluará?}
+    \subsection*{¿Qué se evaluará?}
     \begin{itemize}
         \item Uso correcto de las razones trigonométricas
         \item Claridad en la memoria
