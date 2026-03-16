@@ -1,9 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1773597487.39422 "c:/Users/fires/Documents/workspaces/MaterialClase/1ºESO/ExamenÁlgebra.tex" "build/ExamenÁlgebra.pdf" "ExamenÁlgebra" 1773597488.44522 0
-  "ExamenÁlgebra.tex" 1773597486 1873 bcc5307ad7ad9590a964a4182d642ab1 ""
+["pdflatex"] 1773676680.00362 "c:/Users/fires/Documents/workspaces/MaterialClase/1ºESO/ExamenÁlgebra.tex" "build/ExamenÁlgebra.pdf" "ExamenÁlgebra" 1773676681.03841 0
+  "ExamenÁlgebra.tex" 1773676678 3573 a557a1a55698a8fe6eb192c4bd9f7faa ""
   "build/../../img-Logos/iesoGalileo.jpg" 1772032367 44906 a19e7d12aadf7126fd92d9dd4396e4b5 ""
-  "build/ExamenÁlgebra.aux" 1773597488 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "c:/Users/fires/Documents/workspaces/MaterialClase/1ºESO/ExamenÁlgebra.tex" 1773597486 1873 bcc5307ad7ad9590a964a4182d642ab1 ""
+  "build/ExamenÁlgebra.aux" 1773676680 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
+  "c:/Users/fires/Documents/workspaces/MaterialClase/1ºESO/ExamenÁlgebra.tex" 1773676678 3573 a557a1a55698a8fe6eb192c4bd9f7faa ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1727624763 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1727628144 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm" 1727628626 2520 53e01eef820ca829e42c1333c3fd02b9 ""
@@ -27,6 +27,7 @@
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1727623926 1120 8b7d695260f3cff42e636090a8002094 ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1727622760 36741 0ee9e374ec3e30da87cdfb0ea3575226 ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1727622760 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1727622760 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1727622760 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb" 1727628626 44648 23115b2a545ebfe2c526c3ca99db8b95 ""
   "c:/texlive/2024/texmf-dist/fonts/vf/adobe/helvetic/phvr7t.vf" 1727628626 1372 dc841a9f00a1a11b1443367ae6c5588e ""
