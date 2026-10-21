@@ -1,0 +1,23 @@
+# Fdb version 4
+["pdflatex"] 1792571677.95308 "c:/Users/Usuario/Documents/workspaces/MaterialClase/3ºESO/Potencias/raices2.tex" "build/raices2.pdf" "raices2" 1792571678.77811 2
+  "build/raices2.aux" 1792571677 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "c:/Users/Usuario/Documents/workspaces/MaterialClase/3ºESO/Potencias/raices2.tex" 1792571663 31423 55bc11fab94d124ff45528e2d4643580 ""
+  "c:/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty" 1725538545 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
+  "c:/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty" 1725538545 1057 525c2192b5febbd8c1f662c9468335bb ""
+  "c:/texlive/2024/texmf-dist/tex/latex/base/article.cls" 1725538825 20144 67a5f8e0f9e445e8ec6834e595cebdc9 ""
+  "c:/texlive/2024/texmf-dist/tex/latex/base/size10.clo" 1725538825 8448 358bf3de18513f057a13bdc6e6770c41 ""
+  "c:/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.sty" 1725538031 3755 4872b99d810c024f9c09bb1c62ffee3b ""
+  "c:/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty" 1725538128 41601 9cf6c5257b1bc7af01a58859749dd37a ""
+  "c:/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty" 1725538247 2671 70891d50dac933918b827d326687c6e8 ""
+  "c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1725538791 29785 9f93ab201fe5dd053afcc6c1bcf7d266 ""
+  "c:/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty" 1725538797 6565 433202089ba6cc213cc39b66dbcea832 ""
+  "c:/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty" 1725538804 9783 ab4bee47700c04aadedb8da27591b0ab ""
+  "c:/texlive/2024/texmf-dist/web2c/texmf.cnf" 1725536080 42007 0b741a3c21a5ca32b40e3846e75b3548 ""
+  "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1725545861 8239334 135493cedb47fb7b683f438bf2ad13bf ""
+  "c:/texlive/2024/texmf.cnf" 1725545639 713 e69b156964470283e0530f5060668171 ""
+  "raices2.tex" 1792571663 31423 55bc11fab94d124ff45528e2d4643580 ""
+  (generated)
+  "build/raices2.aux"
+  "build/raices2.log"
+  "build/raices2.pdf"
+  (rewritten before read)

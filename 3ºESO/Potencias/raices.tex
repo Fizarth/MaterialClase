@@ -1,0 +1,556 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{array}
+\usepackage{alphalph}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{multicol}
+
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{framed}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+
+% Estilos para cajas de teoría y recordatorios
+\definecolor{graybox}{gray}{0.92}
+\newenvironment{boxsummary}{%
+  \def\FrameCommand{\fcolorbox{black}{graybox}}%
+  \MakeFramed{\FrameRestore}%
+  \small\textbf{RECORDAR:}\par\smallskip
+}{%
+  \endMakeFramed
+}
+
+\begin{document}
+
+\section*{Tema 2: Potencias y raíces}
+
+\begin{boxsummary}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item Definición de raíz $n$-ésima: $\sqrt[n]{a} = x \Leftrightarrow x^n = a$
+    \item Casos particulares de simplificación: $\sqrt[n]{x^n} = x \qquad (\sqrt[n]{x})^n = x$
+\end{itemize}
+\textit{(Añadir estas fórmulas al formulario, junto con la lista de los 20 primeros cuadrados perfectos que indicará el profesor)}
+\end{boxsummary}
+\begin{boxsummary}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item Simplificación general de radicales: $\sqrt[n]{x^m} = \sqrt[n/p]{x^{m/p}}$
+    \item Amplificación de radicales: $\sqrt[n]{x^m} = \sqrt[n \cdot p]{x^{m \cdot p}}$
+    \item Casos particulares de simplificación: $\sqrt[n]{x^n} = x \qquad (\sqrt[n]{x})^n = x$
+\end{itemize}
+\end{boxsummary}
+\begin{boxsummary}
+\textbf{CONSECUENCIA:} Potencia de exponente fraccionario: $\sqrt[n]{x^m} = x^{m/n}$
+\end{boxsummary}
+\begin{boxsummary}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item Propiedades de las raíces:
+    \[ \sqrt[n]{a} \cdot \sqrt[n]{b} = \sqrt[n]{a \cdot b} \qquad \frac{\sqrt[n]{a}}{\sqrt[n]{b}} = \sqrt[n]{\frac{a}{b}} \qquad (\sqrt[n]{a})^m = \sqrt[n]{a^m} \qquad \sqrt[m]{\sqrt[n]{a}} = \sqrt[m \cdot n]{a} \]
+    \item Introducir/extraer factores: $x \cdot \sqrt[n]{a} = \sqrt[n]{x^n \cdot a}$
+\end{itemize}
+\end{boxsummary}
+
+
+\begin{enumerate}
+    \item \textbf{Calcular, aplicando mentalmente la definición de raíz (no usar calculadora):}
+    \begin{multicols}{4}
+    \begin{enumerate}[label=\alph*)]
+        \item $\sqrt{9} =$
+        \item $\sqrt{25} =$
+        \item $\sqrt{49} =$
+        \item $\sqrt{100} =$
+        \item $\sqrt{1} =$
+        \item $\sqrt{0} =$
+        \item $\sqrt{\frac{1}{4}} =$
+        \item $\sqrt{\frac{1}{9}} =$
+        \item $\sqrt{\frac{4}{25}} =$
+        \item $\sqrt{\frac{16}{100}} =$
+        \item $\sqrt{-4} =$
+        \item $\sqrt{64} =$
+        \item $\sqrt{2^{14}} =$
+        \item $\sqrt{5^{10}} =$
+        \item $\sqrt{3^6} =$
+        \item $\sqrt{7^4} =$
+        \item $\sqrt{\frac{36}{25}} =$
+        \item $\sqrt{121} =$
+        \item $\sqrt{169} =$
+        \item $\sqrt{400} =$
+        \item $\sqrt{144} =$
+        \item $\sqrt{196} =$
+        \item $\sqrt{2500} =$
+    \end{enumerate}
+    \end{multicols}
+
+    \item \textbf{Calcula (No usar calculadora, salvo para comprobar):}
+    \begin{multicols}{3}
+    \begin{enumerate}[label=\alph*)]
+        \item $\sqrt{0,25} =$
+        \item $\sqrt{0,49} =$
+        \item $\sqrt{0,09} =$
+        \item $\sqrt{0,0025} =$
+        \item $\sqrt{0,64} =$
+        \item $\sqrt{0,04} =$
+        \item $\sqrt{0,\bar{1}} =$
+        \item $\sqrt{225} =$
+        \item $\sqrt{27} =$
+        \item $\sqrt{0,16} =$
+    \end{enumerate}
+    \end{multicols}
+
+    \item \textbf{Calcular, aplicando mentalmente la definición de raíz (no vale calculadora):}
+    \begin{multicols}{3}
+    \begin{enumerate}[label=\alph*)]
+        \item $\sqrt[3]{8} =$
+        \item $\sqrt[3]{27} =$
+        \item $\sqrt[3]{64} =$
+        \item $\sqrt[3]{1000} =$
+        \item $\sqrt[3]{-1} =$
+        \item $\sqrt[3]{-125} =$
+        \item $\sqrt[3]{-27} =$
+        \item $\sqrt[3]{\frac{1}{8}} =$
+        \item $\sqrt[3]{\frac{1}{125}} =$
+        \item $\sqrt[3]{\frac{27}{64}} =$
+        \item $\sqrt[3]{-1000} =$
+        \item $\sqrt[3]{-\frac{125}{8}} =$
+        \item $\sqrt[3]{-8} =$
+        \item $\sqrt[3]{2^{15}} =$
+        \item $\sqrt[3]{\frac{64}{1000}} =$
+        \item $\sqrt[3]{a^9} =$
+        \item $\sqrt[3]{-64} =$
+        \item $\sqrt[3]{125} =$
+    \end{enumerate}
+    \end{multicols}
+\end{enumerate}
+
+
+
+\begin{enumerate}[start=4]
+    \item \textbf{Calcular de dos formas: $1^\circ$) Mentalmente. $2^\circ$) Pasando a fracción generatriz:}
+    \begin{multicols}{3}
+    \begin{enumerate}[label=\alph*)]
+        \item $\sqrt[3]{0,001} =$
+        \item $\sqrt[3]{0,008} =$
+        \item $\sqrt[3]{-0,027} =$
+        \item $\sqrt[3]{0,125} =$
+        \item $\sqrt[3]{0,216} =$
+        \item $\sqrt[3]{-0,064} =$
+    \end{enumerate}
+    \end{multicols}
+
+    \item \textbf{Calcular (resultado en la forma del radicando), factorizando previamente el radicando cuando sea necesario:}
+    \begin{multicols}{3}
+    \begin{enumerate}[label=\arabic*)]
+        \item $\sqrt{36} =$
+        \item $\sqrt[3]{729} =$
+        \item $\sqrt{729} =$
+        \item $\sqrt[4]{16} =$
+        \item $\sqrt[5]{-243} =$
+        \item $\sqrt{-8} =$
+        \item $\sqrt[3]{-8} =$
+        \item $\sqrt[6]{1} =$
+        \item $\sqrt[5]{-32} =$
+        \item $\sqrt[4]{81} =$
+        \item $\sqrt{5^2} =$
+        \item $\sqrt{\frac{25}{81}} =$
+        \item $\sqrt[6]{2^6} =$
+        \item $\sqrt[4]{\frac{81}{256}} =$
+        \item $\sqrt[5]{3^{15}} =$
+        \item $\sqrt[3]{0,064} =$
+        \item $\sqrt[4]{0,0001} =$
+        \item $\sqrt[6]{1\,000\,000} =$
+        \item $\sqrt[4]{1296} =$
+        \item $\sqrt{1296} =$
+        \item $\sqrt{14161} =$
+        \item $\sqrt[3]{-\frac{8}{27}} =$
+        \item $\sqrt{0,\bar{4}} =$
+        \item $\sqrt[4]{-0,4} =$
+        \item $\sqrt{1764} =$
+        \item $\sqrt[3]{3^9} =$
+        \item $\sqrt[5]{-\frac{1}{32}} =$
+        \item $\sqrt{484} =$
+        \item $\sqrt{1,7} =$
+        \item $\sqrt{5,4} =$
+        \item $\sqrt{900} =$
+        \item $\sqrt[4]{\frac{1}{16}} =$
+        \item $\sqrt[5]{5^{20}} =$
+        \item $\sqrt[3]{-1} =$
+        \item $\sqrt{31,36} =$
+        \item $\sqrt{23^2} =$
+        \item $\sqrt{11^4} =$
+        \item $\sqrt[4]{-1} =$
+        \item $\sqrt[3]{-\frac{343}{125}} =$
+        \item $\sqrt[4]{0,0016} =$
+        \item $\sqrt{2,\bar{7}} =$
+        \item $\sqrt[3]{3,375} =$
+        \item $\sqrt[4]{2^{36}} =$
+        \item $\sqrt[5]{-\frac{1024}{243}} =$
+        \item $\sqrt[6]{-64} =$
+        \item $\sqrt{2025} =$
+        \item $\sqrt{11025} =$
+        \item $\sqrt[4]{16a^4 b^8} =$
+        \item $\sqrt[3]{-\frac{343}{729}} =$
+        \item $\sqrt{-25} =$
+        \item $\sqrt[6]{9^3} =$
+        \item $\sqrt{0,00\hat{1}} =$
+        \item $\sqrt{0,13\bar{4}} =$
+        \item $\sqrt[3]{0,296} =$
+        \item $\sqrt{2,66\hat{7}} =$
+        \item $\sqrt{0,02\bar{7}} =$
+        \item $\sqrt[4]{-2^4} =$
+        \item $\sqrt[4]{(-2)^4} =$
+    \end{enumerate}
+    \end{multicols}
+
+    \item \textbf{Utilizar la calculadora para hallar, con cuatro cifras decimales bien aproximadas:}
+    \begin{multicols}{3}
+    \begin{enumerate}[label=\alph*)]
+        \item $\sqrt[4]{8} \cong \pm 1{,}6818$
+        \item $\sqrt[5]{9} =$
+        \item $\sqrt[6]{25} =$
+        \item $\sqrt[3]{10} =$
+        \item $\sqrt[5]{-15} =$
+        \item $\sqrt[6]{-40} =$
+        \item $\sqrt[4]{2^3} =$
+        \item $\sqrt[5]{3^2} =$
+        \item $\sqrt[6]{5^2} =$
+        \item $\sqrt[8]{256} =$
+        \item $\sqrt[3]{64} =$
+        \item $\sqrt{1315} =$
+    \end{enumerate}
+    \end{multicols}
+
+    \item \textbf{Acotar los siguientes radicales entre dos enteros consecutivos, razonando el porqué:}
+    \begin{enumerate}[label=\alph*)]
+        \item $1 < \sqrt{3} < 2$ porque $1^2 = 1$ y $2^2 = 4$
+        \item $\sqrt{13} \cong 3\dots$ porque $3^2 = 9$ y $4^2 = 16$
+        \item $\underline{\hspace{0.8cm}} < \sqrt{17} < \underline{\hspace{0.8cm}}$
+        \item $\sqrt{40} \cong \underline{\hspace{0.8cm}}$
+        \item $\underline{\hspace{0.8cm}} < \sqrt[3]{6} < \underline{\hspace{0.8cm}}$
+        \item $\sqrt[3]{100} \cong \underline{\hspace{0.8cm}}$
+        \item $\underline{\hspace{0.8cm}} < \sqrt{93} < \underline{\hspace{0.8cm}}$
+        \item $\sqrt[4]{57} \cong \underline{\hspace{0.8cm}}$
+        \item $\underline{\hspace{0.8cm}} < \sqrt[3]{-10} < \underline{\hspace{0.8cm}}$
+    \end{enumerate}
+
+    \item \textbf{Hallar, razonadamente, el valor de $k$ (indicar todos los pasos):}
+    \begin{multicols}{3}
+    \begin{enumerate}[label=\alph*)]
+        \item $\sqrt{k^3} = 8 \qquad (\text{Sol: } k=4)$
+        \item $\sqrt[k]{729} = 9 \qquad (\text{Sol: } k=3)$
+        \item $\sqrt[5]{10^{10}} = k \qquad (\text{Sol: } k=100)$
+    \end{enumerate}
+    \end{multicols}
+\end{enumerate}
+
+\newpage
+
+% ==================== FICHA 2 ====================
+\section*{FICHA 2: Radicales equivalentes. Simplificación de radicales}
+
+
+\begin{enumerate}
+    \item \textbf{Simplificar los siguientes radicales (y comprobar el resultado con la calculadora, cuando proceda):}
+    \begin{multicols}{3}
+    \begin{enumerate}[label=\arabic*)]
+        \item $\sqrt[4]{3^2} = \sqrt[4/2]{3^{2/2}} = \sqrt{3}$
+        \item $\sqrt[8]{5^4} =$
+        \item $\sqrt[9]{27} =$
+        \item $\sqrt[5]{1024} =$
+        \item $\sqrt[6]{8} =$
+        \item $\sqrt[9]{64} =$
+        \item $\sqrt[8]{81} =$
+        \item $\sqrt[12]{x^9} =$
+        \item $\sqrt[12]{x^8} =$
+        \item $\sqrt[5]{x^{10}} =$
+        \item $\sqrt[8]{2^2 3^4} =$
+        \item $\sqrt[9]{a^3 b^6} =$
+        \item $\sqrt[10]{a^4 b^6} =$
+        \item $\sqrt[6]{2^3 3^9} =$
+        \item $\sqrt[6]{5^3} =$
+        \item $\sqrt[15]{2^{12}} =$
+        \item $\sqrt[10]{a^8} =$
+        \item $\sqrt[12]{a^4 b^8} =$
+        \item $\sqrt[15]{243} =$
+        \item $\sqrt[4]{81} =$
+        \item $\sqrt[12]{64} =$
+        \item $\sqrt[6]{2^{12}} =$
+        \item $\sqrt[6]{512} =$
+        \item $\sqrt[8]{16 a^4 b^8} =$
+        \item $\sqrt{1444} =$
+        \item $\sqrt{1600} =$
+        \item $\sqrt[12]{256} =$
+        \item $\sqrt{784} =$
+        \item $\sqrt[5]{144} =$
+        \item $\sqrt[6]{400 a^4 b^6} =$
+        \item $\sqrt[6]{144 x^2 y^6} =$
+        \item $\sqrt[12]{8^8} =$
+    \end{enumerate}
+    \end{multicols}
+
+    \item \textbf{Estudiar si los siguientes radicales son equivalentes; comprobar después con la calculadora:}
+    \begin{enumerate}[label=\alph*)]
+        \item $\sqrt{2}, \quad \sqrt[6]{8}, \quad \sqrt[10]{32}$
+        \item $\sqrt{9}, \quad \sqrt[4]{81}, \quad \sqrt[5]{243}$
+        \item $\sqrt{3}, \quad \sqrt[4]{9}, \quad \sqrt[8]{729}$
+    \end{enumerate}
+
+    \item 
+    \begin{enumerate}[label=\alph*)]
+        \item Indicar tres radicales equivalentes a $\sqrt{5}$ por amplificación, y comprobar con la calculadora.
+        \item Hallar razonadamente un radical equivalente a $\sqrt[6]{16}$ por simplificación, y otro por amplificación.
+    \end{enumerate}
+
+    \item 
+    \begin{enumerate}[label=\alph*)]
+        \item Hallar razonadamente un radical de índice 4 equivalente a $\sqrt{32}$. Comprobar con calculadora.
+        \item Hallar razonadamente un radical de índice 9 equivalente a $\sqrt[3]{5}$, y comprobar.
+    \end{enumerate}
+
+    \item 
+    \begin{enumerate}[label=\alph*)]
+        \item Simplificar los siguientes radicales e indicar los que son equivalentes y los que son irreducibles:
+        \[ \sqrt[3]{5^2}, \qquad \sqrt[9]{125}, \qquad \sqrt[6]{625}, \qquad \sqrt[3]{5} \]
+        \item Simplificar los siguientes radicales e indicar mediante lenguaje matemático su posible equivalencia:
+        \[ \sqrt[8]{9}, \qquad \sqrt[12]{3^9}, \qquad \sqrt[16]{81} \]
+    \end{enumerate}
+
+    \item \textbf{Hallar tres radicales equivalentes a $\sqrt[6]{8}$ de índice 2, 4 y 12 respectivamente.}
+\end{enumerate}
+
+\newpage
+
+% ==================== FICHA 3 ====================
+\section*{FICHA 3: Producto y cociente de radicales}
+
+
+
+\begin{enumerate}
+    \item \textbf{Multiplicar los siguientes radicales del mismo índice, simplificando siempre que sea posible:}
+    \begin{multicols}{3}
+    \begin{enumerate}[label=\alph*)]
+        \item $\sqrt{2}\sqrt{32} = \sqrt{64} = 8$
+        \item $\sqrt{15}\sqrt{5} =$
+        \item $\sqrt[3]{2}\sqrt[3]{4} =$
+        \item $\sqrt{3}\sqrt{27} =$
+        \item $\sqrt{3}\sqrt{4} =$
+        \item $\sqrt[3]{2}\sqrt[3]{5} =$
+        \item $\sqrt{32}\sqrt{8} =$
+        \item $\sqrt{13}\sqrt{13} =$
+        \item $\sqrt[3]{9}\sqrt[3]{81} =$
+        \item $\sqrt{2}\sqrt{8}\sqrt{16} =$
+        \item $\sqrt{12}\sqrt{3} =$
+        \item $2\sqrt{18} \cdot 3\sqrt{2} =$
+        \item $\sqrt{2x^3}\sqrt{2x} =$
+        \item $\sqrt{12}\sqrt{6}\sqrt{18} =$
+        \item $(2\sqrt{2})^2 =$
+        \item $(3\sqrt{5})^2 =$
+    \end{enumerate}
+    \end{multicols}
+
+    \item \textbf{Multiplicar los siguientes radicales de distinto índice, simplificando siempre que sea posible:}
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\alph*)]
+        \item $\sqrt{2}\sqrt[4]{64} = \sqrt{2}\sqrt[4]{2^6} = \sqrt{2}\sqrt{2^3} = \sqrt{2^4} = 4$
+        \item $\sqrt[6]{9}\sqrt[3]{9} =$
+        \item $\sqrt[4]{x^{10}}\sqrt[6]{x^9} =$
+        \item $\sqrt[6]{7^{10}}\sqrt[3]{49} =$
+        \item $\sqrt[4]{1024}\sqrt[6]{8} =$
+        \item $\sqrt[4]{4a^2}\sqrt{8a} =$
+        \item $\sqrt{3}\sqrt[6]{27} =$
+        \item $\sqrt[6]{2^9}\sqrt[4]{1024} =$
+        \item $\sqrt[4]{25}\sqrt{25}\sqrt{5} =$
+    \end{enumerate}
+    \end{multicols}
+
+    \item \textbf{Simplificar, aplicando convenientemente las propiedades de las raíces:}
+    \begin{multicols}{3}
+    \begin{enumerate}[label=\alph*)]
+        \item $\frac{\sqrt{32}}{\sqrt{2}} = \sqrt{16} = 4$
+        \item $\frac{\sqrt{8}}{\sqrt{2}} =$
+        \item $\frac{\sqrt[3]{81}}{\sqrt[3]{9}} =$
+        \item $\frac{\sqrt{15}}{\sqrt{3}} =$
+        \item $\frac{\sqrt{27}}{\sqrt{3}} =$
+        \item $\frac{\sqrt[3]{16}}{\sqrt[3]{2}} =$
+        \item $\sqrt{\frac{256}{729}} =$
+        \item $\frac{\sqrt{21}}{2\sqrt{7}} =$
+        \item $\frac{\sqrt{33}}{\sqrt{3}} =$
+        \item $\sqrt[3]{\frac{125}{512}} =$
+        \item $\sqrt[4]{\frac{16}{625}} =$
+        \item $\frac{\sqrt{2}\sqrt{8}}{\sqrt{32}} =$
+        \item $\frac{\sqrt{2}\sqrt{3}}{\sqrt{6}} =$
+        \item $\frac{\sqrt{8a^3}}{\sqrt{2a}} =$
+        \item $(\frac{3}{2})^2 : \left(1 + \sqrt{\frac{1}{8} + \frac{7}{16}} - \frac{3}{2}\right) : \left(-\frac{2}{3} + 1\right)^2 =$
+    \end{enumerate}
+    \end{multicols}
+
+    \item \textbf{Dividir los siguientes radicales de distinto índice, simplificando siempre que sea posible:}
+    \begin{multicols}{2}
+    \begin{enumerate}[label=\alph*)]
+        \item $\frac{\sqrt{128}}{\sqrt[6]{8}} = \frac{\sqrt{2^7}}{\sqrt[6]{2^3}} = \frac{\sqrt{2^7}}{\sqrt{2}} = \sqrt{2^6} = 2^3 = 8$
+        \item $\frac{\sqrt[4]{64}}{\sqrt[6]{8}} =$
+        \item $\frac{\sqrt[3]{27}}{\sqrt[6]{81}} =$
+        \item $\frac{\sqrt{5^5}}{\sqrt[4]{5^6}} =$
+        \item $\frac{\sqrt[4]{a^{14}}}{\sqrt[6]{a^9}} =$
+        \item $\frac{\sqrt{7^3}}{\sqrt[4]{49}} =$
+        \item $\frac{\sqrt[6]{x^{15}}}{\sqrt[10]{x^{15}}} =$
+        \item $\frac{\sqrt{a^3 b^5}}{\sqrt{a b^3}} =$
+        \item $\frac{\sqrt[4]{81}}{\sqrt[4]{9}\sqrt{3}} =$
+        \item $\frac{\sqrt[4]{4}\sqrt{2}}{\sqrt[6]{8}} =$
+        \item $\frac{\sqrt[4]{x^2}\cdot\sqrt{x^3}}{\sqrt{x}\cdot\sqrt[6]{x^9}} =$
+        \item $\frac{\sqrt{125}}{\sqrt[4]{25}} =$
+        \item $\sqrt{36}\sqrt[3]{125} - \frac{\sqrt[3]{8}}{\sqrt{16}} =$
+    \end{enumerate}
+    \end{multicols}
+\end{enumerate}
+
+\newpage
+
+% ==================== FICHA 4 ====================
+\section*{FICHA 4: Potencia de un radical. Radical de un radical. Introducir/extraer factores}
+
+\begin{enumerate}
+    \item \textbf{Simplificar, aplicando convenientemente las propiedades de las raíces:}
+    \begin{multicols}{3}
+    \begin{enumerate}[label=\alph*)]
+        \item $(\sqrt[3]{4})^2 = (\sqrt[3]{2^2})^2 = \sqrt[3]{2^4} = \mathbf{\sqrt[3]{16}}$
+        \item $(\sqrt{2})^4 =$
+        \item $(\sqrt{3x^3 y})^3 =$
+        \item $(\sqrt[3]{2})^2 \sqrt[3]{2} =$
+        \item $\frac{(\sqrt{5})^5}{\sqrt{5^3}} =$
+        \item $(\sqrt[3]{a^2})^6 =$
+        \item $(\sqrt[6]{a b^2})^2 =$
+        \item $\sqrt[8]{9}(\sqrt[4]{3})^3 =$
+        \item $\frac{\sqrt[3]{25}(\sqrt[6]{5})^4}{\sqrt[3]{5}} =$
+    \end{enumerate}
+    \end{multicols}
+
+    \item \textbf{Simplificar, aplicando convenientemente las propiedades de las raíces:}
+    \begin{multicols}{3}
+    \begin{enumerate}[label=\alph*)]
+        \item $\sqrt{\sqrt{2}} =$
+        \item $\sqrt[3]{\sqrt{3}} =$
+        \item $\sqrt{\sqrt[3]{25}} =$
+        \item $\sqrt{\sqrt{\sqrt{2}}} =$
+        \item $\sqrt{\sqrt{256}} =$
+        \item $\sqrt[3]{\sqrt{729}} =$
+        \item $\sqrt{\sqrt{12}} =$
+        \item $(\sqrt{\sqrt{\sqrt{2}}})^8 =$
+        \item $\sqrt[3]{\sqrt[4]{x^5 x^7}} =$
+        \item $\sqrt[3]{\sqrt[4]{x^{15}}} =$
+        \item $(\sqrt[3]{\sqrt[7]{\sqrt{8x^3}}})^7 =$
+        \item $\frac{(\sqrt{x})^3}{(\sqrt[3]{\sqrt[4]{x}})^6} =$
+        \item $(\sqrt[6]{32})^3 =$
+        \item $\frac{\sqrt{\sqrt{a^5}}\cdot\sqrt[4]{a^5}}{(\sqrt{a})^3} =$
+        \item $(\sqrt{7})^3 \cdot \frac{\sqrt[4]{343}}{\sqrt[4]{7}} =$
+        \item $\frac{(\sqrt{2})^3}{\sqrt{\sqrt{2^5}}\cdot\sqrt[4]{32}} =$
+        \item $\frac{\sqrt{3^7}}{\sqrt[8]{9}\cdot\sqrt[4]{3^5}} =$
+        \item $\frac{\sqrt{\sqrt{3^5}}\cdot\sqrt[4]{243}}{(\sqrt{3})^3} =$
+    \end{enumerate}
+    \end{multicols}
+
+    \item \textbf{Introducir factores y simplificar:}
+    \begin{multicols}{3}
+    \begin{enumerate}[label=\alph*)]
+        \item $2\sqrt{2} = \sqrt{2^2 \cdot 2} = \mathbf{\sqrt{8}}$
+        \item $2\sqrt{3} =$
+        \item $2\sqrt{\frac{3}{2}} =$
+        \item $3\sqrt{2} =$
+        \item $3\sqrt{\frac{2}{27}} =$
+        \item $\sqrt[3]{3} =$
+        \item $6\sqrt{\frac{5}{12}} =$
+        \item $\sqrt[4]{5} =$
+        \item $ab\sqrt{\frac{c}{a b^3}} =$
+        \item $3\sqrt{7} =$
+        \item $2a\sqrt{\frac{3c}{2a}} =$
+        \item $\sqrt{x\sqrt{x}} =$
+        \item $\sqrt{2\sqrt[3]{2}} =$
+        \item $\sqrt{2\sqrt{2}}\cdot\sqrt[4]{2} =$
+        \item $\sqrt[3]{3\sqrt[3]{3}}\cdot(\sqrt[9]{3})^2 =$
+        \item $\frac{\sqrt{2\sqrt{2}}\cdot\sqrt[4]{8}}{(\sqrt[4]{2})^5} =$
+        \item $\frac{(\sqrt[6]{3})^5\cdot\sqrt[12]{9}}{\sqrt[3]{3^2 \sqrt{3}}} =$
+        \item $\frac{(\sqrt[6]{5^2})^2}{\sqrt[3]{25}}\sqrt[6]{5} =$
+        \item $\frac{\sqrt[4]{a^7}}{\sqrt{a\sqrt{a}}\cdot\sqrt[4]{a^3}} =$
+        \item $\frac{\sqrt{3(\sqrt{3})^3}}{\sqrt[4]{27}} =$
+    \end{enumerate}
+    \end{multicols}
+
+    \item \textbf{Extraer factores y simplificar cuando proceda:}
+    \begin{multicols}{3}
+    \begin{enumerate}[label=\arabic*)]
+        \item $\sqrt{8} = \sqrt{2^3} = \underline{2\sqrt{2}}$
+        \item $\sqrt{18} =$
+        \item $\sqrt{98} =$
+        \item $\sqrt{32} =$
+        \item $\sqrt{60} =$
+        \item $\sqrt{72} =$
+        \item $\sqrt{12} =$
+        \item $\sqrt{128} =$
+        \item $\sqrt{48} =$
+        \item $\sqrt{108} =$
+        \item $\sqrt{162} =$
+        \item $\sqrt{75} =$
+        \item $\sqrt{200} =$
+        \item $\sqrt{27} =$
+        \item $\sqrt[3]{3^4 5^5} =$
+        \item $\sqrt[4]{80} =$
+        \item $\sqrt[3]{2592} =$
+        \item $(\sqrt{\sqrt{2}})^{10} =$
+        \item $\sqrt[3]{500} =$
+        \item $\sqrt[3]{32x^4} =$
+        \item $\sqrt{686} =$
+        \item $\sqrt{1936} =$
+        \item $\sqrt[3]{81a^3 b^5 c} =$
+        \item $\sqrt[5]{64} =$
+        \item $\sqrt[3]{16x^6} =$
+        \item $\sqrt{32} + \frac{\sqrt{4\sqrt{2}}}{(\sqrt[4]{2})^3} =$
+        \item $\sqrt{\frac{28x^5}{75y^3}} =$
+        \item $\frac{11\sqrt{132}}{132} =$
+        \item $\frac{\sqrt{396}}{66} =$
+        \item $\sqrt{\frac{3a^2}{4}} =$
+        \item $\frac{\sqrt{11}\sqrt{132}}{132} =$
+        \item $\sqrt{25 + \frac{25}{4}} =$
+        \item $\sqrt{12}\cdot\sqrt{3}\cdot\sqrt{50} =$
+        \item $5\sqrt[3]{\frac{3}{2}}\sqrt[3]{\frac{4}{81}} =$
+        \item $\sqrt[3]{384} =$
+        \item $\sqrt[3]{432} =$
+        \item $2\sqrt[3]{24} - \frac{1}{2}\sqrt[3]{192} =$
+        \item $\frac{4+\sqrt{12}}{2} =$
+    \end{enumerate}
+    \end{multicols}
+
+    \item \textbf{Sumar los siguientes radicales, reduciéndolos previamente a radicales semejantes:}
+    \begin{enumerate}[label=\alph*)]
+        \item $\sqrt{2} + \sqrt{8} + \sqrt{18} - \sqrt{32} = \sqrt{2} + \sqrt{2^3} + \sqrt{3^2 \cdot 2} - \sqrt{2^5} = \sqrt{2} + 2\sqrt{2} + 3\sqrt{2} - 4\sqrt{2} = \mathbf{2\sqrt{2}}$
+        \item $\sqrt{5} + \sqrt{45} + \sqrt{180} - \sqrt{80} =$
+        \item $\sqrt{24} - 5\sqrt{6} + \sqrt{486} =$
+        \item $27\sqrt{3} - 5\sqrt{27} - 9\sqrt{12} =$
+        \item $2\sqrt{8} + 5\sqrt{72} - 7\sqrt{18} - \sqrt{50} =$
+        \item $\sqrt{32} + 2\sqrt{3} - \sqrt{8} + \sqrt{2} - 2\sqrt{12} =$
+        \item $3\sqrt{24} - \frac{1}{3}\sqrt{54} + \sqrt{150} =$
+        \item $\sqrt{2} + \sqrt[4]{4} + (\sqrt[3]{\sqrt[4]{2}})^6 =$
+        \item $\sqrt[3]{54} - 2\sqrt[3]{16} =$
+        \item $4\sqrt{5} - (\sqrt[4]{\sqrt[3]{5}})^6 - \sqrt[4]{25} =$
+        \item $5\sqrt{2} + 4\sqrt{8} + 3\sqrt{18} + 2\sqrt{32} + \sqrt{50} =$
+        \item $2\sqrt{108} - \sqrt{75} - \sqrt{27} - \sqrt{12} - \sqrt{3} =$
+        \item $\sqrt{128} + 5\sqrt{12} - 2\sqrt{18} - 3\sqrt{27} - \sqrt{2} =$
+        \item $a\sqrt{a} - \frac{\sqrt{a^3}}{3} =$
+        \item $2\sqrt{27} - \sqrt{48} + \sqrt{3} =$
+        \item $\sqrt{\frac{5}{4}} + \frac{1}{4}\sqrt{20} + \sqrt{45} =$
+        \item $\sqrt{2} + \sqrt{8} =$
+        \item $\sqrt[3]{384} - \sqrt[3]{6} + 2\sqrt[6]{36} =$
+        \item $\sqrt{x^5} - x\sqrt{x} + \sqrt{4x^3} - x^2 \sqrt{x} =$
+        \item $\sqrt{80} - 2\sqrt{5} - 2\sqrt{20} - \sqrt{45} =$
+        \item $\sqrt{20} - 2\sqrt{125} + \sqrt{5} =$
+        \item $3\sqrt{45} - \sqrt{5} - 2\sqrt{80} =$
+        \item $(\sqrt{2} + \sqrt{8})\sqrt{10} =$
+        \item $\sqrt{7} - 6\sqrt{112} - 5\sqrt{28} =$
+    \end{enumerate}
+\end{enumerate}
+
+
+\end{document}
