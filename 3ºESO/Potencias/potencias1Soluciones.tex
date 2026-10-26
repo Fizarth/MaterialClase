@@ -1,0 +1,281 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{array}
+\usepackage{alphalph}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{framed}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+
+% Estilos para cajas de teoría y recordatorios
+\definecolor{graybox}{gray}{0.92}
+\newenvironment{boxsummary}{%
+  \def\FrameCommand{\fcolorbox{black}{graybox}}%
+  \MakeFramed{\FrameRestore}%
+  \small\textbf{RECORDAR:}\par\smallskip
+}{%
+  \endMakeFramed
+}
+
+\begin{document}
+
+\section*{Tema 2: Potencias y Raíces - Enunciados}
+
+\subsection*{1. Completa la siguiente tabla}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Potencia} & \textbf{Base} & \textbf{Exponente} & \textbf{Valor} & \textbf{Se lee} \\ \hline
+$(-1)^{7}$ & & & & \\ \hline
+$(-2)^{5}$ & & & & \\ \hline
+$(+3)^{3}$ & & & & \\ \hline
+$(-4)^{3}$ & & & & \\ \hline
+$8^{2}$ & & & & \\ \hline
+$(+7)^{0}$ & & & & \\ \hline
+$-2^{2}$ & & & & \\ \hline
+\end{tabular}
+\end{center}
+
+\vspace{0.5cm}
+
+\subsection*{2. ¿Qué signo tienen las potencias siguientes?}
+
+\begin{enumerate}[label=\alph*)]
+    \item $6^{3}$
+    \item $(-3)^{12}$
+    \item $3^{21}$
+    \item $(-3)^{21}$
+    \item $(-2)^{4}$
+    \item $5^{32}$
+    \item $(-3)^{5}$
+    \item $4^{51}$
+    \item $(-1)^{17}$
+    \item $3^{3}$
+    \item $(-2)^{3}$
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\subsection*{3. Expresa estas operaciones como una sola potencia.}
+
+\begin{enumerate}[label=\alph*.]
+    \item $(5^{8} \cdot 5^{4}) : (5^{2})^{5} =$
+    \item $[(-2)^{6} \cdot (+2)^{3}] : [(+2)^{3}]^{2} =$
+    \item $(-12)^{-7} \cdot [(-3)^{5} \cdot 4^{5}] =$
+    \item $25^{3} : [(-15)^{5} : 3^{5}] =$
+    \item $6^{3} : [(2^{7} : 2^{6}) \cdot 3]^{-2} =$
+    \item $\left[\left(\dfrac{2}{5}\right)^{8} : \left(\dfrac{2}{5}\right)^{3}\right]^{-2} : \left(\dfrac{4}{25}\right)^{-1} =$
+    \item $5 : (+1)^{2} - 3 : \left(\dfrac{1}{2} - \dfrac{1}{4}\right) =$
+    \item $\dfrac{2}{3}\left(\dfrac{3}{4} - \dfrac{1}{2}\right)^{2} - \dfrac{1}{6}\left(\dfrac{5}{6} - \dfrac{1}{3}\right)^{2} =$
+    \item $8^{4} : (2^{5} \cdot 4^{2}) =$
+    \item $[(6^{2})^{2} \cdot 4^{4}] : (2^{3})^{4} =$
+    \item $[4^{-4}] \cdot (2^{3})^{4} =$
+    \item $2^{3} : 8^{-2} \cdot 2^{4} =$
+    \item $81^{5} \cdot 27^{-2} =$
+    \item $\dfrac{3^{7} \cdot 9^{3} \cdot 3^{-3}}{81 \cdot 9^{-5}}$
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\subsection*{4. Calcula sin usar la calculadora el valor de las siguientes potencias.}
+
+\begin{enumerate}[label=\alph*)]
+    \begin{minipage}[t]{0.3\textwidth}
+        \item $2^{5} =$
+        \item $(-2)^{5} =$
+        \item $3^{4} =$
+        \item $(-3)^{4} =$
+        \item $1^{5} =$
+        \item $(-1)^{5} =$
+        \item $(-1)^{6} =$
+        \item $(-1)^{37} =$
+        \item $3^{0} =$
+    \end{minipage}
+    \begin{minipage}[t]{0.3\textwidth}
+        \item[j)] $(-2)^{2} =$
+        \item[k)] $(-5)^{0} =$
+        \item[l)] $(-2)^{4} =$
+        \item[m)] $-2^{4} =$
+        \item[n)] $(-3)^{3} =$
+        \item[o)] $-3^{3} =$
+        \item[p)] $1^{34} =$
+        \item[q)] $(-1)^{56} =$
+        \item[r)] $(-1)^{57} =$
+    \end{minipage}
+    \begin{minipage}[t]{0.3\textwidth}
+        \item[s)] $\left(\dfrac{1}{2}\right)^{3} =$
+        \item[t)] $\left(\dfrac{1}{3}\right)^{2} =$
+        \item[u)] $9^{2} =$
+        \item[v)] $(-9)^{2} =$
+        \item[w)] $\left(\dfrac{3}{2}\right)^{2} =$
+        \item[x)] $9^{3} =$
+        \item[y)] $(-9)^{3} =$
+        \item[z)] $0{,}4^{2} =$
+        \item[$\alpha$)] $60^{2} =$
+    \end{minipage}
+\end{enumerate}
+
+\vspace{0.8cm}
+
+\textbf{Consecuencias:}
+\begin{itemize}
+    \item $(\text{nº negativo})^{\text{par}} =$
+    \item $(\text{nº negativo})^{\text{impar}} =$
+    \item $1^{n} =$
+    \item $(-1)^{\text{par}} =$
+    \item $(-1)^{\text{impar}} =$
+\end{itemize}
+
+\vspace{0.5cm}
+
+\subsection*{5. Simplifica, mediante las propiedades de las potencias, dejando el resultado como entero o fracción.}
+
+\begin{enumerate}[label=\alph*)]
+    \item $\left[\left(\dfrac{5}{2}\right)^{3}\right]^{-4} \cdot \left(\dfrac{4}{5}\right)^{-2} =$
+    \item $\left(\dfrac{6}{5}\right)^{6} \cdot \left(-\dfrac{10}{3}\right)^{-4} =$
+    \item $\dfrac{2^{-3} \cdot (-2)^{4} \cdot (-4)^{-1}}{-2} =$
+    \item $(-1)^{3} + (-1)^{2} + (-1) =$
+    \item $2 \cdot (-1)^{3} - 4 \cdot (-1)^{2} + 2 \cdot (-1) =$
+    \item $\dfrac{\left(\dfrac{1}{2}\right)^{3} \cdot \left(-\dfrac{1}{4}\right)^{2}}{2^{-1}} =$
+    \item $2 \cdot (-2)^{4} + 3 \cdot (-2)^{3} - 4 \cdot (-2)^{2} - 3 \cdot (-2) =$
+\end{enumerate}
+
+\newpage
+\section*{Soluciones Solucionadas}
+
+\subsection*{Solución 1: Tabla Completa}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|c|l|}
+\hline
+\textbf{Potencia} & \textbf{Base} & \textbf{Exponente} & \textbf{Valor} & \textbf{Se lee} \\ \hline
+$(-1)^{7}$ & $-1$ & $7$ & $-1$ & Menos uno elevado a siete \\ \hline
+$(-2)^{5}$ & $-2$ & $5$ & $-32$ & Menos dos elevado a cinco \\ \hline
+$(+3)^{3}$ & $+3$ & $3$ & $27$ & Tres elevado al cubo \\ \hline
+$(-4)^{3}$ & $-4$ & $3$ & $-64$ & Menos cuatro elevado al cubo \\ \hline
+$8^{2}$ & $8$ & $2$ & $64$ & Ocho elevado al cuadrado \\ \hline
+$(+7)^{0}$ & $+7$ & $0$ & $1$ & Siete elevado a cero \\ \hline
+$-2^{2}$ & $2$ (con signo $-$ exterior) & $2$ & $-4$ & Menos el cuadrado de dos \\ \hline
+\end{tabular}
+\end{center}
+
+\subsection*{Solución 2: Signos de las potencias}
+
+\begin{multicols}{3}
+\begin{enumerate}[label=\alph*)]
+    \item Positivo ($+$)
+    \item Positivo ($+$)
+    \item Positivo ($+$)
+    \item Negativo ($-$)
+    \item Positivo ($+$)
+    \item Positivo ($+$)
+    \item Negativo ($-$)
+    \item Positivo ($+$)
+    \item Negativo ($-$)
+    \item Positivo ($+$)
+    \item Negativo ($-$)
+\end{enumerate}
+\end{multicols}
+
+\subsection*{Solución 3: Operaciones como una sola potencia}
+
+\begin{enumerate}[label=\alph*.]
+    \item $(5^{8} \cdot 5^{4}) : (5^{2})^{5} = 5^{12} : 5^{10} = 5^{2}$
+    \item $[(-2)^{6} \cdot (+2)^{3}] : [(+2)^{3}]^{2} = [2^{6} \cdot 2^{3}] : 2^{6} = 2^{9} : 2^{6} = 2^{3}$
+    \item $(-12)^{-7} \cdot [(-3)^{5} \cdot 4^{5}] = (-12)^{-7} \cdot (-12)^{5} = (-12)^{-2} = 12^{-2}$
+    \item $25^{3} : [(-15)^{5} : 3^{5}] = (5^{2})^{3} : (-5)^{5} = 5^{6} : (-5^{5}) = -5^{1}$
+    \item $6^{3} : [(2^{7} : 2^{6}) \cdot 3]^{-2} = 6^{3} : [2^{1} \cdot 3]^{-2} = 6^{3} : 6^{-2} = 6^{3 - (-2)} = 6^{5}$
+    \item $\left[\left(\dfrac{2}{5}\right)^{8} : \left(\dfrac{2}{5}\right)^{3}\right]^{-2} : \left(\dfrac{4}{25}\right)^{-1} = \left[\left(\dfrac{2}{5}\right)^{5}\right]^{-2} : \left(\left(\dfrac{2}{5}\right)^{2}\right)^{-1} = \left(\dfrac{2}{5}\right)^{-10} : \left(\dfrac{2}{5}\right)^{-2} = \left(\dfrac{2}{5}\right)^{-8}$
+    \item Expresión simplificada de potencias:
+    \[ 5 : 1 - 3 : \left(\frac{1}{4}\right) = 5 - 12 = -7 \]
+    \item Expresión simplificada:
+    \[ \frac{2}{3}\left(\frac{1}{4}\right)^{2} - \frac{1}{6}\left(\frac{3}{6}\right)^{2} = \frac{2}{3} \cdot \frac{1}{16} - \frac{1}{6} \cdot \frac{1}{4} = \frac{1}{24} - \frac{1}{24} = 0 = 0^{1} \]
+    \item $8^{4} : (2^{5} \cdot 4^{2}) = (2^{3})^{4} : (2^{5} \cdot (2^{2})^{2}) = 2^{12} : (2^{5} \cdot 2^{4}) = 2^{12} : 2^{9} = 2^{3}$
+    \item $[(6^{2})^{2} \cdot 4^{4}] : (2^{3})^{4} = [6^{4} \cdot (2^{2})^{4}] : 2^{12} = [6^{4} \cdot 2^{8}] : 2^{12} = (2^{4} \cdot 3^{4} \cdot 2^{8}) : 2^{12} = (2^{12} \cdot 3^{4}) : 2^{12} = 3^{4}$
+    \item $[4^{-4}] \cdot (2^{3})^{4} = (2^{2})^{-4} \cdot 2^{12} = 2^{-8} \cdot 2^{12} = 2^{4}$
+    \item $2^{3} : 8^{-2} \cdot 2^{4} = 2^{3} : (2^{3})^{-2} \cdot 2^{4} = 2^{3} : 2^{-6} \cdot 2^{4} = 2^{9} \cdot 2^{4} = 2^{13}$
+    \item $81^{5} \cdot 27^{-2} = (3^{4})^{5} \cdot (3^{3})^{-2} = 3^{20} \cdot 3^{-6} = 3^{14}$
+    \item $\dfrac{3^{7} \cdot 9^{3} \cdot 3^{-3}}{81 \cdot 9^{-5}} = \dfrac{3^{7} \cdot (3^{2})^{3} \cdot 3^{-3}}{3^{4} \cdot (3^{2})^{-5}} = \dfrac{3^{7} \cdot 3^{6} \cdot 3^{-3}}{3^{4} \cdot 3^{-10}} = \dfrac{3^{10}}{3^{-6}} = 3^{16}$
+\end{enumerate}
+
+\subsection*{Solución 4: Cálculo numérico directo}
+
+\begin{enumerate}[label=\alph*)]
+    \begin{minipage}[t]{0.3\textwidth}
+        \item $2^{5} = 32$
+        \item $(-2)^{5} = -32$
+        \item $3^{4} = 81$
+        \item $(-3)^{4} = 81$
+        \item $1^{5} = 1$
+        \item $(-1)^{5} = -1$
+        \item $(-1)^{6} = 1$
+        \item $(-1)^{37} = -1$
+        \item $3^{0} = 1$
+    \end{minipage}
+    \begin{minipage}[t]{0.3\textwidth}
+        \item[j)] $(-2)^{2} = 4$
+        \item[k)] $(-5)^{0} = 1$
+        \item[l)] $(-2)^{4} = 16$
+        \item[m)] $-2^{4} = -16$
+        \item[n)] $(-3)^{3} = -27$
+        \item[o)] $-3^{3} = -27$
+        \item[p)] $1^{34} = 1$
+        \item[q)] $(-1)^{56} = 1$
+        \item[r)] $(-1)^{57} = -1$
+    \end{minipage}
+    \begin{minipage}[t]{0.3\textwidth}
+        \item[s)] $\left(\dfrac{1}{2}\right)^{3} = \dfrac{1}{8}$
+        \item[t)] $\left(\dfrac{1}{3}\right)^{2} = \dfrac{1}{9}$
+        \item[u)] $9^{2} = 81$
+        \item[v)] $(-9)^{2} = 81$
+        \item[w)] $\left(\dfrac{3}{2}\right)^{2} = \dfrac{9}{4}$
+        \item[x)] $9^{3} = 729$
+        \item[y)] $(-9)^{3} = -729$
+        \item[z)] $0{,}4^{2} = 0{,}16$
+        \item[$\alpha$)] $60^{2} = 3600$
+    \end{minipage}
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\textbf{Consecuencias:}
+\begin{itemize}
+    \item $(\text{nº negativo})^{\text{par}} = \text{Positivo (+)}$
+    \item $(\text{nº negativo})^{\text{impar}} = \text{Negativo (-)}$
+    \item $1^{n} = 1$
+    \item $(-1)^{\text{par}} = 1$
+    \item $(-1)^{\text{impar}} = -1$
+\end{itemize}
+
+\subsection*{Solución 5: Simplificación detallada}
+
+\begin{enumerate}[label=\alph*)]
+    \item $\left[\left(\dfrac{5}{2}\right)^{3}\right]^{-4} \cdot \left(\dfrac{4}{5}\right)^{-2} = \left(\dfrac{5}{2}\right)^{-12} \cdot \left(\dfrac{2^{2}}{5}\right)^{-2} = \left(\dfrac{2}{5}\right)^{12} \cdot \dfrac{2^{-4}}{5^{-2}} = \dfrac{2^{12} \cdot 5^{2}}{5^{12} \cdot 2^{4}} = \dfrac{2^{8}}{5^{10}}$ 
+    
+    \textit{(Nota: La solución original daba $2^{7}/5^{10}$ por un pequeño despiste de exponente en la guía original, el resultado correcto es $2^8 / 5^{10}$)}.
+
+    \item $\left(\dfrac{6}{5}\right)^{6} \cdot \left(-\dfrac{10}{3}\right)^{-4} = \left(\dfrac{2 \cdot 3}{5}\right)^{6} \cdot \left(\dfrac{2 \cdot 5}{3}\right)^{-4} = \dfrac{2^{6} \cdot 3^{6}}{5^{6}} \cdot \dfrac{3^{4}}{2^{4} \cdot 5^{4}} = \dfrac{2^{2} \cdot 3^{10}}{5^{10}}$
+
+    \item $\dfrac{2^{-3} \cdot (-2)^{4} \cdot (-4)^{-1}}{-2} = \dfrac{2^{-3} \cdot 2^{4} \cdot (-1 \cdot 2^{2})^{-1}}{-2} = \dfrac{2^{1} \cdot (-1 \cdot 2^{-2})}{-2} = \dfrac{-2^{-1}}{-2^{1}} = 2^{-2} = \dfrac{1}{4}$
+
+    \item $(-1)^{3} + (-1)^{2} + (-1) = -1 + 1 - 1 = -1$
+
+    \item $2 \cdot (-1)^{3} - 4 \cdot (-1)^{2} + 2 \cdot (-1) = 2(-1) - 4(1) + 2(-1) = -2 - 4 - 2 = -8$
+
+    \item $\dfrac{\left(\dfrac{1}{2}\right)^{3} \cdot \left(-\dfrac{1}{4}\right)^{2}}{2^{-1}} = \dfrac{2^{-3} \cdot (2^{-2})^{2}}{2^{-1}} = \dfrac{2^{-3} \cdot 2^{-4}}{2^{-1}} = \dfrac{2^{-7}}{2^{-1}} = 2^{-6} = \dfrac{1}{64}$
+    
+    \textit{(Nota: Tras operar en potencias base 2 da $2^{-6} = 1/64$. Si en el enunciado original la primera fracción era $1/4$, daría $1/128$)}.
+
+    \item $2 \cdot (-2)^{4} + 3 \cdot (-2)^{3} - 4 \cdot (-2)^{2} - 3 \cdot (-2) = 2(16) + 3(-8) - 4(4) + 6 = 32 - 24 - 16 + 6 = -2$
+\end{enumerate}
+
+\end{document}

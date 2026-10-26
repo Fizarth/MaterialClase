@@ -1,0 +1,172 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{array}
+\usepackage{alphalph}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{framed}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+
+% Estilos para cajas de teoría y recordatorios
+\definecolor{graybox}{gray}{0.92}
+\newenvironment{boxsummary}{%
+  \def\FrameCommand{\fcolorbox{black}{graybox}}%
+  \MakeFramed{\FrameRestore}%
+  \small\textbf{RECORDAR:}\par\smallskip
+}{%
+  \endMakeFramed
+}
+
+\begin{document}
+
+\section*{Tema 2: Potencias y raíces}
+
+\begin{boxsummary}
+\[ a^n = a \cdot a \cdot a \cdot \dots \cdot a \cdot a \quad \text{(n veces)} \]
+\end{boxsummary}
+
+\begin{boxsummary}
+\begin{multicols}{2}
+\begin{align*}
+a^m \cdot a^n &= a^{m+n} \\[6pt]
+\dfrac{a^m}{a^n} &= a^{m-n} \\[6pt]
+\left(a^m\right)^n &= a^{m \cdot n}
+\end{align*}
+
+\columnbreak
+
+\begin{align*}
+(a \cdot b)^n &= a^n \cdot b^n \\[6pt]
+\left(\dfrac{a}{b}\right)^n &= \dfrac{a^n}{b^n} \\[6pt]
+a^0 &= 1
+\end{align*}
+\end{multicols}
+\end{boxsummary}
+
+\begin{boxsummary}
+\begin{multicols}{2}
+\begin{align*}
+a^{-n} &= \dfrac{1}{a^n} \\[10pt]
+\left(\dfrac{a}{b}\right)^{-n} &= \left(\dfrac{b}{a}\right)^n
+\end{align*}
+
+\columnbreak
+
+\begin{align*}
+a^{-1} &= \dfrac{1}{a} \\[10pt]
+\dfrac{1}{a^{-n}} &= a^n
+\end{align*}
+\end{multicols}
+\end{boxsummary}
+
+\begin{boxsummary}
+\begin{multicols}{2}
+\begin{align*}
+a^m \cdot a^n &= a^{m+n} \\[8pt]
+\dfrac{a^m}{a^n} &= a^{m-n} \\[8pt]
+\left(a^m\right)^n &= a^{m \cdot n} \\[8pt]
+(a \cdot b)^n &= a^n \cdot b^n \\[8pt]
+\left(\dfrac{a}{b}\right)^n &= \dfrac{a^n}{b^n}
+\end{align*}
+
+\columnbreak
+
+\begin{align*}
+a^0 &= 1 \\[8pt]
+a^{-n} &= \dfrac{1}{a^n} \\[8pt]
+\left(\dfrac{a}{b}\right)^{-n} &= \left(\dfrac{b}{a}\right)^n \\[8pt]
+a^{-1} &= \dfrac{1}{a} \\[8pt]
+\dfrac{1}{a^{-n}} &= a^n
+\end{align*}
+\end{multicols}
+\end{boxsummary}
+
+CONSEJO: Para dividir dos potencias de la misma base entera se recomienda restar el mayor menos el
+menor exponente, dejando la potencia donde estaba el mayor exponente (De esta forma
+evitamos exponentes negativos)
+
+
+
+
+\begin{enumerate}
+    \item Simplificar, utilizando las propiedades de las potencias, dejando el \textbf{resultado como potencia única}, sin usar la calculadora.
+        \begin{enumerate}
+            \item $\dfrac{14^6}{7^6} =$
+            \item $\dfrac{5^6 \cdot 5^7}{5^{11}} =$
+            \item $2^2 \cdot \left(2^3\right)^2 =$
+            \item $\dfrac{3^8}{\left(3^2\right)^2 \cdot 3} =$
+            \item $\left(2^2\right)^4 \cdot a^2 \cdot \left(a^3\right)^2 =$
+            \item $\left(2^5 \cdot 7^5\right)^0 =$
+            \item $\left(\dfrac{3}{5}\right)^3 \cdot \left(\dfrac{3}{5}\right)^6 =$
+            \item $\left(-\dfrac{2}{3}\right) \cdot \left(-\dfrac{2}{3}\right)^9 =$
+            \item $\dfrac{(-3)^6 \cdot 3^{-1} \cdot 9^{-2}}{\left[\left(3^2\right)^3\right]^{-2} \cdot 27 \cdot \left(\dfrac{1}{3}\right)^{-2}} =$ \hfill \textit{(Soluc: 6561)}
+            \item $\dfrac{3^{-2} \cdot 7^2 \cdot 3 \cdot 7^{-4} \cdot 3^5}{7^3 \cdot 3^{-1} \cdot 7^{-5} \cdot 3^4} =$ \hfill \textit{(Soluc: 3)}
+            \item $\dfrac{3^8 \cdot 7^{-1} \cdot 5^2 \cdot 7^3 \cdot 3^{-2}}{7^4 \cdot 5^{-1} \cdot 3^5 \cdot 5^3 \cdot 7^{-2}} =$ \hfill \textit{(Soluc: 3)}
+            \item $\dfrac{15^2 \cdot 5^{-2} \cdot 5^3 \cdot 45^2}{\left(5^3\right)^2 \cdot 27 \cdot 3^{-2}} =$ \hfill \textit{(Soluc: 243/5)}
+            \item $\dfrac{\left\{\left[(-27)^2\right]^{-3}\right\}^{-2} \cdot 81^{-1}}{3^{-6} \cdot 3^0} =$ \hfill \textit{(Soluc: $3^{38}$)}
+            \item $(-2)^3 - \dfrac{2}{3} \cdot (-2)^2 - \dfrac{-2}{4} + 10 =$ \hfill \textit{(Soluc: -1/6)}
+            \item $\dfrac{\left[\left(5^2\right)^{-3}\right]^4 \cdot 75^{12}}{1^{-7} \cdot \left(\dfrac{1}{3}\right)^6 \cdot \left(\dfrac{1}{3}\right)^{18} \cdot \left(\dfrac{1}{3}\right)^0} =$ \hfill \textit{(Soluc: 1)}
+            \item $\dfrac{9^2 \cdot 2^9 \cdot 8^{-1}}{4^3 \cdot 12 \cdot 3^{-6} \cdot 8} =$ \hfill \textit{(Soluc: $2^7 \cdot 3^9$)}
+            \item  $\dfrac{2^3 \cdot 8^{-3} \cdot 12^{-1} \cdot (-3)^2}{6^2 \cdot 16^{-2} \cdot 3^{-3}} =$ \hfill \textit{(Soluc: 9/4)}
+            \item $\dfrac{6^4 \cdot 9^2 \cdot 2^{-4} \cdot 3^{-5} \cdot 2^{-1}}{18^3 \cdot 2^{-5} \cdot 3^6 \cdot \left(3^3\right)^{-3}} =$ \hfill \textit{(Soluc: 2)}
+            \item $\dfrac{4^4 \cdot 8^{-1} \cdot 16^2}{\left(\dfrac{1}{2}\right)^3 \cdot 8^6} =$ \hfill \textit{(Soluc: 1/4)}
+            \item $\dfrac{\dfrac{\left(5^2 \cdot 5^3 \cdot 5^{-4}\right)^2}{\left(5^{-2} \cdot 5^{-3} \cdot 5^4\right)^3}}{\left[\left(\dfrac{1}{5}\right)^2 \cdot \left(\dfrac{1}{5}\right)^4\right]^4} =$ \hfill \textit{(Soluc: 1/125)}
+            \item $\dfrac{\left(\dfrac{3}{2}\right)^{-2} \cdot \left(\dfrac{5}{3}\right)^2 \cdot \left(\dfrac{2}{5}\right)^{-1}}{\left(\dfrac{5}{2}\right)^2 \cdot \left(\dfrac{3}{5}\right)^{-3} \cdot 8 \cdot \left(\dfrac{2}{3}\right)^{-1} \cdot 3^{-2}} =$ \hfill \textit{(Soluc: 2/15)}
+            \item $\dfrac{\left[\left(\dfrac{2}{3}\right)^2\right]^{-2} \cdot \left(\dfrac{4}{9}\right)^1}{(-2)^6 \cdot \left(2^{-5} \cdot 4\right)^2 \cdot 36} =$ \hfill \textit{(Soluc: 1/81)}
+            \item $\dfrac{\left(2^{-4} \cdot 4^3\right)^2 \cdot 5 \cdot 5^0}{100^2 \cdot \left(5^2\right)^{-3}} =$ \hfill \textit{(Soluc: 125)}
+            \item $\left(\dfrac{8}{9}\right)^{-2} \cdot \left[\left(-\dfrac{2}{3}\right)^2\right]^3 \cdot \left(\dfrac{3}{2}\right)^{-1} \cdot 9 =$ \hfill \textit{(Soluc: 2/3)}
+            \item $\dfrac{\left(\dfrac{3}{2}\right)^0 \cdot \left(\dfrac{2}{3}\right)^{-1}}{\left[\left(\dfrac{3}{2}\right)^{-2}\right]^3 \cdot \left(-\dfrac{3}{2}\right)^4} =$ \hfill \textit{(Soluc: 27/8)}
+                    
+        \end{enumerate}
+     \item Completa las siguientes tables que resumen los casos de cálculo con potencias:
+            %\begin{boxsummary}
+                \begin{center}
+                \renewcommand{\arraystretch}{1.5}
+                \begin{tabular}{cc|c|c|}
+                \cline{3-4}
+                & & \multicolumn{2}{c|}{\textbf{EXPONENTE}} \\ \cline{3-4} 
+                & & \textbf{POSITIVO} & \textbf{NEGATIVO} \\ \hline
+                \multicolumn{1}{|c|}{\multirow{3}{*}{\rotatebox[origin=c]{90}{\textbf{BASE ENTERA}}}} & \rotatebox[origin=c]{90}{\textbf{POSITIVA}} & $2^3 =$ & $2^{-3} =$ \\ \cline{2-4} 
+                \multicolumn{1}{|c|}{} & \multirow{2}{*}{\rotatebox[origin=c]{90}{\textbf{NEGATIVA}}} & $(-2)^3 =$ & $(-2)^{-3} =$ \\
+                \multicolumn{1}{|c|}{} & & $(-2)^4 =$ & $(-2)^{-4} =$ \\ \hline
+                \end{tabular}
+                \hfill
+                \begin{tabular}{cc|c|c|}
+                \cline{3-4}
+                & & \multicolumn{2}{c|}{\textbf{EXPONENTE}} \\ \cline{3-4} 
+                & & \textbf{POSITIVO} & \textbf{NEGATIVO} \\ \hline
+                \multicolumn{1}{|c|}{\multirow{3}{*}{\rotatebox[origin=c]{90}{\textbf{BASE FRACCIONARIA}}}} & \rotatebox[origin=c]{90}{\textbf{POSITIVA}} & $\left(\dfrac{2}{3}\right)^3 =$ & $\left(\dfrac{2}{3}\right)^{-3} =$ \\ \cline{2-4} 
+                \multicolumn{1}{|c|}{} & \multirow{2}{*}{\rotatebox[origin=c]{90}{\textbf{NEGATIVA}}} & $\left(-\dfrac{2}{3}\right)^3 =$ & $\left(-\dfrac{2}{3}\right)^{-3} =$ \\
+                \multicolumn{1}{|c|}{} & & $\left(-\dfrac{2}{3}\right)^4 =$ & $\left(-\dfrac{2}{3}\right)^{-4} =$ \\ \hline
+                \end{tabular}
+                \end{center}
+
+            %\end{boxsummary}
+        \item Realiza las siguientes operaciones sin usar la calculadora
+        \begin{enumerate}
+                \item[\textbf{a)}] $2,5 \cdot 10^7 + 3,6 \cdot 10^7 =$
+                \item[\textbf{b)}] $4,6 \cdot 10^{-8} + 5,4 \cdot 10^{-8} =$
+                \item[\textbf{c)}] $1,5 \cdot 10^6 + 2,4 \cdot 10^5 =$
+                \item[\textbf{d)}] $2,3 \cdot 10^9 + 3,25 \cdot 10^{12} =$
+                \item[\textbf{e)}] $3,2 \cdot 10^8 - 1,1 \cdot 10^8 =$
+                \item[\textbf{f)}] $4,25 \cdot 10^7 - 2,14 \cdot 10^5 =$
+                \item[\textbf{g)}] $7,28 \cdot 10^{-3} - 5,12 \cdot 10^{-3} =$
+                \item[\textbf{h)}] $(2 \cdot 10^9) \cdot (3,5 \cdot 10^7) =$
+                \item[\textbf{i)}] $\frac{8,4 \cdot 10^9}{2 \cdot 10^7} =$
+                \item[\textbf{j)}] $\frac{(3,2 \cdot 10^{-3}) \cdot (4 \cdot 10^5)}{2 \cdot 10^{-8}} =$
+                \item[\textbf{k)}] $(2 \cdot 10^5)^2 =$
+        \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
