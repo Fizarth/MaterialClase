@@ -1,0 +1,121 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-noquot]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{patterns,arrows.meta}
+
+% Desactivar atajos conflictivos de babel en el preámbulo
+\spanishdeactivate{<>}
+
+% Configuración de márgenes
+\geometry{top=2cm, bottom=2cm, left=2cm, right=2cm}
+
+% Definición del color usado en el examen original
+\definecolor{numcolor}{rgb}{0.1, 0.4, 0.7}
+
+\begin{document}
+
+% Asegura la desactivación de los atajos al iniciar el cuerpo del documento
+\shorthandoff{<>}
+
+\begin{center}
+    {\LARGE \textbf{Ficha de Repaso: Polinomios y Fracciones Algebraicas}}\\[0.2cm]
+\end{center}
+
+
+\begin{enumerate}[label=\textbf{\arabic*.}, leftmargin=*]
+
+    \item Dados $P(x) = x - 3$, $Q(x) = x - 4$ y $R(x) = x + 5$, realiza las siguientes operaciones:
+        \begin{enumerate}[label=\textit{\alph*})]
+            \item Halla $M(x) = P(x) \cdot Q(x) \cdot R(x)$.
+            \item Descompón en factores $M(x)$.
+            \item ¿Cuáles son las raíces de $M(x)$?
+            \item ¿Para qué valores de $x$ se anula el polinomio $M(x)$?
+        \end{enumerate}
+    \item \textbf{Opera y simplifica las siguientes expresiones polinómicas:}
+        \begin{enumerate}[label=\alph*), itemsep=1em]
+            \item $\dfrac{(x - 2)(x + 1)}{3} - \dfrac{(3x - 1)^2}{8} + \dfrac{(2x - 3)(2x + 3)}{12}$
+            \item $\dfrac{(2x + 3)^2}{4} - \dfrac{(x - 1)(x + 5)}{6} - \dfrac{(3x - 2)(3x + 2)}{3}$
+            \item $\dfrac{3(x - 3)^2}{2} - \dfrac{(2x + 1)(x - 4)}{4} + \dfrac{(x - 5)(x + 5)}{8}$
+        \end{enumerate}
+    \item \textbf{Halla el cociente $C(x)$ y el resto $R(x)$ de las siguientes divisiones de polinomios:}
+        \begin{enumerate}[label=\alph*), itemsep=1em]
+            \item $(-3x^4 - 5x^3 + 4x^2 - 1) : (x^2 + 2)$
+            \item $(2x^5 - 4x^3 + 6x^2 - 7x + 2) : (x^2 - 3x + 1)$
+            \item $(4x^4 - 6x^3 + 2x - 5) : (2x^2 + 1)$
+        \end{enumerate}
+    \item \textbf{Mediante la regla de Ruffini, calcula el cocient y el resto de las siguientes divisiones:}
+        \begin{enumerate}[label=\textit{\alph*})]
+            \item $(x^2 - 7x + 6) : (x - 1) =$
+            \item $(2x^3 + 3x^2 - x - 5) : (x + 2) =$
+            \item $(x^4 - 8) : (x - 2) =$
+        \end{enumerate}
+    \item \textbf{Descompón en factores los siguientes polinomios:}
+        \begin{enumerate}[label=\alph*), itemsep=0.8em]
+            \item $x^4 - 12x^3 + 36x^2$
+            \item $2x^4 + 5x^3 - 4x^2 - 3x$
+            \item $x^4 - 16$
+            \item $3x^3 - 12x^2 + 9x$
+            \item $x^4 - 2x^3 - 7x^2 + 8x + 12$
+            \item $4x - 24x^2 + 16x^3 =$
+            \item $3(x - 1) + 8(x - 1)^2 - 5(x - 1) \cdot (x + 1) =$
+            \item $(x + 3)^2 - 4(x + 3) \cdot (x - 3) + 6(x + 3) =$
+            \item $x^2 + 4x + 4 =$
+            \item $x^2 - 9 =$
+            \item $25x^2 - 125 =$
+        \end{enumerate}
+    \item \textbf{Calcula el valor del parámetro {\color{numcolor}$m$} en cada uno de los siguientes casos:}
+        \begin{enumerate}[label=\alph*), itemsep=0.8em]
+            \item Para que el polinomio $P(x) = 7x^3 - mx^2 + 3x - 2$ sea divisible por $x + 1$.
+            \item Para que la división $(2x^3 + mx^2 - 5x + 6) : (x - 2)$ tenga un resto igual a $12$.
+            \item Para que $x = 3$ sea una raíz del polinomio $Q(x) = x^3 - 4x^2 + mx - 9$.
+        \end{enumerate}
+    \item \textbf{Simplifica las siguientes fracciones algebraicas:}
+        \begin{enumerate}[label=\alph*), itemsep=1em]
+            \item $\dfrac{x^3 - 4x}{x^3 + x^2 - 2x}$
+            \item $\dfrac{x^2 + 2x - 3}{x^3 + 6x^2 + 5x - 12}$
+            \item $\dfrac{2x^3 - 8x}{x^3 - 2x^2 - 4x + 8}$
+            \item $\dfrac{x^2 - 9}{x^2 - 6x + 9}$
+        \end{enumerate}
+    \item \textbf{Efectúa las operaciones y simplifica el resultado al máximo:}
+        \begin{enumerate}[label=\alph*), itemsep=1.2em]
+            \item $\dfrac{2x^2}{x - 3} : \dfrac{8}{x^3 - 3x^2}$
+            \item $\dfrac{x^2 - 6}{(x - 2)^2} - \dfrac{x - 3}{x - 2}$
+            \item $\dfrac{x + 1}{x^2 - 4} \cdot \dfrac{x - 2}{x^2 - 1}$
+            \item $\dfrac{3}{x + 2} + \dfrac{2}{x - 2} - \dfrac{8}{x^2 - 4}$
+        \end{enumerate}
+    \item \textbf{Expresiones algebraicas en problemas geométricos:}
+        \begin{enumerate}[label=\alph*), itemsep=0.8em]
+            \item En un triángulo rectángulo, un cateto mide $14\text{ cm}$. Escribe el perímetro y el área del triángulo en función de su hipotenusa $x$.
+            \item En un triángulo rectángulo, la hipotenusa mide $20\text{ cm}$. Expresa su perímetro y su área en función de la longitud de uno de sus catetos $y$.
+            \item Un rectángulo tiene una altura que mide $6\text{ cm}$. Expresa su diagonal y su área en función de su base $x$.
+        \end{enumerate}
+    \item \textbf{Expresa el área de la zona NO edificada en función de las variables indicadas:}
+        \begin{enumerate}[label=\alph*), itemsep=1.5em]
+            \item En una parcela de lados $x$ e $y$ se construye una casa en la zona indicada. Halla el área no edificada en función de $x$ e $y$.
+            \begin{center}
+                \begin{tikzpicture}[scale=0.07]
+                \draw[thick] (0,0) rectangle (70,45);
+                \draw[thick] (0,20) -- (40,20) -- (40,45);
+                \fill[red!30] (40,20) rectangle (70,45);
+                \draw[thick, red!70!black] (40,20) rectangle (70,45);
+                \node at (55, 32.5) {\textbf{CASA}};
+                % Sintaxis de flecha compatible usando stealth y sin atajos conflictivos
+                \draw[{Stealth[length=2mm]}-{Stealth[length=2mm]}] (0,26) -- (40,26);
+                \node[fill=white, inner sep=1pt] at (20,26) {$50\text{ m}$};
+                \draw[{Stealth[length=2mm]}-{Stealth[length=2mm]}] (43,0) -- (43,20);
+                \node[right] at (43,10) {$30\text{ m}$};
+                \node[below] at (35,-1) {$x$};
+                \node[right] at (71,22.5) {$y$};
+                \end{tikzpicture}
+            \end{center}
+            \item En un terreno rectangular de ancho $x$ y largo $y$, se reserva una franja exterior no edificable de $4\text{ m}$ de ancho en todo el perímetro. Expresa el área edificable interior en función de $x$ e $y$.
+            \item En una parcela cuadrada de lado $x$, se edifica una piscina rectangular de dimensiones $12\text{ m}$ y $y\text{ m}$. Expresa el área libre ajardinada en función de $x$ e $y$.
+        \end{enumerate}
+\end{enumerate}
+\end{document}
