@@ -1,0 +1,159 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{array}
+\usepackage{multicol}
+
+\usepackage[spanish, bidi=basic, provide=*]{babel}
+
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{enumitem}
+
+% Definición de colores temáticos de Halloween
+\definecolor{halloweenOrange}{HTML}{D9531E}
+\definecolor{halloweenPurple}{HTML}{4A154B}
+\definecolor{halloweenDark}{HTML}{1A1A1A}
+\definecolor{halloweenBg}{HTML}{FDF8F5}
+
+% Configuración de las cajas de retos
+\tcbset{
+  colback=halloweenBg,
+  colframe=halloweenOrange,
+  fonttitle=\bfseries\color{white},
+  coltitle=white,
+  colbacktitle=halloweenOrange,
+  boxrule=1pt,
+  arc=3mm,
+  left=4mm,
+  right=4mm,
+  top=3mm,
+  bottom=3mm
+}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% Encabezado
+\begin{center}
+    \includegraphics[scale=0.001]{../../img/iconoCalabaza.png}
+    {\LARGE \textbf{\color{halloweenPurple}  ESCAPE ROOM: LA MALDICIÓN DEL BRUJO EXPONENTIALIS }} \\[0.2cm]
+    {\large \textbf{\color{halloweenOrange} Desafío Matemático de Halloween — 3.º / 4.º ESO}} \\[0.4cm]
+    \rule{\textwidth}{1.5pt}
+\end{center}
+
+\vspace{0.2cm}
+
+\noindent \textbf{Nombre del equipo / Alumno(a):} \dotfill \\[0.2cm]
+\noindent \textbf{Curso y grupo:} \dotfill \hfill \textbf{Fecha:} \dotfill
+
+\vspace{0.4cm}
+
+% Historia de ambientación
+\begin{tcolorbox}[colframe=halloweenPurple, colbacktitle=halloweenPurple, title= EL CONTEXTO DE LA MISION]
+El laboratorio del instituto ha sido dominado por el Gran Brujo \textbf{Exponentialis}. Para romper el hechizo y escapar antes de que caiga la medianoche, debéis descifrar el \textbf{código secreto de 4 dígitos} resolviendo cada una de las pruebas que encontréis a continuación. 
+
+\textbf{¡Atención!} Cada prueba os revelará una cifra del código final. ¡Buena suerte!
+\end{tcolorbox}
+
+\vspace{0.4cm}
+
+% Prueba 1
+\begin{tcolorbox}[title= PRUEBA 1: El Elixir de las Potencias (Primer Cifra)]
+Simplifica la siguiente expresión utilizando las propiedades de las potencias para dejarla en forma de $2^x$:
+
+\[
+\frac{(2^3 \cdot 2^{-1})^2 \cdot 2^5}{2^4 \cdot (2^2)^2}
+\]
+
+\textbf{Indicación:} Aplica correctamente las propiedades del producto, cociente y potencia de una potencia. \\
+\textbf{Dígito de la clave:} El \textbf{primer dígito} del candado es el valor del exponente final $x$.
+
+\vspace{1.5cm}
+\hfill \textbf{DÍGITO 1 = } \framebox[1.5cm]{\vrule height 0.5cm depth 0.2cm width 0pt}
+\end{tcolorbox}
+
+\vspace{0.4cm}
+
+% Prueba 2
+\begin{tcolorbox}[title= PRUEBA 2: El Polvo de Estrellas (Segunda Cifra)]
+Para preparar el antídoto contra el hechizo se deben mezclar dos ingredientes medidos a escala microscópica:
+\begin{itemize}[leftmargin=1.5em]
+    \item \textbf{Veneno de araña negra:} $4{,}2 \cdot 10^{-5}\text{ g}$
+    \item \textbf{Pelo de murciélago pulverizado:} $1{,}8 \cdot 10^{-5}\text{ g}$
+\end{itemize}
+
+\textbf{Pasos a seguir:}
+\begin{enumerate}
+    \item Calcula la masa total de la mezcla sumando ambos ingredientes (expresa el resultado en notación científica).
+    \item Multiplica la masa total obtenida por el factor de amplificación mágica $10^7$.
+    \item Escribe el número resultante en forma estándar.
+\end{enumerate}
+
+\textbf{Dígito de la clave:} El \textbf{segundo dígito} es la cifra de las centenas del número final obtenido.
+
+\vspace{1.2cm}
+\hfill \textbf{DÍGITO 2 = } \framebox[1.5cm]{\vrule height 0.5cm depth 0.2cm width 0pt}
+\end{tcolorbox}
+
+\newpage
+
+% Prueba 3
+\begin{tcolorbox}[title= PRUEBA 3: Las Raíces de la Tumba (Tercera Cifra)]
+Resuelve la siguiente operación de radicales extraídos de las catacumbas:
+
+\[
+\sqrt{75} + 2\sqrt{12} - \sqrt{27}
+\]
+
+\textbf{Pasos a seguir:}
+\begin{enumerate}
+    \item Descompón en factores primos los radicandos y extrae todos los factores posibles fuera de las raíces.
+    \item Simplifica la expresión hasta obtener la forma $k\sqrt{3}$.
+\end{enumerate}
+
+\textbf{Dígito de la clave:} El \textbf{tercer dígito} de la clave es el número entero $k$ que multiplica a $\sqrt{3}$.
+
+\vspace{2cm}
+\hfill \textbf{DÍGITO 3 = } \framebox[1.5cm]{\vrule height 0.5cm depth 0.2cm width 0pt}
+\end{tcolorbox}
+
+\vspace{0.6cm}
+
+% Prueba 4
+\begin{tcolorbox}[title= PRUEBA 4: La Clave de los Radicales (Cuarta Cifra)]
+Aplica las propiedades de los radicales y las potencias de exponente fraccionario para simplificar al máximo la siguiente expresión:
+
+\[
+\sqrt{\sqrt[3]{a^{12}}}
+\]
+
+\textbf{Pasos a seguir:}
+\begin{enumerate}
+    \item Utiliza la propiedad de la «raíz de una raíz» ($\sqrt[n]{\sqrt[m]{x}} = \sqrt[n \cdot m]{x}$) o convierte los radicales a potencias de exponente fraccionario.
+    \item Simplifica la expresión hasta dejarla de la forma $a^p$.
+\end{enumerate}
+
+\textbf{Dígito de la clave:} El \textbf{cuarto dígito} de la clave es el exponente $p$.
+
+\vspace{2cm}
+\hfill \textbf{DÍGITO 4 = } \framebox[1.5cm]{\vrule height 0.5cm depth 0.2cm width 0pt}
+\end{tcolorbox}
+
+\vspace{0.8cm}
+
+% Caja del Código Final
+\begin{center}
+\begin{tcolorbox}[colframe=halloweenDark, colback=white, width=0.85\textwidth, halign=center]
+    {\Large \textbf{ CÓDIGO FINAL DE ESCAPE}} \\[0.3cm]
+    Introduce aquí la combinación de 4 dígitos para desactivar la trampa: \\[0.2cm]
+    \textbf{\Large [ \quad \text{—} \quad ] \quad [ \quad \text{—} \quad ] \quad [ \quad \text{—} \quad ] \quad [ \quad \text{—} \quad ]}
+\end{tcolorbox}
+\end{center}
+
+\end{document}
