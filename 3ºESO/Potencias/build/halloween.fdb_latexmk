@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1793346629.55407 "c:/Users/Usuario/Documents/workspaces/MaterialClase/3ºESO/Potencias/halloween.tex" "build/halloween.pdf" "halloween" 1793346631.236 2
+["pdflatex"] 1793606078.18416 "c:/Users/Usuario/Documents/workspaces/MaterialClase/3ºESO/Potencias/halloween.tex" "build/halloween.pdf" "halloween" 1793606081.97081 2
   "../../img/iconoCalabaza.png" 1793346291 11539 7324f46d6fb18f74f405f333f7f78286 ""
-  "build/halloween.aux" 1793346630 150 a542a6116cc2d60683123b3ee3baa873 "pdflatex"
-  "c:/Users/Usuario/Documents/workspaces/MaterialClase/3ºESO/Potencias/halloween.tex" 1793346597 5646 d73adafdcc3afd5da5e4fb2bc87ca0fe ""
+  "build/halloween.aux" 1793606081 150 beea6fa4ca715e8bbbf023cc8bccc805 "pdflatex"
+  "c:/Users/Usuario/Documents/workspaces/MaterialClase/3ºESO/Potencias/halloween.tex" 1793606075 5621 92a708732d1a248a23201b728f3e9d15 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1725536995 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1725538021 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcbx1440.tfm" 1725537551 1536 31d7b1d6f1ef88de2aa925487cab16c7 ""
@@ -145,7 +145,7 @@
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1725545670 5543950 2aa73a438b7054b2327b796fbe5f4275 ""
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1725545861 8239334 135493cedb47fb7b683f438bf2ad13bf ""
   "c:/texlive/2024/texmf.cnf" 1725545639 713 e69b156964470283e0530f5060668171 ""
-  "halloween.tex" 1793346597 5646 d73adafdcc3afd5da5e4fb2bc87ca0fe ""
+  "halloween.tex" 1793606075 5621 92a708732d1a248a23201b728f3e9d15 ""
   (generated)
   "build/halloween.aux"
   "build/halloween.log"
