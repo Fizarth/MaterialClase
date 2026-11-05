@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.30)  16 MAR 2026 16:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.30)  26 APR 2026 16:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -323,10 +323,7 @@ Package pdftex.def Info: ../../img-Logos/iesoGalileo.jpg  used on input line 19.
 Overfull \vbox (10.92493pt too high) detected at line 19
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 19.
-(c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1phv.fd
-File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-)
+
 Overfull \hbox (3.1766pt too wide) in paragraph at lines 24--42
 [][] 
  []
@@ -336,6 +333,10 @@ Overfull \hbox (3.1766pt too wide) in paragraph at lines 24--42
 [1
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc} <build/../../img-Logos/iesoGalileo.jpg>]
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 79.
+ (c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
 
 [2] (build/ExamenÁlgebra.aux)
  ***********
@@ -350,9 +351,9 @@ Here is how much of TeX's memory you used:
  26380 multiletter control sequences out of 15000+600000
  564787 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,12n,65p,290b,210s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,12n,65p,285b,253s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on build/ExamenÁlgebra.pdf (2 pages, 97237 bytes).
+Output written on build/ExamenÁlgebra.pdf (2 pages, 97136 bytes).
 PDF statistics:
  38 PDF objects out of 1000 (max. 8388607)
  22 compressed objects within 1 object stream
