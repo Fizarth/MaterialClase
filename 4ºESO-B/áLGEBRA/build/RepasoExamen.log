@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.30)  3 NOV 2026 17:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.5)  5 NOV 2026 08:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/fires/Documents/workspaces/MaterialClase/4ºESO-B/áLGEBRA/RepasoExamen.tex
-(c:/Users/fires/Documents/workspaces/MaterialClase/4ºESO-B/áLGEBRA/RepasoExamen.tex
+**c:/Users/Usuario/Documents/workspaces/MaterialClase/4ºESO-B/áLGEBRA/RepasoExamen.tex
+(c:/Users/Usuario/Documents/workspaces/MaterialClase/4ºESO-B/áLGEBRA/RepasoExamen.tex
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-09-10>
+L3 programming layer <2024-08-16>
 (c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2024/02/08 v1.4n Standard LaTeX document class
 (c:/texlive/2024/texmf-dist/tex/latex/base/size11.clo
@@ -28,7 +28,7 @@ Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 ) (c:/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2024/09/18 v24.10 The Babel package
+Package: babel 2024/08/29 v24.9 The Babel package
 \babel@savecnt=\count268
 \U@D=\dimen142
 \l@unhyphenated=\language89
@@ -45,7 +45,7 @@ Package babel Info: Making < an active character on input line 722.
 Package babel Info: Making > an active character on input line 722.
 ) (c:/texlive/2024/texmf-dist/tex/generic/babel/errbabel.def)
 
-c:/texlive/2024/texmf-dist/tex/generic/babel/babel.sty:4234: Package babel Error: Unknown option 'es-noquot'. Either you misspelled it
+c:/texlive/2024/texmf-dist/tex/generic/babel/babel.sty:4219: Package babel Error: Unknown option 'es-noquot'. Either you misspelled it
 (babel)                or the language definition file es-noquot.ldf
 (babel)                was not found.
 
@@ -53,7 +53,7 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4234 \ProcessOptions*
+l.4219 \ProcessOptions*
                        
 Valid options are, among others: shorthands=, KeepShorthandsActive,
 activeacute, activegrave, noconfigs, safe=, main=, math=
@@ -479,17 +479,17 @@ LaTeX Info: Redefining \% on input line 8.
 )
  ***********
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-09-10>
+L3 programming layer <2024-08-16>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 15883 strings out of 473579
- 315213 string characters out of 5732263
- 714013 words of memory out of 5000000
- 38521 multiletter control sequences out of 15000+600000
+ 15872 strings out of 473579
+ 315030 string characters out of 5732264
+ 1941960 words of memory out of 5000000
+ 38510 multiletter control sequences out of 15000+600000
  563977 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,6n,107p,489b,934s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,6n,107p,491b,934s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 Output written on build/RepasoExamen.pdf (2 pages, 93901 bytes).
 PDF statistics:

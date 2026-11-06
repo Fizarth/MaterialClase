@@ -15,7 +15,7 @@
 % Configuración de márgenes
 \geometry{top=2cm, bottom=2cm, left=2cm, right=2cm}
 
-% Definición del color usado en el examen original
+% Definición del color usado en el documento
 \definecolor{numcolor}{rgb}{0.1, 0.4, 0.7}
 \definecolor{solcolor}{rgb}{0.0, 0.5, 0.2}
 
@@ -25,7 +25,8 @@
 \shorthandoff{<>}
 
 \begin{center}
-    {\LARGE \textbf{Ficha de Repaso: Polinomios y Fracciones Algebraicas}}\\[0.2cm]
+    {\LARGE \textbf{Solucionario: Ficha de Repaso}}\\[0.2cm]
+    {\large \textbf{Polinomios y Fracciones Algebraicas}}\\[0.4cm]
 \end{center}
 
 
@@ -34,194 +35,174 @@
     \item Dados $P(x) = x - 3$, $Q(x) = x - 4$ y $R(x) = x + 5$, realiza las siguientes operaciones:
         \begin{enumerate}[label=\textit{\alph*})]
             \item Halla $M(x) = P(x) \cdot Q(x) \cdot R(x)$.
+            
+            \noindent{\color{solcolor}\textbf{Solución:}} Multiplicamos los polinomios paso a paso:
+            $$M(x) = (x - 3)(x - 4)(x + 5) = (x^2 - 7x + 12)(x + 5)$$
+            $$M(x) = x^3 + 5x^2 - 7x^2 - 35x + 12x + 60 = \mathbf{x^3 - 2x^2 - 23x + 60}$$
+
             \item Descompón en factores $M(x)$.
+            
+            \noindent{\color{solcolor}\textbf{Solución:}} Como $M(x)$ proviene directamente del producto de factores dados al inicio, su descomposición factorial es inmediata:
+            $$\mathbf{M(x) = (x - 3)(x - 4)(x + 5)}$$
+
             \item ¿Cuáles son las raíces de $M(x)$?
+            
+            \noindent{\color{solcolor}\textbf{Solución:}} Las raíces son los valores que anulan cada factor: 
+            $$\mathbf{x = 3}, \quad \mathbf{x = 4} \quad \text{y} \quad \mathbf{x = -5}$$
+
             \item ¿Para qué valores de $x$ se anula el polinomio $M(x)$?
+            
+            \noindent{\color{solcolor}\textbf{Solución:}} El polinomio se anula exactamente en sus raíces, es decir, para $\mathbf{x \in \{-5, 3, 4\}}$.
         \end{enumerate}
-    
-    \item \textbf{Opera y simplifica las siguientes expresiones polinómicas:}
-        \begin{enumerate}[label=\alph*), itemsep=1em]
-            \item $\dfrac{(x - 2)(x + 1)}{3} - \dfrac{(3x - 1)^2}{8} + \dfrac{(2x - 3)(2x + 3)}{12}$
-            \item $\dfrac{(2x + 3)^2}{4} - \dfrac{(x - 1)(x + 5)}{6} - \dfrac{(3x - 2)(3x + 2)}{3}$
-            \item $\dfrac{3(x - 3)^2}{2} - \dfrac{(2x + 1)(x - 4)}{4} + \dfrac{(x - 5)(x + 5)}{8}$
-        \end{enumerate}
-        
+
     \item \textbf{Halla el cociente $C(x)$ y el resto $R(x)$ de las siguientes divisiones de polinomios:}
         \begin{enumerate}[label=\alph*), itemsep=1em]
             \item $(-3x^4 - 5x^3 + 4x^2 - 1) : (x^2 + 2)$
+            
+            \noindent{\color{solcolor}\textbf{Solución:}} Realizando la división polinómica:
+            $$\mathbf{C(x) = -3x^2 - 5x + 10}, \quad \mathbf{R(x) = 10x - 21}$$
+
             \item $(2x^5 - 4x^3 + 6x^2 - 7x + 2) : (x^2 - 3x + 1)$
+            
+            \noindent{\color{solcolor}\textbf{Solución:}} 
+            $$\mathbf{C(x) = 2x^3 + 6x^2 + 8x + 16}, \quad \mathbf{R(x) = 17x - 14}$$
+
             \item $(4x^4 - 6x^3 + 2x - 5) : (2x^2 + 1)$
+            
+            \noindent{\color{solcolor}\textbf{Solución:}} 
+            $$\mathbf{C(x) = 2x^2 - 3x - 1}, \quad \mathbf{R(x) = 5x - 4}$$
         \end{enumerate}
-        
+
     \item \textbf{Mediante la regla de Ruffini, calcula el cociente y el resto de las siguientes divisiones:}
         \begin{enumerate}[label=\textit{\alph*})]
             \item $(x^2 - 7x + 6) : (x - 1) =$
+            
+            \noindent{\color{solcolor}\textbf{Solución:}} Aplicando Ruffini con raíz $x = 1$:
+            \begin{center}
+            \begin{tabular}{r|rrr}
+              1 & 1 & -7 & 6 \\
+              & & 1 & -6 \\
+              \hline
+              & 1 & -6 & \multicolumn{1}{|r}{0}
+            \end{tabular}
+            \end{center}
+            $$\mathbf{C(x) = x - 6}, \quad \mathbf{R = 0}$$
+
             \item $(2x^3 + 3x^2 - x - 5) : (x + 2) =$
+            
+            \noindent{\color{solcolor}\textbf{Solución:}} Aplicando Ruffini con raíz $x = -2$:
+            \begin{center}
+            \begin{tabular}{r|rrrr}
+              -2 & 2 & 3 & -1 & -5 \\
+              & & -4 & 2 & -2 \\
+              \hline
+              & 2 & -1 & 1 & \multicolumn{1}{|r}{-7}
+            \end{tabular}
+            \end{center}
+            $$\mathbf{C(x) = 2x^2 - x + 1}, \quad \mathbf{R = -7}$$
+
             \item $(x^4 - 8) : (x - 2) =$
+            
+            \noindent{\color{solcolor}\textbf{Solución:}} Completando los coeficientes intermedios con ceros ($x^4 + 0x^3 + 0x^2 + 0x - 8$) y raíz $x = 2$:
+            \begin{center}
+            \begin{tabular}{r|rrrrr}
+              2 & 1 & 0 & 0 & 0 & -8 \\
+              & & 2 & 4 & 8 & 16 \\
+              \hline
+              & 1 & 2 & 4 & 8 & \multicolumn{1}{|r}{8}
+            \end{tabular}
+            \end{center}
+            $$\mathbf{C(x) = x^3 + 2x^2 + 4x + 8}, \quad \mathbf{R = 8}$$
         \end{enumerate}
-        
+
     \item \textbf{Descompón en factores los siguientes polinomios:}
         \begin{enumerate}[label=\alph*), itemsep=0.8em]
-            \item $x^4 - 12x^3 + 36x^2$
-            \item $2x^4 + 5x^3 - 4x^2 - 3x$
-            \item $x^4 - 16$
-            \item $3x^3 - 12x^2 + 9x$
-            \item $x^4 - 2x^3 - 7x^2 + 8x + 12$
-            \item $4x - 24x^2 + 16x^3 =$
-            \item $3(x - 1) + 8(x - 1)^2 - 5(x - 1) \cdot (x + 1) =$
-            \item $(x + 3)^2 - 4(x + 3) \cdot (x - 3) + 6(x + 3) =$
-            \item $x^2 + 4x + 4 =$
-            \item $x^2 - 9 =$
-            \item $25x^2 - 125 =$
+            \item $x^4 - 12x^3 + 36x^2 = x^2(x^2 - 12x + 36) = \mathbf{x^2(x - 6)^2}$
+            \item $2x^4 + 5x^3 - 4x^2 - 3x = x(2x^3 + 5x^2 - 4x - 3)$. Por Ruffini con raíces $1$ y $-1$:
+            $\mathbf{x(x - 1)(x + 1)(2x + 3)}$
+            \item $x^4 - 16 = (x^2 - 4)(x^2 + 4) = \mathbf{(x - 2)(x + 2)(x^2 + 4)}$
+            \item $3x^3 - 12x^2 + 9x = 3x(x^2 - 4x + 3) = \mathbf{3x(x - 1)(x - 3)}$
+            \item $x^4 - 2x^3 - 7x^2 + 8x + 12$. Probando divisores por Ruffini (raíces $-1, 2, 3, -2$):
+            $\mathbf{(x + 1)(x - 2)(x - 3)(x + 2)}$
+            \item $4x - 24x^2 + 16x^3 = 4x(4x^2 - 6x + 1)$ (o sacando factor común): $\mathbf{4x(4x^2 - 6x + 1)}$
+            \item $3(x - 1) + 8(x - 1)^2 - 5(x - 1)(x + 1) = (x - 1)[3 + 8(x - 1) - 5(x + 1)] = \mathbf{(x - 1)(3x - 6)} = \mathbf{3(x - 1)(x - 2)}$
+            \item $(x + 3)^2 - 4(x + 3)(x - 3) + 6(x + 3) = (x + 3)[(x + 3) - 4(x - 3) + 6] = \mathbf{(x + 3)(-3x + 21)}$
+            \item $x^2 + 4x + 4 = \mathbf{(x + 2)^2}$
+            \item $x^2 - 9 = \mathbf{(x - 3)(x + 3)}$
+            \item $25x^2 - 125 = 25(x^2 - 5) = \mathbf{25(x - \sqrt{5})(x + \sqrt{5})}$
         \end{enumerate}
-        
+
     \item \textbf{Calcula el valor del parámetro {\color{numcolor}$m$} en cada uno de los siguientes casos:}
         \begin{enumerate}[label=\alph*), itemsep=0.8em]
-            \item Para que el polinomio $P(x) = 7x^3 - mx^2 + 3x - 2$ sea divisible por $x + 1$.
-            \item Para que la división $(2x^3 + mx^2 - 5x + 6) : (x - 2)$ tenga un resto igual a $12$.
-            \item Para que $x = 3$ sea una raíz del polinomio $Q(x) = x^3 - 4x^2 + mx - 9$.
+            \item Para que el polinomio $P(x) = 7x^3 - mx^2 + 3x - 2$ sea divisible por $x + 1$.\\
+            \noindent{\color{solcolor}\textbf{Solución:}} Por el teorema del resto, $P(-1) = 0$:
+            $$7(-1)^3 - m(-1)^2 + 3(-1) - 2 = 0 \implies -7 - m - 3 - 2 = 0 \implies \mathbf{m = -12}$$
+            
+            \item Para que la división $(2x^3 + mx^2 - 5x + 6) : (x - 2)$ tenga un resto igual a $12$.\\
+            \noindent{\color{solcolor}\textbf{Solución:}} Evaluamos en $x = 2$ e igualamos a $12$:
+            $$2(2)^3 + m(2)^2 - 5(2) + 6 = 12 \implies 16 + 4m - 10 + 6 = 12 \implies 4m + 12 = 12 \implies \mathbf{m = 0}$$
+            
+            \item Para que $x = 3$ sea una raíz del polinomio $Q(x) = x^3 - 4x^2 + mx - 9$.\\
+            \noindent{\color{solcolor}\textbf{Solución:}} Evaluamos $Q(3) = 0$:
+            $$3^3 - 4(3)^2 + m(3) - 9 = 0 \implies 27 - 36 + 3m - 9 = 0 \implies 3m - 18 = 0 \implies \mathbf{m = 6}$$
         \end{enumerate}
-        
+
     \item \textbf{Simplifica las siguientes fracciones algebraicas:}
         \begin{enumerate}[label=\alph*), itemsep=1em]
-            \item $\dfrac{x^3 - 4x}{x^3 + x^2 - 2x}$
-            \item $\dfrac{x^2 + 2x - 3}{x^3 + 6x^2 + 5x - 12}$
-            \item $\dfrac{2x^3 - 8x}{x^3 - 2x^2 - 4x + 8}$
-            \item $\dfrac{x^2 - 9}{x^2 - 6x + 9}$
+            \item $\dfrac{x^3 - 4x}{x^3 + x^2 - 2x} = \dfrac{x(x-2)(x+2)}{x(x-1)(x+2)} = \mathbf{\dfrac{x - 2}{x - 1}}$
+            \item $\dfrac{x^2 + 2x - 3}{x^3 + 6x^2 + 5x - 12} = \dfrac{(x-1)(x+3)}{(x-1)(x+3)(x+4)} = \mathbf{\dfrac{1}{x + 4}}$
+            \item $\dfrac{2x^3 - 8x}{x^3 - 2x^2 - 4x + 8} = \dfrac{2x(x-2)(x+2)}{(x-2)^2(x+2)} = \mathbf{\dfrac{2x}{x - 2}}$
+            \item $\dfrac{x^2 - 9}{x^2 - 6x + 9} = \dfrac{(x-3)(x+3)}{(x-3)^2} = \mathbf{\dfrac{x + 3}{x - 3}}$
         \end{enumerate}
-        
+
     \item \textbf{Efectúa las operaciones y simplifica el resultado al máximo:}
         \begin{enumerate}[label=\alph*), itemsep=1.2em]
-            \item $\dfrac{2x^2}{x - 3} : \dfrac{8}{x^3 - 3x^2}$
-            \item $\dfrac{x^2 - 6}{(x - 2)^2} - \dfrac{x - 3}{x - 2}$
-            \item $\dfrac{x + 1}{x^2 - 4} \cdot \dfrac{x - 2}{x^2 - 1}$
-            \item $\dfrac{3}{x + 2} + \dfrac{2}{x - 2} - \dfrac{8}{x^2 - 4}$
+            \item $\dfrac{2x^2}{x - 3} : \dfrac{8}{x^3 - 3x^2} = \dfrac{2x^2 \cdot x^2(x - 3)}{8(x - 3)} = \dfrac{2x^4(x - 3)}{8(x - 3)} = \mathbf{\dfrac{x^4}{4}}$
+            \item $\dfrac{x^2 - 6}{(x - 2)^2} - \dfrac{x - 3}{x - 2} = \dfrac{(x^2 - 6) - (x - 3)(x - 2)}{(x - 2)^2} = \dfrac{x^2 - 6 - (x^2 - 5x + 6)}{(x - 2)^2} = \mathbf{\dfrac{5x - 12}{(x - 2)^2}}$
+            \item $\dfrac{x + 1}{x^2 - 4} \cdot \dfrac{x - 2}{x^2 - 1} = \dfrac{(x + 1)(x - 2)}{(x - 2)(x + 2)(x - 1)(x + 1)} = \mathbf{\dfrac{1}{(x + 2)(x - 1)}}$
+            \item $\dfrac{3}{x + 2} + \dfrac{2}{x - 2} - \dfrac{8}{x^2 - 4} = \dfrac{3(x - 2) + 2(x + 2) - 8}{(x - 2)(x + 2)} = \dfrac{3x - 6 + 2x + 4 - 8}{x^2 - 4} = \mathbf{\dfrac{5x - 10}{x^2 - 4}} = \mathbf{\dfrac{5(x - 2)}{(x - 2)(x + 2)}} = \mathbf{\dfrac{5}{x + 2}}$
         \end{enumerate}
-        
+
     \item \textbf{Expresiones algebraicas en problemas geométricos:}
         \begin{enumerate}[label=\alph*), itemsep=0.8em]
-            \item En un triángulo rectángulo, un cateto mide $14\text{ cm}$. Escribe el perímetro y el área del triángulo en función de su hipotenusa $x$.
-            \item En un triángulo rectángulo, la hipotenusa mide $20\text{ cm}$. Expresa su perímetro y su área en función de la longitud de uno de sus catetos $y$.
-            \item Un rectángulo tiene una altura que mide $6\text{ cm}$. Expresa su diagonal y su área en función de su base $x$.
+            \item En un triángulo rectángulo, un cateto mide $14\text{ cm}$. Escribe el perímetro y el área del triángulo en función de su hipotenusa $x$.\\
+            \noindent{\color{solcolor}\textbf{Solución:}} El otro cateto mide $\sqrt{x^2 - 14^2} = \sqrt{x^2 - 196}$.
+            $$\text{Perímetro: } \mathbf{P(x) = 14 + x + \sqrt{x^2 - 196}}$$
+            $$\text{Área: } \mathbf{A(x) = \frac{1}{2} \cdot 14 \cdot \sqrt{x^2 - 196} = 7\sqrt{x^2 - 196}}$$
+
+            \item En un triángulo rectángulo, la hipotenusa mide $20\text{ cm}$. Expresa su perímetro y su área en función de la longitud de uno de sus catetos $y$.\\
+            \noindent{\color{solcolor}\textbf{Solución:}} El otro cateto es $\sqrt{20^2 - y^2} = \sqrt{400 - y^2}$.
+            $$\text{Perímetro: } \mathbf{P(y) = 20 + y + \sqrt{400 - y^2}}$$
+            $$\text{Área: } \mathbf{A(y) = \frac{1}{2}y\sqrt{400 - y^2}}$$
+
+            \item Un rectángulo tiene una altura que mide $6\text{ cm}$. Expresa su diagonal y su área en función de su base $x$.\\
+            \noindent{\color{solcolor}\textbf{Solución:}} 
+            $$\text{Diagonal: } \mathbf{d(x) = \sqrt{x^2 + 6^2} = \sqrt{x^2 + 36}}$$
+            $$\text{Área: } \mathbf{A(x) = 6x}$$
         \end{enumerate}
-        
+
     \item \textbf{Expresa el área de la zona NO edificada en función de las variables indicadas:}
         \begin{enumerate}[label=\alph*), itemsep=1.5em]
-            \item En una parcela de lados $x$ e $y$ se construye una casa en la zona indicada. Halla el área no edificada en función de $x$ e $y$.
-            \begin{center}
-                \begin{tikzpicture}[scale=0.07]
-                \draw[thick] (0,0) rectangle (70,45);
-                \draw[thick] (0,20) -- (40,20) -- (40,45);
-                \fill[red!30] (40,20) rectangle (70,45);
-                \draw[thick, red!70!black] (40,20) rectangle (70,45);
-                \node at (55, 32.5) {\textbf{CASA}};
-                \draw[{Stealth[length=2mm]}-{Stealth[length=2mm]}] (0,26) -- (40,26);
-                \node[fill=white, inner sep=1pt] at (20,26) {$50\text{ m}$};
-                \draw[{Stealth[length=2mm]}-{Stealth[length=2mm]}] (43,0) -- (43,20);
-                \node[right] at (43,10) {$30\text{ m}$};
-                \node[below] at (35,-1) {$x$};
-                \node[right] at (71,22.5) {$y$};
-                \end{tikzpicture}
-            \end{center}
-            \item En un terreno rectangular de ancho $x$ y largo $y$, se reserva una franja exterior no edificable de $4\text{ m}$ de ancho en todo el perímetro. Expresa el área edificable interior en función de $x$ e $y$.
-            \item En una parcela cuadrada de lado $x$, se edifica una piscina rectangular de dimensiones $12\text{ m}$ y $y\text{ m}$. Expresa el área libre ajardinada en función de $x$ e $y$.
+            \item En una parcela de lados $x$ e $y$ se construye una casa en la zona indicada...\\
+            \noindent{\color{solcolor}\textbf{Solución:}} Área total $= x \cdot y$. Área de la casa $= 30 \cdot (x - 50)$ (según el esquema del gráfico adjunto).
+            $$\mathbf{A_{\text{no edificada}}(x, y) = x \cdot y - (y-30)(x - 50)}$$
+
+            \item En un terreno rectangular de ancho $x$ y largo $y$, se reserva una franja exterior no edificable de $4\text{ m}$ de ancho en todo el perímetro. Expresa el área edificable interior en función de $x$ e $y$.\\
+            \noindent{\color{solcolor}\textbf{Solución:}} Las dimensiones interiores disminuyen $4\text{ m}$ por cada lado ($8\text{ m}$ en total por dimensión):
+            $$\mathbf{A_{\text{edificable}}(x, y) = (x - 8)(y - 8)}$$
+
+            \item En una parcela cuadrada de lado $x$, se edifica una piscina rectangular de dimensiones $12\text{ m}$ y $y\text{ m}$. Expresa el área libre ajardinada en función de $x$ e $y$.\\
+            \noindent{\color{solcolor}\textbf{Solución:}} Área total del cuadrado $= x^2$. Área de la piscina $= 12y$.
+            $$\mathbf{A_{\text{ajardinada}}(x, y) = x^2 - 12y}$$
         \end{enumerate}
+
+    \item \textbf{Jugando con un trozo de alambre de 36 cm, doblamos el alambre para formar un rectángulo con base "$x$" cm. Hállase la expresión algebraica que define el área del rectángulo en función de $x$ y calcula su valor para $x = 5$.}\\
+    \noindent{\color{solcolor}\textbf{Solución:}} 
+    El perímetro total es $36\text{ cm}$, por lo que la suma de la base y la altura es la mitad del perímetro: $18\text{ cm}$.
+    Si la base es $x$, la altura será $18 - x$.
+    $$\text{Área en función de } x\text{: } \mathbf{A(x) = x(18 - x) = 18x - x^2}$$
+    Para $x = 5\text{ cm}$:
+    $$\mathbf{A(5)} = 5(18 - 5) = 5 \cdot 13 = \mathbf{65\text{ cm}^2}$$
+
 \end{enumerate}
-
-\newpage
-\begin{center}
-    {\LARGE \textbf{\color{solcolor}Soluciones y Resolución Detallada}}\\[0.4cm]
-\end{center}
-
-\begin{enumerate}[label=\textbf{\arabic*.}, leftmargin=*]
-    \item 
-        \begin{enumerate}[label=\textit{\alph*})]
-            \item $M(x) = (x-3)(x-4)(x+5) = (x^2 - 7x + 12)(x+5) = x^3 - 2x^2 - 23x + 60$.
-            \item Ya está descompuesto en factores de primer grado: $M(x) = (x - 3)(x - 4)(x + 5)$.
-            \item Las raíces son $x = 3$, $x = 4$ y $x = -5$.
-            \item El polinomio se anula exactamente para los mismos valores que sus raíces: $x \in \{3, 4, -5\}$.
-        \end{enumerate}
-
-    \item 
-        \begin{enumerate}[label=\alph*)]
-            \item Mínimo común múltiplo de denominadores: $24$.
-            $\dfrac{8(x^2 - x - 2) - 3(9x^2 - 6x + 1) + 2(4x^2 - 9)}{24} = \dfrac{-13x^2 + 10x - 29}{24}$.
-            \item Mínimo común múltiplo: $12$.
-            $\dfrac{3(4x^2 + 12x + 9) - 2(x^2 + 4x - 5) - 4(9x^2 - 4)}{12} = \dfrac{-26x^2 + 28x + 53}{12}$.
-            \item Mínimo común múltiplo: $8$.
-            $\dfrac{12(x^2 - 6x + 9) - 2(2x^2 - 7x - 4) + (x^2 - 25)}{8} = \dfrac{9x^2 - 58x + 124}{8}$.
-        \end{enumerate}
-
-    \item 
-        \begin{enumerate}[label=\alph*)]
-            \item $C(x) = -3x^2 - 5x + 10$, $R(x) = 10x - 21$.
-            \item $C(x) = 2x^2 + 6x + 8$, $R(x) = 10x - 6$.
-            \item $C(x) = 2x^2 - 3x - 1$, $R(x) = 5x - 4$.
-        \end{enumerate}
-
-    \item 
-        \begin{enumerate}[label=\textit{\alph*})]
-            \item Cociente: $C(x) = x - 6$, Resto: $R = 0$.
-            \item Cociente: $C(x) = 2x^2 - x + 1$, Resto: $R = -7$.
-            \item Cociente: $C(x) = x^3 + 2x^2 + 4x + 8$, Resto: $R = 8$.
-        \end{enumerate}
-
-    \item 
-        \begin{enumerate}[label=\alph*)]
-            \item $x^2(x - 6)^2$
-            \item $x(x - 1)(2x + 1)(x + 3)$ o bien $x(x-1)(2x^2+7x+3)$
-            \item $(x - 2)(x + 2)(x^2 + 4)$
-            \item $3x(x - 1)(x - 3)$
-            \item $(x - 3)(x + 2)^2 (x - 1)$
-            \item $4x(4x^2 - 6x + 1)$ (o factorizado completamente: $4x\left(x - \frac{3+\sqrt{5}}{4}\right)\left(x - \frac{3-\sqrt{5}}{4}\right)$)
-            \item $(x - 1)(-5x + 6)$
-            \item $(x + 3)(-3x + 22)$
-            \item $(x + 2)^2$
-            \item $(x - 3)(x + 3)$
-            \item $25(x - \sqrt{5})(x + \sqrt{5})$
-        \end{enumerate}
-
-    \item 
-        \begin{enumerate}[label=\alph*)]
-            \item Aplicando el Teorema del Resto, $P(-1) = 0 \implies 7(-1)^3 - m(-1)^2 + 3(-1) - 2 = 0 \implies -7 - m - 3 - 2 = 0 \implies m = -12$.
-            \item $P(2) = 12 \implies 2(2)^3 + m(2)^2 - 5(2) + 6 = 12 \implies 16 + 4m - 10 + 6 = 12 \implies 4m + 12 = 12 \implies m = 0$.
-            \item $Q(3) = 0 \implies 3^3 - 4(3)^2 + m(3) - 9 = 0 \implies 27 - 36 + 3m - 9 = 0 \implies 3m - 18 = 0 \implies m = 6$.
-        \end{enumerate}
-
-    \item 
-        \begin{enumerate}[label=\alph*)]
-            \item $\dfrac{x(x-2)(x+2)}{x(x+2)(x-1)} = \dfrac{x - 2}{x - 1}$
-            \item $\dfrac{(x-1)(x+3)}{(x-1)(x+3)(x+4)} = \dfrac{1}{x + 4}$
-            \item $\dfrac{2x(x-2)(x+2)}{(x-2)^2(x+2)} = \dfrac{2x}{x - 2}$
-            \item $\dfrac{(x-3)(x+3)}{(x-3)^2} = \dfrac{x + 3}{x - 3}$
-        \end{enumerate}
-
-    \item 
-        \begin{enumerate}[label=\alph*)]
-            \item $\dfrac{2x^2}{x - 3} \cdot \dfrac{x^2(x - 3)}{8} = \dfrac{2x^4(x-3)}{8(x-3)} = \dfrac{x^4}{4}$
-            \item $\dfrac{x^2 - 6 - (x - 3)(x - 2)}{(x - 2)^2} = \dfrac{x^2 - 6 - (x^2 - 5x + 6)}{(x - 2)^2} = \dfrac{5x - 12}{(x - 2)^2}$
-            \item $\dfrac{(x+1)(x-2)}{(x-2)(x+2)(x-1)(x+1)} = \dfrac{1}{(x+2)(x-1)}$
-            \item $\dfrac{3(x-2) + 2(x+2) - 8}{(x+2)(x-2)} = \dfrac{3x - 6 + 2x + 4 - 8}{x^2 - 4} = \dfrac{5x - 10}{x^2 - 4} = \dfrac{5(x-2)}{(x-2)(x+2)} = \dfrac{5}{x+2}$
-        \end{enumerate}
-
-    \item 
-        \begin{enumerate}[label=\alph*)]
-            \item Si un cateto mide $14$, por el teorema de Pitágoras el otro cateto es $\sqrt{x^2 - 14^2} = \sqrt{x^2 - 196}$.\\
-            \textbf{Perímetro:} $P = 14 + x + \sqrt{x^2 - 196}$. \quad \textbf{Área:} $A = \dfrac{14\sqrt{x^2 - 196}}{2} = 7\sqrt{x^2 - 196}$.
-            \item Si la hipotenusa es $20$ y un cateto es $y$, el otro cateto es $\sqrt{20^2 - y^2} = \sqrt{400 - y^2}$.\\
-            \textbf{Perímetro:} $P = 20 + y + \sqrt{400 - y^2}$. \quad \textbf{Área:} $A = \dfrac{y\sqrt{400 - y^2}}{2}$.
-            \item Altura $= 6$, base $= x$.\\
-            \textbf{Diagonal:} $D = \sqrt{x^2 + 6^2} = \sqrt{x^2 + 36}$. \quad \textbf{Área:} $A = 6x$.
-        \end{enumerate}
-
-    \item 
-        \begin{enumerate}[label=\alph*)]
-            \item El área total de la parcela es $x \cdot y$. La casa mide $50\text{ m}$ de ancho (en la figura horizontal) y $30\text{ m}$ de alto (en la figura vertical). Por tanto, Área No Edificada $= xy - 50 \cdot 30 = xy - 1500$.
-            \item Las dimensiones interiores restando la franja de $4\text{ m}$ por cada lado quedan con dimensiones $(x - 8)$ y $(y - 8)$. \\
-            \textbf{Área edificable interior:} $A = (x - 8)(y - 8) = xy - 8x - 8y + 64$.
-            \item El área de la parcela cuadrada es $x^2$. La piscina ocupa un área de $12y$. \\
-            \textbf{Área libre ajardinada:} $A = x^2 - 12y$.
-        \end{enumerate}
-\end{enumerate}
-
 \end{document}
