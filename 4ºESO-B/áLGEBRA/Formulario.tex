@@ -1,0 +1,146 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-noquot]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=1cm]{geometry}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{enumitem}
+
+\spanishdeactivate{<>}
+\pagestyle{empty}
+
+% Definición de colores
+\definecolor{mainblue}{rgb}{0.1, 0.4, 0.7}
+\definecolor{boxbg}{rgb}{0.93, 0.95, 0.98}
+
+% Estilo de cajas de sección
+\newcommand{\sectionbox}[1]{%
+  \vspace{0.15cm}\noindent
+  \fcolorbox{mainblue}{boxbg}{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{\textbf{\color{mainblue}\small #1}}}%
+  \vspace{0.1cm}%
+}
+
+\setlist[itemize]{nosep, leftmargin=1.2em}
+\setlist[enumerate]{nosep, leftmargin=1.2em}
+
+\begin{document}
+
+\begin{center}
+    {\Large \textbf{\color{mainblue} RESUMEN DE EXAMEN: POLINOMIOS Y FRACCIONES ALGEBRAICAS}}\\[0.1cm]
+    {\small \textbf{Ficha de Repaso Rápido --- Fórmulas, Teoremas y Métodos}}
+\end{center}
+
+\begin{multicols*}{2}
+
+% --------------------------------------------------
+\sectionbox{1. VALOR NUMÉRICO E IDENTIDADES NOTABLES}
+% --------------------------------------------------
+\begin{itemize}
+    \item \textbf{Valor Numérico $P(a)$:} Sustituir la variable $x$ por el número $a$. Si $P(a) = 0$, $a$ es una \textbf{raíz} de $P(x)$.
+    \item \textbf{Identidades Notables Clave:}
+    \begin{align*}
+        (a + b)^2 &= a^2 + 2ab + b^2 \\
+        (a - b)^2 &= a^2 - 2ab + b^2 \\
+        (a + b)(a - b) &= a^2 - b^2
+    \end{align*}
+\end{itemize}
+
+% --------------------------------------------------
+\sectionbox{2. DIVISIÓN DE POLINOMIOS Y RUFFINI}
+% --------------------------------------------------
+\begin{itemize}
+    \item \textbf{Algoritmo de la División:} $D(x) = d(x) \cdot C(x) + R(x)$ donde $\text{grado}(R) < \text{grado}(d)$.
+    \item \textbf{Regla de Ruffini:} Se usa cuando el divisor es del tipo $(x - a)$ o $(x + a)$.
+    \begin{itemize}
+        \item Completar los coeficientes faltantes con \textbf{ceros}.
+        \item Si se divide entre $(x + a)$, en Ruffini se usa el número \textbf{$-a$}.
+    \end{itemize}
+    \item \textbf{Candidatos a raíces enteras:} Divisores del término independiente de $P(x)$.
+\end{itemize}
+
+% --------------------------------------------------
+\sectionbox{3. TEOREMA DEL RESTO Y DEL FACTOR}
+% --------------------------------------------------
+\begin{itemize}
+    \item \textbf{Teorema del Resto:} El resto de la división $P(x) : (x - a)$ coincide con el valor numérico $P(a)$.
+    \[
+    \text{Resto } R = P(a)
+    \]
+    \item \textbf{Teorema del Factor:} $P(x)$ es divisible por $(x - a) \iff P(a) = 0$.
+    \item \textbf{Cálculo de parámetros ($m$):} Igualar $P(a)$ al resto dado (o a $0$ si es divisible) y despejar $m$.
+\end{itemize}
+
+% --------------------------------------------------
+\sectionbox{4. GUÍA PASO A PASO PARA FACTORIZAR}
+% --------------------------------------------------
+Para descomponer en factores un polinomio $P(x)$:
+\begin{enumerate}
+    \item \textbf{Sacar factor común:} Extraer $x$ (con el menor exponente) y/o factores numéricos.
+    \[
+    3x^3 - 12x^2 + 9x = 3x(x^2 - 4x + 3)
+    \]
+    \item \textbf{Identidades Notables:} Identificar cuadrados perfectos o diferencia de cuadrados.
+    \[
+    x^2 - 9 = (x - 3)(x + 3), \quad x^2 + 4x + 4 = (x + 2)^2
+    \]
+    \item \textbf{Regla de Ruffini:} Probar divisores del término independiente hasta obtener resto $0$.
+    \item \textbf{Ecuación de 2.º Grado:} Para trinomios $ax^2 + bx + c$, resolver $ax^2 + bx + c = 0 \implies a(x - x_1)(x - x_2)$.
+\end{enumerate}
+
+\columnbreak
+
+% --------------------------------------------------
+\sectionbox{5. FRACCIONES ALGEBRAICAS}
+% --------------------------------------------------
+\begin{itemize}
+    \item \textbf{Simplificación:} Factorizar numerador y denominador y simplificar los factores comunes repetidos.
+    \[
+    \frac{x^2 - 1}{x^2 - 2x + 1} = \frac{(x-1)(x+1)}{(x-1)^2} = \frac{x + 1}{x - 1}
+    \]
+    \item \textbf{Suma y Resta:} Hallar el $\text{m.c.m.}$ de los denominadores tras haberlos factorizado.
+    \item \textbf{Multiplicación:} 
+    \[
+    \frac{A}{B} \cdot \frac{C}{D} = \frac{A \cdot C}{B \cdot D} \quad \text{(\small\textbf{¡Factorizar antes de multiplicar!})}
+    \]
+    \item \textbf{División (producto en cruz):} 
+    \[
+    \frac{A}{B} : \frac{C}{D} = \frac{A \cdot D}{B \cdot C}
+    \]
+\end{itemize}
+
+% --------------------------------------------------
+\sectionbox{6. TRADUCCIÓN ALGEBRAICA Y GEOMETRÍA}
+% --------------------------------------------------
+\begin{itemize}
+    \item \textbf{Expresiones Frecuentes:}
+    \begin{itemize}
+        \item Mitad de $y$ más 6: $\dfrac{y}{2} + 6$
+        \item Inversos de dos números: $\dfrac{1}{x} - \dfrac{1}{y}$
+        \item Números consecutivos: $x, \quad x + 1$
+        \item Algoritmo división: $D = d \cdot c + r$
+    \end{itemize}
+    \item \textbf{Fórmulas Geométricas:}
+    \begin{itemize}
+        \item \textbf{Teorema de Pitágoras:} $h = \sqrt{c_1^2 + c_2^2} \implies c_2 = \sqrt{h^2 - c_1^2}$
+        \item \textbf{Rectángulo:} $P = 2b + 2h$, \quad $A = b \cdot h$
+        \item \textbf{Triángulo Rectángulo:} $A = \dfrac{\text{cateto}_1 \cdot \text{cateto}_2}{2}$
+        \item \textbf{Área No Edificada / Ajardinada:}
+        \[
+        A_{\text{libre}} = A_{\text{total}} - A_{\text{edificada}}
+        \]
+    \end{itemize}
+\end{itemize}
+
+% --------------------------------------------------
+\sectionbox{7. ¡ERRORES TÍPICOS A EVITAR!}
+% --------------------------------------------------
+\begin{itemize}
+    \item $\mathbf{(a + b)^2 \neq a^2 + b^2}$ $\longrightarrow$ ¡Falta el doble producto $2ab$!
+    \item $\mathbf{-(x - 3) \neq -x - 3}$ $\longrightarrow$ El signo negativo cambia el signo de \textbf{todo} el paréntesis: $-x + 3$.
+    \item No simplificar términos en sumas: $\dfrac{x + 2}{x} \neq 2$. Solo se simplifican factores multiplicando.
+\end{itemize}
+
+\end{multicols*}
+
+\end{document}

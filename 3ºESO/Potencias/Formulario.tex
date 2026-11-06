@@ -1,0 +1,131 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-noquot]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+
+% Definición de colores parecidos a los de la imagen
+\definecolor{headergreen}{HTML}{B8D89C}
+\definecolor{pinkcell}{HTML}{F4DCDC}
+\definecolor{bluecell}{HTML}{E2F0D9} % o ligero tono azul según la fila
+
+\setlength{\arrayrulewidth}{1pt}
+
+\begin{document}
+
+\begin{center}
+{\huge \textbf{\textcolor{green!60!black}{\underline{RESUMEN}}}}
+\vspace{0.5cm}
+
+\renewcommand{\arraystretch}{1.5}
+
+
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+Producto y cociente de potencias & En el producto de potencias con la misma base se suman los exponentes. \\ \hline
+Potencia de un producto y de un cociente & La potencia de un producto es igual al producto de las potencias de cada uno de los factores. \\ \hline
+\end{tabularx}
+
+\begin{tabular}{|c|c|c|}
+    \hline
+
+    \rowcolor{pinkcell!40}
+    Producto y cociente de potencias & 
+    En el producto de potencias con la misma base se suman los exponentes. En el cociente se restan los exponentes. \newline
+    Con el mismo exponente: En el producto, se multiplican las bases y se eleva el resultado al mismo exponente. En el cociente se dividen las bases y se eleva el resultado al mismo exponente. & 
+    $(-5)^4 \cdot (-5)^2 = (-5)^6$ \newline
+    $3^2 : 3^7 = 3^{-5}$ \newline
+    $2^5 \cdot 7^5 = 14^5$ \newline
+    $(-5)^3 : (4)^3 = (-5/4)^3$ \\ \hline
+
+    \rowcolor{pinkcell!40}
+    Potencia de un producto y de un cociente & 
+    La potencia de un producto es igual al producto de cada uno de los factores elevados a dicha potencia:
+    $ (a \cdot b \cdot c \cdot d)^n = a^n \cdot b^n \cdot c^n \cdot d^n $
+    La potencia de un cociente es igual al cociente del dividendo y el divisor elevados a dicha potencia:
+    $ c^m : c^n = c^{m-n} $ & 
+    $(5 \cdot 2 \cdot 3)^4 = 5^4 \cdot 2^4 \cdot 3^4$ \vspace{0.3cm}\newline
+    $(-7/2)^6 = 7^6 / (-2)^6$ \\ \hline
+
+
+
+
+
+\textbf{Columna 1} & \textbf{Columna 2} & \textbf{Columna 3} \\ \hline
+Dato 1             & Dato 2             & Dato 3             \\ 
+Dato 4             & Dato 5             & Dato 6             \\ \hline
+\end{tabular}
+
+
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash\bfseries}p{3.5cm}|X|>{\centering\arraybackslash}p{4cm}|}
+\hline
+\rowcolor{headergreen}
+ & \centering \textbf{POTENCIAS Y RAÍCES} & \textit{\textbf{Ejemplos}} \\ \hline
+
+\rowcolor{pinkcell!40}
+Producto y cociente de potencias & 
+En el producto de potencias con la misma base se suman los exponentes. En el cociente se restan los exponentes. \newline
+Con el mismo exponente: En el producto, se multiplican las bases y se eleva el resultado al mismo exponente. En el cociente se dividen las bases y se eleva el resultado al mismo exponente. & 
+$(-5)^4 \cdot (-5)^2 = (-5)^6$ \newline
+$3^2 : 3^7 = 3^{-5}$ \newline
+$2^5 \cdot 7^5 = 14^5$ \newline
+$(-5)^3 : (4)^3 = (-5/4)^3$ \\ \hline
+
+\rowcolor{pinkcell!40}
+Potencia de un producto y de un cociente & 
+La potencia de un producto es igual al producto de cada uno de los factores elevados a dicha potencia:
+\[ (a \cdot b \cdot c \cdot d)^n = a^n \cdot b^n \cdot c^n \cdot d^n \]
+La potencia de un cociente es igual al cociente del dividendo y el divisor elevados a dicha potencia:
+\[ c^m : c^n = c^{m-n} \] & 
+$(5 \cdot 2 \cdot 3)^4 = 5^4 \cdot 2^4 \cdot 3^4$ \vspace{0.3cm}\newline
+$(-7/2)^6 = 7^6 / (-2)^6$ \\ \hline
+
+\rowcolor{pinkcell!40}
+Potencia de otra potencia & 
+\centering $((d)^m)^n = d^{m \cdot n}$ & 
+$((-4)^3)^5 = (-4)^{15}$ \\ \hline
+
+\rowcolor{pinkcell!40}
+Potencia de base racional & 
+\centering $(a/b)^n = a^n / b^n$ & 
+$(6/5)^2 = 6^2 / 5^2$ \\ \hline
+
+\rowcolor{pinkcell!40}
+Potencia de exponente negativo & 
+\centering $a^{-n} = 1 / a^n$ & 
+$8^{-3} = 1 / 8^3$ \\ \hline
+
+\rowcolor{pinkcell!40}
+Notación científica: operaciones & 
+$a \cdot 10^{\pm n}$ siendo $1 \le a \le 9$.\newline
+$+n$ para grandes números\newline
+$-n$ para pequeños números & 
+$320\,000\,000 = 3.2 \cdot 10^8$\newline
+$0.000000009 = 9 \cdot 10^{-10}$ \\ \hline
+
+\rowcolor{cyan!10}
+Radicales: raíces de índice cualquiera & 
+\multicolumn{2}{l|}{$\sqrt{49} = 7; \quad \sqrt[3]{-216} = -6; \quad \sqrt[4]{64} = 4; \quad \sqrt[4]{81} = 3; \quad \sqrt[5]{-32} = -2$} \\ \hline
+
+\rowcolor{pinkcell!40}
+Potencias de exponente racional & 
+Una potencia con exponente racional puede expresarse en forma de raíz cuyo índice es el denominador del exponente y el radicando queda elevado al numerador del exponente: $x^{\frac{m}{n}} = \sqrt[n]{x^m}$ & 
+$8^{2/5} = \sqrt[5]{8^2}$ \\ \hline
+
+\rowcolor{cyan!10}
+Extracción de factores de un radical & 
+Si $m = n \cdot c + r$ entonces $\sqrt[n]{a^m} = a^c \cdot \sqrt[n]{a^r}$ & 
+$\sqrt[3]{8^7} = 8^2 \cdot \sqrt[3]{8}$ \\ \hline
+
+\rowcolor{pinkcell!40}
+Operaciones con radicales & 
+\centering $\sqrt[n]{x \cdot y \cdot z} = \sqrt[n]{x} \cdot \sqrt[n]{y} \cdot \sqrt[n]{z}$; \quad $\sqrt[n]{\dfrac{x}{y}} = \dfrac{\sqrt[n]{x}}{\sqrt[n]{y}}$ & 
+$\sqrt[4]{5 \cdot 3 \cdot 2} = \sqrt[4]{5} \cdot \sqrt[4]{3} \cdot \sqrt[4]{2}$\newline
+$\sqrt[3]{\dfrac{1}{27}} = \dfrac{\sqrt[3]{1}}{\sqrt[3]{27}} = \dfrac{1}{3}$ \\ \hline
+
+\end{tabularx}
+\end{center}
+
+\end{document}
