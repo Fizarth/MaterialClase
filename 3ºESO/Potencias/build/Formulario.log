@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.5)  6 NOV 2026 11:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.5)  6 NOV 2026 12:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -222,78 +222,708 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
  (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (1502.11333pt too wide) in paragraph at lines 24--53
- [][] 
+Overfull \hbox (2.1671pt too wide) in paragraph at lines 89--89
+[]|\OT1/cmr/m/n/10 Producto
  []
 
 
-Underfull \hbox (badness 1681) in paragraph at lines 121--121
-[]|\OT1/cmr/m/n/10 En el pro-duc-to de
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+[]|\OT1/cmr/m/n/10 En el
  []
 
 
-Underfull \hbox (badness 1377) in paragraph at lines 121--121
-\OT1/cmr/m/n/10 po-nen-te. En el co-
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 pro-
  []
 
 
-Underfull \hbox (badness 1484) in paragraph at lines 121--121
-[]|\OT1/cmr/m/n/10 La po-ten-cia de un
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 duc-to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
-\OT1/cmr/m/n/10 pro-duc-to de ca-da
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 de po-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
-\OT1/cmr/m/n/10 ele-va-dos a di-cha
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 ten-cias
  []
 
 
-Overfull \hbox (11.60999pt too wide) detected at line 121
-\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 b \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 c \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 d\OT1/cmr/m/n/10 )[] = \OML/cmm/m/it/10 a[] \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 b[] \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 c[] \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 d[]
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 con la
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
-[]|$\OML/cmm/m/it/10 a \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 10[]$ sien-do
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 mis-ma
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
-\OT1/cmr/m/n/10 +\OML/cmm/m/it/10 n$ \OT1/cmr/m/n/10 pa-ra gran-des
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 ba-se se
  []
 
 
-Underfull \hbox (badness 4242) in paragraph at lines 121--121
-\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 n$ \OT1/cmr/m/n/10 pa-ra pe-que~nos
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 su-man
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
-[]|\OT1/cmr/m/n/10 Una po-ten-cia con
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 nen-tes.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
-\OT1/cmr/m/n/10 ex-po-nen-te ra-cio-nal
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 En el
  []
 
 
-Underfull \hbox (badness 2205) in paragraph at lines 121--121
-\OT1/cmr/m/n/10 ele-va-do al nu-me-ra-
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 co-cien-te
  []
 
 
-Underfull \hbox (badness 3343) in paragraph at lines 121--121
-\OT1/cmr/m/n/10 dor del ex-po-nen-te:
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 Con el
  []
 
 
-Overfull \hbox (61.30719pt too wide) in alignment at lines 121--121
-[][][] 
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 mis-mo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 ex-po-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 nen-te:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 En el
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 pro-duc-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 to, se
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 mul-ti-pli-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 can las
+ []
+
+
+Underfull \hbox (badness 6708) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 ba-ses y
+ []
+
+
+Underfull \hbox (badness 2970) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 se ele-va
+ []
+
+
+Underfull \hbox (badness 1137) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 el re-sul-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 ta-do al
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 mis-mo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 ex-po-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 nen-te.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 En el
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 co-cien-te
+ []
+
+
+Underfull \hbox (badness 6876) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 se di-vi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 den las
+ []
+
+
+Underfull \hbox (badness 6708) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 ba-ses y
+ []
+
+
+Underfull \hbox (badness 2970) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 se ele-va
+ []
+
+
+Underfull \hbox (badness 1137) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 el re-sul-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 ta-do al
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 mis-mo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 ex-po-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+[]|$\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 5)[] \OMS/cmsy/m/n/10 ^^A
+ []
+
+
+Underfull \hbox (badness 2111) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 5)[] :
+ []
+
+
+Underfull \hbox (badness 5331) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 (4)[] =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+[]|\OT1/cmr/m/n/10 Potencia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 de un
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 pro-duc-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 to y
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 de un
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+[]|\OT1/cmr/m/n/10 La po-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 ten-cia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 de un
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 pro-duc-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 to es
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 igual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 al pro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 duc-to
+ []
+
+
+Underfull \hbox (badness 2608) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 de ca-da
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 uno
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 de los
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 fac-to-res
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 ele-va-dos
+ []
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 a di-cha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 po-ten-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 po-ten-cia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 de un
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 co-cien-te
+ []
+
+
+Underfull \hbox (badness 3482) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 es igual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 al co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 cien-te
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 del di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 vi-den-do
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 y el
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 di-vi-sor
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 ele-va-dos
+ []
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 a di-cha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 po-ten-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OML/cmm/m/it/10 c[] \OT1/cmr/m/n/10 =
+ []
+
+
+Underfull \hbox (badness 4859) in paragraph at lines 89--89
+[]|$\OT1/cmr/m/n/10 (5 \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 2 \OMS/cmsy/m/n/10 ^^A
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 3)[] =
+ []
+
+
+Overfull \hbox (7.31984pt too wide) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 7\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 2)[] =
+ []
+
+
+Overfull \hbox (1.25046pt too wide) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 7[]\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 2)[]$| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+[]|\OT1/cmr/m/n/10 Potencia
+ []
+
+
+Underfull \hbox (badness 7851) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 de otra
+ []
+
+
+Overfull \hbox (6.07797pt too wide) in paragraph at lines 89--89
+ []|$\OT1/cmr/m/n/10 ((\OML/cmm/m/it/10 d\OT1/cmr/m/n/10 )[])[] = 
+ []
+
+
+Overfull \hbox (9.58374pt too wide) in paragraph at lines 89--89
+[]|$\OT1/cmr/m/n/10 ((\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 4)[])[] =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+[]|\OT1/cmr/m/n/10 Potencia
+ []
+
+
+Underfull \hbox (badness 4660) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 de ba-se
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+[]|\OT1/cmr/m/n/10 Potencia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 de ex-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 po-nen-te
+ []
+
+
+Underfull \hbox (badness 8019) in paragraph at lines 89--89
+[]|$\OT1/cmr/m/n/10 8[] =
+ []
+
+
+Overfull \hbox (0.88931pt too wide) in paragraph at lines 89--89
+[]|\OT1/cmr/m/n/10 Notaci^^Son
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 cient^^S^^Pfi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 ca:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 ope-ra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 sien-do
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 gran-des
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 n$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 que~nos
+ []
+
+
+Overfull \hbox (20.61145pt too wide) in paragraph at lines 89--89
+[]|$\OT1/cmr/m/n/10 320 000 000 =
+ []
+
+
+Overfull \hbox (25.056pt too wide) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 0[]000000009 =
+ []
+
+
+Overfull \hbox (5.80595pt too wide) in paragraph at lines 89--89
+[]|\OT1/cmr/m/n/10 Radicales:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 ^^S^^Pndi-ce
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 cual-
+ []
+
+
+Overfull \hbox (3.30595pt too wide) in paragraph at lines 89--89
+[]|\OT1/cmr/m/n/10 Potencias
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 de ex-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 po-nen-te
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+[]|\OT1/cmr/m/n/10 Una
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 po-ten-cia
+ []
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 con ex-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 po-nen-te
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 ra-cio-nal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 pue-de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 ex-pre-
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 sar-se en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 for-ma
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 de ra^^S^^Pz
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 cu-yo
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 el de-no-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 mi-na-dor
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 del ex-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 po-nen-te
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 di-can-do
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 que-da
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 ele-va-do
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 al nu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 me-ra-dor
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 del ex-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 po-nen-te:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 =
+ []
+
+
+Underfull \hbox (badness 4872) in paragraph at lines 89--89
+[]|$\OT1/cmr/m/n/10 8[] =
+ []
+
+
+Overfull \hbox (8.83377pt too wide) in paragraph at lines 89--89
+[]|\OT1/cmr/m/n/10 Extracci^^Son
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 de fac-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 to-res
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 de un
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 en-ton-ces
+ []
+
+
+Underfull \hbox (badness 3713) in paragraph at lines 89--89
+[]|$[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (14.86154pt too wide) in paragraph at lines 89--89
+[]|\OT1/cmr/m/n/10 Operaciones
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+\OT1/cmr/m/n/10 con ra-
+ []
+
+
+Overfull \hbox (12.74911pt too wide) in paragraph at lines 89--89
+ []|$[] \OT1/cmr/m/n/10 = 
+ []
+
+
+Overfull \hbox (10.68083pt too wide) in paragraph at lines 89--89
+[]|$[] \OT1/cmr/m/n/10 =
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 89--89
+[] \OT1/cmr/m/n/10 =
  []
 
 
@@ -301,7 +931,7 @@ Overfull \hbox (61.30719pt too wide) in alignment at lines 121--121
 [1
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \vbox (271.154pt too high) has occurred while \output is active []
+Overfull \vbox (1192.53412pt too high) has occurred while \output is active []
 
 
 
@@ -315,18 +945,18 @@ L3 programming layer <2024-08-16>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4396 strings out of 473579
- 66619 string characters out of 5732264
- 1959960 words of memory out of 5000000
- 27276 multiletter control sequences out of 15000+600000
- 565724 words of font info for 66 fonts, out of 8000000 for 9000
+ 4385 strings out of 473579
+ 66425 string characters out of 5732264
+ 1957960 words of memory out of 5000000
+ 27268 multiletter control sequences out of 15000+600000
+ 564711 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,17n,79p,323b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on build/Formulario.pdf (2 pages, 132021 bytes).
+ 56i,17n,79p,308b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on build/Formulario.pdf (2 pages, 104746 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 61 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
