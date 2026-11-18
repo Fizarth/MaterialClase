@@ -1,0 +1,345 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{array}
+\usepackage{multicol}
+
+\usepackage[spanish, bidi=basic, provide=*]{babel}
+
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\definecolor{primary}{RGB}{31, 78, 121}
+\definecolor{secondary}{RGB}{220, 53, 69}
+\definecolor{bglight}{RGB}{245, 247, 250}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    urlcolor=primary
+}
+
+\setlist[enumerate]{label=\textbf{\arabic*.--}, leftmargin=*}
+
+
+
+\begin{document}
+
+
+
+\begin{center}
+    \textbf{\color{primary} TEMA 2: POTENCIAS Y RAÍCES}
+\end{center}
+
+
+
+\begin{enumerate}
+
+    \item \textbf{Reduce a una sola potencia:}
+        \begin{enumerate}[label=\alph*)]
+            \item $2^{3} \cdot 2 \cdot \left(\dfrac{2^{3} \cdot 2}{2^{4} \cdot 2^{2}}\right) = 2^{4} \cdot \left(\dfrac{2^{4}}{2^{6}}\right) = 2^{4} \cdot 2^{-2} = 2^{2}$
+            \item $16^{6} : (8^{5} \cdot 4^{2}) = (2^{4})^{6} : [(2^{3})^{5} \cdot (2^{2})^{2}] = 2^{24} : (2^{15} \cdot 2^{4}) = 2^{24} : 2^{19} = 2^{5}$
+            \item $\dfrac{2^{5} \cdot 3^{2} \cdot 4^{-1}}{2^{3} \cdot 9^{-1}} = \dfrac{2^{5} \cdot 3^{2} \cdot 2^{-2}}{2^{3} \cdot 3^{-2}} = 2^{5-2-3} \cdot 3^{2-(-2)} = 2^{0} \cdot 3^{4} = 3^{4}$
+            \item $\left(\dfrac{1}{2}\right)^{3} : \left(\dfrac{1}{4}\right)^{2} = \left(\dfrac{1}{2}\right)^{3} : \left(\dfrac{1}{2^{2}}\right)^{2} = 2^{-3} : 2^{-4} = 2^{-3-(-4)} = 2^{-3+4} = 2^{1} = 2$
+        \end{enumerate}
+
+    \item \textbf{Simplifica empleando las propiedades de las potencias, y expresa el resultado con exponentes positivos:}
+        \begin{enumerate}[label=\alph*)]
+            \item $\dfrac{3^{-2} \cdot (-7)^{2} \cdot 3 \cdot 7^{-4} \cdot (-3)^{5}}{(-7)^{3} \cdot 3^{-1} \cdot 7^{-5} \cdot 3^{4}} = 3^{-2+1+5-(-1)-4} \cdot 7^{2-4-(-3)-(-5)} = 3^{1} \cdot 7^{6}$
+            \item $\dfrac{2^{3} \cdot 8^{-3} \cdot 12^{-1} \cdot (-3)^{-2}}{6^{2} \cdot 16^{-2} \cdot 3^{-3}} = \dfrac{2^{3} \cdot (2^{3})^{-3} \cdot (2^{2} \cdot 3)^{-1} \cdot 3^{-2}}{(2 \cdot 3)^{2} \cdot (2^{4})^{-2} \cdot 3^{-3}} = \dfrac{2^{3-9-2} \cdot 3^{-1-2}}{2^{2-8} \cdot 3^{2-3}} = 2^{-8-(-6)} \cdot 3^{-3-(-1)} = 2^{-2} \cdot 3^{-2} = \dfrac{1}{2^{2} \cdot 3^{2}}$
+        \end{enumerate}
+
+    \item \textbf{Simplifica empleando las propiedades de las potencias:}
+        \begin{enumerate}[label=\alph*)]
+            \item $\dfrac{[(2^{3}:3^{3}):(3^{-2}:2^{-2})]:6^{-2}}{[(4^{3}:7^{3}):3^{3}]:(6^{-1}:6^{-4})} = \dots$
+            \item $\dfrac{9^{2} \cdot 3^{-3} \cdot 25}{125 \cdot 81} = \dfrac{3^{4} \cdot 3^{-3} \cdot 5^{2}}{5^{3} \cdot 3^{4}} = \dfrac{1}{5 \cdot 3^{3}} = \dfrac{1}{135}$
+            \item $\dfrac{9^{5} \cdot 3^{-3} \cdot 25^{2}}{125 \cdot 27^{3}} = \dfrac{(3^{2})^{5} \cdot 3^{-3} \cdot (5^{2})^{2}}{5^{3} \cdot (3^{3})^{3}} = \dfrac{3^{10} \cdot 3^{-3} \cdot 5^{4}}{5^{3} \cdot 3^{9}} = \dfrac{3^{7} \cdot 5^{4}}{5^{3} \cdot 3^{9}} = \dfrac{5}{3^{2}} = \dfrac{5}{9}$
+            \item $\dfrac{81^{3} \cdot 3^{-3} \cdot 25^{-2}}{125^{-3} \cdot 27^{3}} = \dfrac{(3^{4})^{3} \cdot 3^{-3} \cdot (5^{2})^{-2}}{(5^{3})^{-3} \cdot (3^{3})^{3}} = \dfrac{3^{12} \cdot 3^{-3} \cdot 5^{-4}}{5^{-9} \cdot 3^{9}} = \dfrac{3^{9} \cdot 5^{9}}{3^{9} \cdot 5^{4}} = 5^{5}$
+        \end{enumerate}
+
+    \item \textbf{Los terrenos de dos parcelas miden $3^{8}$ y $3^{4}$ metros cuadrados, respectivamente. Mohamed duda si la primera parcela es el doble que la segunda o no. De no ser doble, ¿cuántas veces es mayor la primera que la segunda?}
+        \textit{Solución:}
+        Para saber cuántas veces es mayor, dividimos la superficie de la grande entre la pequeña:
+        \[
+        3^{8} : 3^{4} = 3^{8-4} = 3^{4} = 81
+        \]
+        Por tanto, la parcela grande no es el doble de la pequeña, sino que es \textbf{81 veces mayor}.
+
+    \item \textbf{La masa de la Luna es de $7,34 \cdot 10^{22}$ kg, y la de la Tierra, de $5,98 \cdot 10^{24}$ kg. ¿A cuántas Lunas equivale la masa de la Tierra?}
+        \textit{Solución:}
+        Dividimos la masa de la Tierra entre la de la Luna:
+        \[
+        \dfrac{\text{masa}_{\text{Tierra}}}{\text{masa}_{\text{Luna}}} = \dfrac{5,98 \cdot 10^{24}}{7,34 \cdot 10^{22}} \approx 81,47
+        \]
+        La masa de la Tierra equivale a poco más de \textbf{81,47 veces} la masa de la Luna.
+
+    \item \textbf{Si el área del huerto cuadrado de mi abuelo es la mitad que el de mi tío, que tiene $200\text{ m}^{2}$, ¿cuánto mide el lado del huerto de mi abuelo?}
+        \textit{Solución:}
+        El área del huerto del abuelo es $A = 100\text{ m}^{2}$.
+        \[
+        A = l^{2} \implies l = \sqrt{A} = \sqrt{100} = 10\text{ metros}
+        \]
+        El lado del huerto mide \textbf{10 m}.
+
+    \item \textbf{La unidad de memoria de un ordenador es el byte. Un kilobyte (kB) son $2^{10} = 1.024$ bytes, un megabyte (MB) son $2^{10}\text{ kB}$, un gigabyte (GB) equivale a $2^{10}\text{ MB}$ y un terabyte (TB) equivale a $2^{10}\text{ GB}$. Expresa en forma de potencia y en notación científica los bytes que tiene mi disco duro extraíble de $36\text{ TB}$.}
+        \textit{Solución:}
+        \[
+        36\text{ TB} = 36 \cdot 2^{10} \cdot 2^{10} \cdot 2^{10} \cdot 2^{10}\text{ bytes} = 36 \cdot (2^{10})^{4} = (2^{2} \cdot 3^{2}) \cdot 2^{40} = 3^{2} \cdot 2^{42}\text{ bytes}
+        \]
+        En notación científica:
+        \[
+        36 \cdot 2^{40} = 36 \cdot 1.099.511.627.776 \approx 3,958 \cdot 10^{13}\text{ bytes}
+        \]
+
+    \item \textbf{Queremos construir un cubo de cartón cuyo volumen sea $6\text{ m}^{3}$. ¿Qué superficie de cartón se necesita? Expresa el resultado en forma radical.}
+        \textit{Solución:}
+        El volumen de un cubo es $V = a^{3} \implies a = \sqrt[3]{6}\text{ m}$.
+        La superficie total de un cubo de 6 caras cuadradas es:
+        \[
+        S = 6 \cdot a^{2} = 6 \cdot (\sqrt[3]{6})^{2} = 6\sqrt[3]{6^{2}}\text{ m}^{2} = 6\sqrt[3]{36}\text{ m}^{2}
+        \]
+
+    \item \textbf{Extrae todos los factores posibles de los siguientes radicales:}
+        \begin{enumerate}[label=\alph*)]
+            \item $\sqrt{81 \cdot a^{5} \cdot b \cdot c^{6}} = \sqrt{3^{4} \cdot a^{5} \cdot b \cdot c^{6}} = 3^{2} \cdot a^{2} \cdot c^{3} \sqrt{a \cdot b} = 9 a^{2} c^{3} \sqrt{a b}$
+            \item $\sqrt[3]{125 \cdot a^{9} \cdot b^{17} \cdot c^{25}} = \sqrt[3]{5^{3} \cdot a^{9} \cdot b^{17} \cdot c^{25}} = 5 a^{3} b^{5} c^{8} \sqrt[3]{b^{2} c}$
+        \end{enumerate}
+
+    \item \textbf{Efectúa las siguientes multiplicaciones y divisiones con radicales:}
+        \begin{enumerate}[label=\alph*)]
+            \item $14\sqrt{12} : 7\sqrt{3} = \dfrac{14\sqrt{12}}{7\sqrt{3}} = 2\sqrt{\dfrac{12}{3}} = 2\sqrt{4} = 2 \cdot 2 = 4$
+            \item $\sqrt{2} \cdot \sqrt{8} = \sqrt{16} = 4 $
+            \item $ \sqrt[3]{9} \cdot \sqrt[3]{3} = \sqrt[3]{27} = \sqrt[3]{3^3} = 3 $ 
+            \item $\sqrt[3]{2} \cdot \sqrt{3} = $ no se puede. 
+            \item $ \sqrt[3]{2} \cdot \sqrt[3]{32} = \sqrt[3]{2^6} = 2^2 = 4$ 
+        \end{enumerate}
+
+    \item \textbf{Extrae los factores que se puedan de los siguientes radicales:}
+        \begin{enumerate}[label=\alph*)]
+            \item $\sqrt[3]{\dfrac{8}{729} b^{5} c^{7} m^{14}} = \sqrt[3]{\dfrac{2^{3}}{3^{6}} b^{5} c^{7} m^{14}} = \dfrac{2}{9} b c^{2} m^{4} \sqrt[3]{b^{2} c m^{2}}$
+            \item $\sqrt{\dfrac{81}{32} z^{6} y^{7} x^{17}} = \dfrac{9}{4} z^{3} y^{3} x^{8} \sqrt{\dfrac{x y}{2}}$
+            \item $\sqrt[3]{\dfrac{216}{343} m^{12} b^{15} c} = \dfrac{6}{7} m^{4} b^{5} \sqrt[3]{c}$
+            \item $\sqrt[4]{\dfrac{1}{243} b^{7} m^{45} c^{18} x^{5}} = \dfrac{b m^{11} c^{4} x}{3} \sqrt[4]{\dfrac{b^{3} m c^{2} x}{3}}$
+        \end{enumerate}
+
+    \item \textbf{Considera las potencias $2^{-2}$, $2^{-3}$ y $2^{-5}$:}
+        \begin{enumerate}[label=\alph*)]
+            \item La mayor es $2^{-2} = \dfrac{1}{4} = 0,25$.
+            \item El valor disminuye a medida que aumenta el valor absoluto del exponente negativo.
+            \item Para $0,7^{-3}$, $0,7^{-4}$ y $0,7^{-5}$: La mayor es $0,7^{-5}$. Al ser la base menor que $1$, el valor aumenta al crecer el exponente en valor absoluto.
+        \end{enumerate}
+
+    \item \textbf{Efectúa las siguientes sumas y restas de radicales:}
+        \begin{enumerate}[label=\alph*)]
+            \item $2\sqrt{20} + 4\sqrt{80} - 5\sqrt{180} + 3\sqrt{125} = 4\sqrt{5} + 16\sqrt{5} - 30\sqrt{5} + 15\sqrt{5} = 5\sqrt{5}$
+            \item $\dfrac{1}{4}\sqrt{128} + 6\sqrt{512} - \dfrac{1}{2}\sqrt{32} - 3\sqrt{98} = 2\sqrt{2} + 96\sqrt{2} - 2\sqrt{2} - 21\sqrt{2} = 75\sqrt{2}$
+            \item $\dfrac{3}{2}\sqrt{45} - \dfrac{\sqrt{20}}{3} + 4\sqrt{125} - 2\sqrt{5} = \dfrac{9}{2}\sqrt{5} - \dfrac{2}{3}\sqrt{5} + 20\sqrt{5} - 2\sqrt{5} = \dfrac{131}{6}\sqrt{5}$
+        \end{enumerate}
+
+    \item \textbf{Calcula los valores de $a, b, c, d$ en las siguientes igualdades:}
+        \begin{enumerate}[label=\alph*)]
+            \item $\sqrt{10^{4} \cdot 14^{6} \cdot 81^{12}} = 2^{a} \cdot 3^{b} \cdot 5^{c} \cdot 7^{d} \implies a=5, b=24, c=2, d=3$
+            \item $\sqrt[3]{100^{9} \cdot 98^{9} \cdot 81^{15}} = 2^{a} \cdot 3^{b} \cdot 5^{c} \cdot 7^{d} \implies a=9, b=60, c=18, d=18$
+        \end{enumerate}
+
+\end{enumerate}
+
+\begin{center}
+    \textbf{\color{primary} TEMA 3: CÁLCULOS CON PORCENTAJES}
+\end{center}
+
+\begin{enumerate}
+    \item ¿Qué porcentaje es? 
+        \begin{enumerate}
+            \item El 40\% del 40\% 
+                \[
+                \frac{40}{100} \cdot \frac{40}{100} = \frac{1600}{10000} = \frac{16}{100} \implies 16\%
+                \]
+            \item El 25\% del 20\% 
+                \[
+                \frac{25}{100} \cdot \frac{20}{100} = \frac{500}{10000} = \frac{5}{100} \implies 5\%
+                \]
+            \item El 30\% del 120\% 
+                \[
+                \frac{30}{100} \cdot \frac{120}{100} = \frac{3600}{10000} = \frac{36}{100} \implies 36\%
+                \]
+            \item El 150\% del 20\%
+                \[
+                \frac{150}{100} \cdot \frac{20}{100} = \frac{3000}{10000} = \frac{30}{100} \implies 30\%
+                \] 
+        \end{enumerate}
+    \item En la clase de 3º, han aprobado todas las asignaturas 24 estudiantes, que son el 75\% del total. ¿Cuántos estudiantes hay en la clase? \\
+        Si llamamos $x$ al número total de estudiantes:
+        \[
+        75\% \text{ de } x = 24 \implies 0{,}75 \cdot x = 24 \implies x = \frac{24}{0{,}75} = 32
+        \]
+        \textbf{Solución:} En la clase hay $32$ estudiantes.
+
+        
+    \item En un partido de balonmano, una jugadora A ha marcado 2/5  de 30 intentos, otra jugadora B, 6 de 16 y una tercera jugadora C, el 36\% de 25 intentos. 
+        \begin{enumerate}
+            \item ¿Cuántos goles ha marcado cada una?
+                \begin{itemize}
+                    \item \textbf{Jugadora A:} $\frac{2}{5} \cdot 30 = \frac{60}{5} = 12$ goles.
+                    \item \textbf{Jugadora B:} $6$ goles.
+                    \item \textbf{Jugadora C:} $36\% \text{ de } 25 = \frac{36}{100} \cdot 25 = \frac{900}{100} = 9$ goles.
+                \end{itemize}
+            \item ¿Qué porcentaje de goles respecto al total ha marcado cada una?
+                \begin{itemize}
+                    \item \textbf{Jugadora A:} $\frac{12}{30} = 0{,}40 \implies 40\%$ de acierto.
+                    \item \textbf{Jugadora B:} $\frac{6}{16} = 0{,}375 \implies 37{,}5\%$ de acierto.
+                    \item \textbf{Jugadora C:} Ya viene dado en el enunciado $\implies 36\%$ de acierto.
+                \end{itemize}
+        \end{enumerate}
+
+    \item El precio de un videojuego subió un 28\% y después lo rebajaron un 30\%. Si el precio inicial era de 58€ calcula el precio final. \\
+        Aplicamos los factores de variación de forma consecutiva:
+        \begin{itemize}
+            \item Subida del $28\% \implies 1 + 0{,}28 = 1{,}28$
+            \item Rebaja del $30\% \implies 1 - 0{,}30 = 0{,}70$
+        \end{itemize}
+        \[
+        \text{Precio final} = 58 \cdot 1{,}28 \cdot 0{,}70 = 58 \cdot 0{,}896 = 51{,}968 \approx 51{,}97 \text{ €}
+        \]
+        \textbf{Solución:} El precio final del videojuego es de $51{,}97\text{ €}$.
+
+    \item El precio de un ordenador portátil a principios de mes era de $640\text{ €}$. A lo largo del mes su precio ha subido un $15\%$. ¿Cuánto cuesta el ordenador ahora?
+    
+        \textbf{Solución:}
+        Aplicamos el factor de aumento correspondiente a una subida del $15\%$:
+        \[
+        \text{Factor de aumento} = 1 + \frac{15}{100} = 1{,}15
+        \]
+        Calculamos el precio final multiplicando el valor inicial por el factor de aumento:
+        \[
+        \text{Precio final} = 640 \cdot 1{,}15 = 736\text{ €}
+        \]
+        \textbf{Respuesta:} El ordenador cuesta ahora $736\text{ €}$.
+
+    \item En una ciudad había $45\,200$ estudiantes matriculados el curso pasado. Este año el número de matriculados ha disminuido un $8\%$. ¿Cuántos estudiantes hay matriculados ahora?
+    
+        \textbf{Solución:}
+        Aplicamos el factor de disminución correspondiente a una bajada del $8\%$:
+        \[
+        \text{Factor de disminución} = 1 - \frac{8}{100} = 0{,}92
+        \]
+        Calculamos la cantidad final multiplicando el valor inicial por el factor de disminución:
+        \[
+        \text{Estudiantes actuales} = 45\,200 \cdot 0{,}92 = 41\,584
+        \]
+        \textbf{Respuesta:} Ahora hay $41\,584$ estudiantes matriculados.
+
+    \item El precio de una batidora, después de cargarle el $21\%$ de IVA, es de $72{,}6\text{ €}$. ¿Cuál es el precio antes de esos impuestos?
+    
+        \textbf{Solución:}
+        Llamamos $x$ al precio inicial sin IVA. El factor de aumento por aplicar el $21\%$ de IVA es:
+        \[
+        1 + \frac{21}{100} = 1{,}21
+        \]
+        Planteamos la ecuación multiplicando el precio inicial por el factor de aumento:
+        \[
+        x \cdot 1{,}21 = 72{,}6 \implies x = \frac{72{,}6}{1{,}21} = 60\text{ €}
+        \]
+        \textbf{Respuesta:} El precio de la batidora antes de impuestos era de $60\text{ €}$.
+
+    \item Al estirar una goma elástica, su longitud aumenta un $30\%$ y en esta posición mide $104\text{ cm}$. ¿Cuánto mide sin estirar?
+    
+        \textbf{Solución:}
+        Llamamos $x$ a la longitud de la goma sin estirar. El factor de aumento por estirarla un $30\%$ es:
+        \[
+        1 + \frac{30}{100} = 1{,}30
+        \]
+        Planteamos la ecuación:
+        \[
+        x \cdot 1{,}30 = 104 \implies x = \frac{104}{1{,}30} = 80\text{ cm}
+        \]
+        \textbf{Respuesta:} La goma mide $80\text{ cm}$ sin estirar.
+
+    \item En unas rebajas en las que se hace el $30\%$ de descuento, Roberto ha comprado una cámara por $50{,}4\text{ €}$. ¿Cuál era el precio inicial?
+    
+        \textbf{Solución:}
+        Llamamos $x$ al precio inicial de la cámara. El factor de disminución tras aplicar el $30\%$ de descuento es:
+        \[
+        1 - \frac{30}{100} = 0{,}70
+        \]
+        Planteamos la ecuación:
+        \[
+        x \cdot 0{,}70 = 50{,}4 \implies x = \frac{50{,}4}{0{,}70} = 72\text{ €}
+        \]
+        \textbf{Respuesta:} El precio inicial de la cámara era de $72\text{ €}$.
+
+    \item Una cartera ha repartido el $36\%$ de las cartas que tenía. Aún le quedan $1\,184$. ¿Cuántas tenía antes de empezar el reparto?
+    
+        \textbf{Solución:}
+        Llamamos $x$ al número total de cartas iniciales. Si ha repartido el $36\%$, le queda por repartir el:
+        \[
+        100\% - 36\% = 64\% \implies \text{Factor de disminución} = 0{,}64
+        \]
+        Planteamos la ecuación relacionando el porcentaje restante con las cartas que quedan:
+        \[
+        x \cdot 0{,}64 = 1\,184 \implies x = \frac{1\,184}{0{,}64} = 1\,850
+        \]
+        \textbf{Respuesta:} Antes de empezar el reparto tenía $1\,850$ cartas.
+
+    \item Un comercio aumenta el precio de sus productos un $30\%$ y después, pretendiendo dejarlo al precio inicial, los rebaja un $30\%$. ¿Es correcto?
+        \begin{enumerate}
+            \item Un ordenador costaba inicialmente $1\,000\text{ €}$. ¿Cuánto costará en cada paso del proceso?
+            
+            \textbf{Solución:}
+            \begin{itemize}
+                \item \textbf{Paso 1 (Aumento del 30\%):}
+                \[
+                \text{Precio tras la subida} = 1\,000 \cdot \left(1 + \frac{30}{100}\right) = 1\,000 \cdot 1{,}30 = 1\,300\text{ €}
+                \]
+                \item \textbf{Paso 2 (Rebaja del 30\% sobre el nuevo precio):}
+                \[
+                \text{Precio final} = 1\,300 \cdot \left(1 - \frac{30}{100}\right) = 1\,300 \cdot 0{,}70 = 910\text{ €}
+                \]
+            \end{itemize}
+
+            \item ¿Cuál es la variación porcentual que sufren los artículos respecto al precio inicial?
+            
+            \textbf{Solución:}
+            Calculamos el factor de variación global multiplicando los factores individuales:
+            \[
+            F V_{\text{global}} = 1{,}30 \cdot 0{,}70 = 0{,}91
+            \]
+            Como $0{,}91 = 1 - 0{,}09$, la variación global corresponde a una \textbf{disminución del $9\%$}.
+            
+            \textbf{Respuesta:} No es correcto, ya que el $30\%$ de descuento se aplica sobre una cantidad mayor. El producto termina costando $910\text{ €}$, sufriendo una rebaja real del $9\%$ respecto a su precio inicial.
+        \end{enumerate}
+
+    \item Un capital de $42\,000\text{ €}$ se deposita en un banco al $5\%$ de interés compuesto anual. ¿En cuánto se habrá convertido al cabo de un año, de dos y de tres años?
+    
+        \textbf{Solución:}
+        El factor de crecimiento anual correspondiente al $5\%$ es:
+        \[
+        1 + \frac{5}{100} = 1{,}05
+        \]
+        Aplicamos la fórmula del interés compuesto $C_t = C_0 \cdot (1 + r)^t$:
+        \begin{itemize}
+            \item \textbf{Al cabo de 1 año ($t = 1$):}
+            \[
+            C_1 = 42\,000 \cdot 1{,}05^1 = 44\,100\text{ €}
+            \]
+            
+            \item \textbf{Al cabo de 2 años ($t = 2$):}
+            \[
+            C_2 = 42\,000 \cdot 1{,}05^2 = 42\,000 \cdot 1{,}1025 = 46\,305\text{ €}
+            \]
+            
+            \item \textbf{Al cabo de 3 años ($t = 3$):}
+            \[
+            C_3 = 42\,000 \cdot 1{,}05^3 = 42\,000 \cdot 1{,}157625 = 48\,620{,}25\text{ €}
+            \]
+        \end{itemize}  
+    
+        
+\end{enumerate}
+\end{document}

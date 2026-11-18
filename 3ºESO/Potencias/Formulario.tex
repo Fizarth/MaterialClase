@@ -1,93 +1,170 @@
-\documentclass[10pt,a4paper]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[spanish,es-noquot]{babel}
+\documentclass[a4paper,11pt]{article}
+\usepackage[margin=1.4cm]{geometry}
 \usepackage{amsmath, amssymb}
-\usepackage[table,xcdraw]{xcolor}
-\usepackage{tabularx}
 \usepackage{array}
+\usepackage{multicol}
+\usepackage[spanish, bidi=basic, provide=*]{babel}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{enumitem}
 
-% Definición de colores parecidos a los de la imagen
-\definecolor{headergreen}{HTML}{B8D89C}
-\definecolor{pinkcell}{HTML}{F4DCDC}
-\definecolor{bluecell}{HTML}{E2F0D9} % o ligero tono azul según la fila
+\definecolor{primary}{RGB}{31, 78, 121}
+\definecolor{secondary}{RGB}{220, 53, 69}
+\definecolor{bglight}{RGB}{245, 247, 250}
 
-\setlength{\arrayrulewidth}{1pt}
+\newtcolorbox{formulabox}[1]{
+    colback=bglight,
+    colframe=primary,
+    boxrule=0.7pt,
+    arc=3pt,
+    left=6pt, right=6pt, top=5pt, bottom=5pt,
+    fonttitle=\bfseries\small,
+    title=#1
+}
+
+\newtcolorbox{alertbox}[1]{
+    colback=secondary!5,
+    colframe=secondary,
+    boxrule=0.7pt,
+    arc=3pt,
+    left=6pt, right=6pt, top=4pt, bottom=4pt,
+    fonttitle=\bfseries\small,
+    title=#1
+}
 
 \begin{document}
 
 \begin{center}
-{\huge \textbf{\textcolor{green!60!black}{\underline{RESUMEN}}}}
-\vspace{0.5cm}
-
-\renewcommand{\arraystretch}{1.5}
-
-
-\begin{tabularx}{\textwidth}{|X|X|X|}
-    \hline
-    \rowcolor{pinkcell!40}
-    Producto y cociente de potencias & 
-    En el producto de potencias con la misma base se suman los exponentes. En el cociente se restan los exponentes. \newline
-    Con el mismo exponente: En el producto, se multiplican las bases y se eleva el resultado al mismo exponente. En el cociente se dividen las bases y se eleva el resultado al mismo exponente. & 
-    $(-5)^4 \cdot (-5)^2 = (-5)^6$ \newline
-    $3^2 : 3^7 = 3^{-5}$ \newline
-    $2^5 \cdot 7^5 = 14^5$ \newline
-    $(-5)^3 : (4)^3 = (-5/4)^3$ \\ \hline
-
-    \rowcolor{pinkcell!40}
-    Potencia de un producto y de un cociente & 
-    La potencia de un producto es igual al producto de cada uno de los factores elevados a dicha potencia:
-    $ (a \cdot b \cdot c \cdot d)^n = a^n \cdot b^n \cdot c^n \cdot d^n $
-    La potencia de un cociente es igual al cociente del dividendo y el divisor elevados a dicha potencia:
-    $ c^m : c^n = c^{m-n} $ & 
-    $(5 \cdot 2 \cdot 3)^4 = 5^4 \cdot 2^4 \cdot 3^4$ \vspace{0.3cm}\newline
-    $(-7/2)^6 = 7^6 / (-2)^6$ \\ \hline
-
-    \rowcolor{pinkcell!40}
-    Potencia de otra potencia & 
-    \centering $((d)^m)^n = d^{m \cdot n}$ & 
-    $((-4)^3)^5 = (-4)^{15}$ \\ \hline
-
-    \rowcolor{pinkcell!40}
-    Potencia de base racional & 
-    \centering $(a/b)^n = a^n / b^n$ & 
-    $(6/5)^2 = 6^2 / 5^2$ \\ \hline
-
-    \rowcolor{pinkcell!40}
-    Potencia de exponente negativo & 
-    \centering $a^{-n} = 1 / a^n$ & 
-    $8^{-3} = 1 / 8^3$ \\ \hline
-
-    \rowcolor{pinkcell!40}
-    Notación científica: operaciones & 
-    $a \cdot 10^{\pm n}$ siendo $1 \le a \le 9$.\newline
-    $+n$ para grandes números\newline
-    $-n$ para pequeños números & 
-    $320\,000\,000 = 3.2 \cdot 10^8$\newline
-    $0.000000009 = 9 \cdot 10^{-10}$ \\ \hline
-
-    \rowcolor{cyan!10}
-    Radicales: raíces de índice cualquiera & 
-    \multicolumn{2}{l|}{$\sqrt{49} = 7; \quad \sqrt[3]{-216} = -6; \quad \sqrt[4]{64} = 4; \quad \sqrt[4]{81} = 3; \quad \sqrt[5]{-32} = -2$} \\ \hline
-
-    \rowcolor{pinkcell!40}
-    Potencias de exponente racional & 
-    Una potencia con exponente racional puede expresarse en forma de raíz cuyo índice es el denominador del exponente y el radicando queda elevado al numerador del exponente: $x^{\frac{m}{n}} = \sqrt[n]{x^m}$ & 
-    $8^{2/5} = \sqrt[5]{8^2}$ \\ \hline
-
-    \rowcolor{cyan!10}
-    Extracción de factores de un radical & 
-    Si $m = n \cdot c + r$ entonces $\sqrt[n]{a^m} = a^c \cdot \sqrt[n]{a^r}$ & 
-    $\sqrt[3]{8^7} = 8^2 \cdot \sqrt[3]{8}$ \\ \hline
-
-    \rowcolor{pinkcell!40}
-    Operaciones con radicales & 
-    \centering $\sqrt[n]{x \cdot y \cdot z} = \sqrt[n]{x} \cdot \sqrt[n]{y} \cdot \sqrt[n]{z}$; \quad $\sqrt[n]{\dfrac{x}{y}} = \dfrac{\sqrt[n]{x}}{\sqrt[n]{y}}$ & 
-    $\sqrt[4]{5 \cdot 3 \cdot 2} = \sqrt[4]{5} \cdot \sqrt[4]{3} \cdot \sqrt[4]{2}$\newline
-    $\sqrt[3]{\dfrac{1}{27}} = \dfrac{\sqrt[3]{1}}{\sqrt[3]{27}} = \dfrac{1}{3}$ \\ \hline
-
-
-\end{tabularx}
-
+    \Large\textbf{\color{primary} HOJA DE FÓRMULAS Y MÉTODOS: POTENCIAS, RAÍCES Y PORCENTAJES}
 \end{center}
+
+\vspace{0.1cm}
+
+% ==========================================
+% TEMA 2: POTENCIAS Y RAÍCES
+% ==========================================
+\noindent\textbf{\large\color{primary} 1. POTENCIAS Y NOTACIÓN CIENTÍFICA}
+\vspace{0.1cm}
+
+\begin{multicols}{2}
+
+\begin{formulabox}{Propiedades de las Potencias}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{@{}ll@{}}
+\textbf{Producto misma base:} & $a^{m} \cdot a^{n} = a^{m+n}$ \\
+\textbf{Cociente misma base:} & $a^{m} : a^{n} = \dfrac{a^{m}}{a^{n}} = a^{m-n}$ \\
+\textbf{Potencia de potencia:} & $(a^{m})^{n} = a^{m \cdot n}$ \\
+\textbf{Producto mismo exp.:} & $(a \cdot b)^{n} = a^{n} \cdot b^{n}$ \\
+\textbf{Cociente mismo exp.:} & $\left(\dfrac{a}{b}\right)^{n} = \dfrac{a^{n}}{b^{n}}$ \\
+\textbf{Exponente cero:} & $a^{0} = 1 \quad (a \neq 0)$ \\
+\textbf{Exponente negativo:} & $a^{-n} = \dfrac{1}{a^{n}} \quad \text{y} \quad \left(\dfrac{a}{b}\right)^{-n} = \left(\dfrac{b}{a}\right)^{n}$
+\end{tabular}
+\end{formulabox}
+
+\columnbreak
+
+\begin{formulabox}{Trucos Clave para Simplificar}
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=0pt]
+    \item \textbf{Factorizar bases:} Convierte números compuestos en potencias de primos ($4=2^2$, $8=2^3$, $9=3^2$, $16=2^4$, $25=5^2$, $27=3^3$, $81=3^4$, $125=5^3$).
+    \item \textbf{Bases negativas:} Si el exponente es \textbf{par}, el resultado es positivo: $(-a)^{\text{par}} = a^{\text{par}}$. Si es \textbf{impar}, es negativo: $(-a)^{\text{impar}} = -a^{\text{impar}}$.
+    \item \textbf{Exponentes negativos y tamaño:}
+    \begin{itemize}[leftmargin=12pt]
+        \item Si base $> 1$ (ej. $2^{-n}$): a mayor exponente negativo, \textbf{menor} es el valor.
+        \item Si $0 < \text{base} < 1$ (ej. $0,7^{-n}$): al invertir la fracción la base es $>1$, por lo que a mayor exponente negativo, \textbf{mayor} es el valor.
+    \end{itemize}
+\end{itemize}
+\end{formulabox}
+
+\end{multicols}
+
+\begin{formulabox}{Notación Científica y Unidades de Memoria}
+\begin{multicols}{2}
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=0pt]
+    \item \textbf{Formato estándar:} $a \cdot 10^{n}$ con $1 \leq |a| < 10$.
+    \item \textbf{Sumas y restas:} Iguala todos los términos al \textbf{mismo exponente} de $10$ antes de sumar o restar los coeficientes.
+    \item \textbf{Multiplicación y división:} Opera los números por un lado y aplica propiedades de potencias a los $10^{n}$ por otro:
+    $(a \cdot 10^{m}) \cdot (b \cdot 10^{n}) = (a \cdot b) \cdot 10^{m+n}$
+\end{itemize}
+\columnbreak
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=0pt]
+    \item \textbf{Escala informática (potencias de $2^{10}$):}
+    $$1\text{ kB} = 2^{10}\text{ B} \quad \big|\quad 1\text{ MB} = 2^{20}\text{ B}$$
+    $$1\text{ GB} = 2^{30}\text{ B} \quad \big|\quad 1\text{ TB} = 2^{40}\text{ B}$$
+    \item \textbf{Geometría básica:}
+    \begin{itemize}[leftmargin=12pt]
+        \item Cuadrado: $\text{Área} = l^{2} \implies l = \sqrt{\text{Área}}$
+        \item Cubo: $V = a^{3} \implies a = \sqrt[3]{V}$ ; $\text{Área total} = 6a^{2}$
+    \end{itemize}
+\end{itemize}
+\end{multicols}
+\end{formulabox}
+
+\vspace{0.2cm}
+\noindent\textbf{\large\color{primary} 2. RADICALES (RAÍCES)}
+\vspace{0.1cm}
+
+\begin{multicols}{2}
+
+\begin{formulabox}{Definición y Operaciones }
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{@{}ll@{}}
+\textbf{Potencia fraccionaria:} & $\sqrt[n]{a^{m}} = a^{\frac{m}{n}}$ \\
+\textbf{Producto (mismo índice):} & $\sqrt[n]{a} \cdot \sqrt[n]{b} = \sqrt[n]{a \cdot b}$ \\
+\textbf{Cociente (mismo índice):} & $\dfrac{\sqrt[n]{a}}{\sqrt[n]{b}} = \sqrt[n]{\dfrac{a}{b}}$ \\
+\textbf{Potencia de un radical:} & $\left(\sqrt[n]{a}\right)^{m} = \sqrt[n]{a^{m}}$ \\
+\textbf{Raíz de una raíz:} & $\sqrt[m]{\sqrt[n]{a}} = \sqrt[m \cdot n]{a}$
+\end{tabular}
+\vspace{2pt}
+\footnotesize\textit{*Para multiplicar/dividir radicales de distinto índice, calcula el $\text{m.c.m.}$ de los índices y amplifica los exponentes internos.}
+\end{formulabox}
+
+\columnbreak
+
+\begin{formulabox}{{Extracción, Sumas y Racionalización.}}
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=0pt]
+    \item \textbf{Extraer factores ($\sqrt[n]{a^{p}}$):} Divide el exponente $p$ entre el índice $n$:
+    \begin{itemize}[leftmargin=12pt]
+        \item El \textbf{cociente} $c$ es el exponente que sale fuera ($a^{c}$).
+        \item El \textbf{resto} $r$ es el exponente que queda dentro ($\sqrt[n]{a^{r}}$).
+    \end{itemize}
+    \item \textbf{Sumas y restas:} Solo se suman radicales \textbf{semejantes} (mismo índice y mismo radicando). Factoriza y extrae factores primero para simplificarlos.
+    \item \textbf{Racionalizar raíz cuadrada:} $\dfrac{A}{\sqrt{b}} = \dfrac{A\sqrt{b}}{b}$
+\end{itemize}
+\end{formulabox}
+
+\end{multicols}
+
+\vspace{0.2cm}
+% ==========================================
+% TEMA 3: CÁLCULOS CON PORCENTAJES
+% ==========================================
+\noindent\textbf{\large\color{primary} 3. CÁLCULOS CON PORCENTAJES}
+\vspace{0.1cm}
+
+\begin{formulabox}{Fórmulas Fundamentales de Porcentajes }
+\renewcommand{\arraystretch}{1.45}
+\begin{tabular}{@{}p{4.8cm} p{5.8cm} p{6.2cm}@{}}
+\toprule
+\textbf{Concepto} & \textbf{Fórmula / Índice de Variación ($IV$)} & \textbf{Uso en la Ficha} \\
+\midrule
+\textbf{Porcentaje de una cantidad} & $\text{Parte} = \dfrac{r}{100} \cdot \text{Total}$ & Calcular goles o fracción de un total. \\
+\textbf{Porcentaje de porcentaje} & $r_1\% \text{ del } r_2\% = \left(\dfrac{r_1}{100} \cdot \dfrac{r_2}{100}\right) \cdot 100\%$ & Multiplicar sus decimales. \\
+\textbf{Aumento porcentual ($+r\%$)} & $IV = 1 + \dfrac{r}{100} \implies C_f = C_i \cdot IV$ & Subida de precio o longitud 
+. \\
+\textbf{Disminución porcentual ($-r\%$)} & $IV = 1 - \dfrac{r}{100} \implies C_f = C_i \cdot IV$ & Rebajas, descuentos o bajadas. \\
+\textbf{Cálculo del valor inicial ($C_i$)} & $C_i = \dfrac{C_f}{IV}$ & Hallar precio sin IVA o antes de rebaja. \\
+\textbf{Porcentajes encadenados} & $IV_{\text{total}} = IV_1 \cdot IV_2 \cdot \ldots \cdot IV_n$ & Varios cambios seguidos sobre un precio. \\
+\textbf{Interés compuesto anual} & $C_f = C_i \cdot \left(1 + \dfrac{r}{100}\right)^{t}$ & Capital tras $t$ años al $r\%$ anual. \\
+\bottomrule
+\end{tabular}
+\end{formulabox}
+
+\begin{alertbox}{Errores Frecuentes a Evitar}
+\begin{itemize}[leftmargin=*, itemsep=1pt, topsep=0pt]
+    \item \textbf{Subir un $r\%$ y bajar un $r\%$ NO vuelve al precio inicial:} El segundo porcentaje se aplica sobre una cantidad distinta ($1,30 \cdot 0,70 = 0,91 \implies$ baja un $9\%$).
+    \item \textbf{No restes el porcentaje al precio final para hallar el inicial:} Si algo cuesta $72,6\text{ €}$ con un $21\%$ de IVA, divide entre $1,21$ ($72,6 : 1,21 = 60\text{ €}$); nunca calcules el $21\%$ de $72,6$.
+\end{itemize}
+\end{alertbox}
 
 \end{document}

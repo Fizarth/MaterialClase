@@ -1,0 +1,96 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-noquot]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{patterns,arrows.meta}
+
+% Desactivar atajos conflictivos de babel en el preámbulo
+\spanishdeactivate{<>}
+
+% Configuración de márgenes
+\geometry{top=2cm, bottom=2cm, left=2cm, right=2cm}
+
+% Definición del color usado en el examen original
+\definecolor{numcolor}{rgb}{0.1, 0.4, 0.7}
+
+\begin{document}
+
+% Asegura la desactivación de los atajos al iniciar el cuerpo del documento
+\shorthandoff{<>}
+
+\begin{center}
+    {\LARGE \textbf{Ficha de Repaso tema 3: Ecuaciones, inecuaciones y sistemas}}\\[0.2cm]
+\end{center}
+
+\begin{enumerate}
+    \item Resuelve las siguientes ecuaciones de segundo grado (si son incompletas intenta resolverlas sin aplicar la fórmula general):
+        \begin{enumerate}
+            \item $\dfrac{x+7}{12}-\dfrac{x^2+1}{4}=1-\dfrac{x^2+2}{3}$
+            \item $(3x-1)(3x+1)+\dfrac{1}{2}(x-2)^2=1-2x$
+            \item $\dfrac{x^2+2}{3} - \dfrac{x^2+1}{4} = 1 - \dfrac{x+7}{12}$
+            \item $\dfrac{x(x-2)}{4} - \dfrac{x+1}{6} = \dfrac{x-3}{2} - \dfrac{x-4}{3}$
+            \item $\dfrac{(2x+1)(2x-1)}{3} - \dfrac{(x-2)^2}{4} = \dfrac{3x+4}{6} + \dfrac{x^2}{3}$ 
+            \item $\dfrac{(x+1)(x-3)}{2} + x = \dfrac{x}{4}$
+            \item $x + \dfrac{3x+1}{2} - \dfrac{x-2}{3} = x^2 - 2$
+            \item $x\left(x + \dfrac{1}{2}\right) - \dfrac{x-2}{2} + \dfrac{x^2-1}{3} = 0$
+        \end{enumerate}
+    \item Resuelve las siguientes ecuaciones bicuadradas:
+        \begin{enumerate}
+            \item $36x^4-13^2+1=0$ 
+            \item $x^4 - 3x^2 - 4 = 0$
+            \item $x^4 - 5x^2 - 36 = 0$
+            \item $25x^4 - 26x^2 + 1 = 0$
+            \item $x^4 - 81 = 0$
+            \item $x^4 - 9x^2 = 0$
+            \item $9x^4 - 10x^2 + 1 = 0$
+            \item $(2x^2 + 1)^2 - 5 = (x^2 + 2)(x^2 - 2)$
+        \end{enumerate}
+    \item Resuelve las siguientes ecuaciones de grado mayor que 2:
+        \begin{enumerate}
+            \item $4x^4-x^3-28x^2+31x-6=0$
+        \end{enumerate}
+    \item Resuelve las siguientes ecuaciones con radicales (recuerda que hay que comprobar los valores obtenidos para cer cuáles son realmente solución):
+        \begin{enumerate}
+            \item $\sqrt{4x+5}-\sqrt{3x+1}=1$
+            \item $\dfrac{1}{2}\sqrt{1+\sqrt{x+1}}=1$
+        \end{enumerate}
+    \item Resuelve las siguientes ecuaciones con la x en el denominador:
+        \begin{enumerate}
+            \item $\dfrac{1}{x^2-3x+2}+\dfrac{1}{x-1}=\dfrac{1}{x-2}$
+        \end{enumerate}
+    \item Resuelve las siguientes ecuaciones exponenciales:
+        \begin{enumerate}
+            \item $3^x-3^{x-1}+3^{x-2}=21$
+            \item $9^x-2 \cdot 3^{x+2}+81=0$
+        \end{enumerate}
+    \item Resuelve las siguientes ecuaciones logaritmicas: 
+        \begin{enumerate}
+            \item $\dfrac{ln(16-x^2)}{ln(3x-4)}=2$
+        \end{enumerate}
+    \item Resuelve las ecuaciones del tipo $(...) \cdot (...) = 0$
+    \item Resuelve los siguientes sistemas de ecuaciones lineales: 
+    \item Resuelve los siguientes sistemas de ecuaciones no lineales:
+        \begin{enumerate}
+            \item %sistema x-y =9 / log x + log y =1
+        \end{enumerate}
+    \item Inecuaciones con una incognita
+    \item  Un cajero hace dos pagos. En el primero da los 2/5 de lo que hay más 500 dh. En el segundo da la mitad de lo que queda más 250 dhs. Al final queda en el cajero la quinta parte de lo que tenía al principio. Calcula lo que tenía el cajero al principio y los pagos que ha efectuado.
+    \item Debido al excesivo precio del aceite de oliva, la cooperativa de supermercados Coviran, junto con algunos productores olivareros de la provincia de Granada, deciden lanzar 2.000 litros de un aceite de oliva mezcla de dos de los mejores aceites de la región al precio de 7,20 € el litro. ¿Qué cantidades cada uno de los aceites han utilizado para conseguir dicha mezcla, si uno cuesta 9 € el litro y el otro 6 €? 
+    \item  Cuando dos bombas de agua actúan a la vez, tardan en vaciar un pozo 15 horas. Si actuara solo una, tardaría en vaciarlo 16 horas más que si actuara la otra. ¿Cuánto tardarían en vaciarlo cada una por separado?
+    \item La edad de mi hermana es hoy el cuadrado de la de su hija, pero dentro de nueve años solamente será el triple. ¿Qué edad tienen mi hermana y mi sobrina?
+    \item En un garaje hay 110 vehículos entre coches y motos, si todas sus ruedas suman 360. ¿Cuántas motos y coches hay en el garaje?
+    \item  El número de visitantes a cierta exposición durante el mes de febrero se incrementó en un 12\% respecto al mes de enero. Sin embargo, en marzo sufrió un descenso del 12\% respecto a febrero. Si el número de visitantes de enero superó en 36 personas al de marzo, ¿Cuántos vieron la exposición en enero?
+    \item Si al lado de un cuadrado se le alargan 2 metros y al lado contiguo se le alargan 7 metros, obtenemos un rectángulo cuya área es 22 m2 más que el doble de la del cuadrado inicial. Calcula las dimensiones del cuadrado.
+    \item  La edad de una madre es 21 años mayor que la de su hijo. Al cabo de 6 años la edad de la madre será cinco veces la que tenga el hijo. ¿Qué está haciendo el padre?
+    \item  Calcula un número entero, sabiendo que si al cuadrado del siguiente número le restamos ocho veces su inverso obtenemos 23.
+    \item Un grupo de abejas exploradoras, cuyo número era igual a la raíz cuadrada de la mitad de todo su enjambre, se posó sobre un jazmín, habiendo dejado muy atrás a 8/9 del enjambre. Mientras tanto otra abeja del mismo enjambre revoloteaba en torno a una flor de loto, atraída por el zumbido de una de sus amigas que cayó imprudentemente en la trampa de la florecilla de dulce fragancia. ¿Cuántas abejas formaban el enjambre?”
+    \item En unos laboratorios se ha comprobado que el número de células de una muestra se quintuplica cada minuto transcurrido. Si inicialmente había dos células, ¿cuántos minutos deben transcurrir para que el número de células sea de 19.531.250?
+
+\end{enumerate}
+
+\end{document}

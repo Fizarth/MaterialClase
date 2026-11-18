@@ -1,0 +1,339 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage[spanish, bidi=basic, provide=*]{babel}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\definecolor{primary}{RGB}{31, 78, 121}
+\definecolor{secondary}{RGB}{220, 53, 69}
+\definecolor{bglight}{RGB}{245, 247, 250}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    urlcolor=primary
+}
+
+% Estilo para las cajas de solución
+\newtcolorbox{solucion}{
+    colback=bglight,
+    colframe=primary,
+    boxrule=0.6pt,
+    arc=3pt,
+    left=6pt, right=6pt, top=5pt, bottom=5pt,
+    fonttitle=\bfseries\small,
+    title=Solución
+}
+
+\setlist[enumerate]{label=\textbf{\arabic*.--}, leftmargin=*}
+
+\begin{document}
+
+\begin{center}
+    \Large\textbf{\color{primary} TEMA 2: POTENCIAS Y RAÍCES (SOLUCIONARIO)}
+\end{center}
+
+\begin{enumerate}
+
+    \item \textbf{Reduce a una sola potencia:}
+        \begin{enumerate}[label=\alph*)]
+            \item $2^{3} \cdot 2 \cdot \left(\dfrac{2^{3} \cdot 2}{2^{4} \cdot 2^{2}}\right)$
+            \item $16^{6} : (8^{5} \cdot 4^{2})$
+            \item $\dfrac{2^{5} \cdot 3^{2} \cdot 4^{-1}}{2^{3} \cdot 9^{-1}}$
+            \item $\left(\dfrac{1}{2}\right)^{3} : \left(\dfrac{1}{4}\right)^{2}$
+        \end{enumerate}
+        \begin{solucion}
+            \begin{enumerate}[label=\alph*)]
+                \item $2^{3} \cdot 2^{1} \cdot \left(\dfrac{2^{4}}{2^{6}}\right) = 2^{4} \cdot 2^{-2} = \mathbf{2^{2}}$
+                \item $(2^{4})^{6} : \left((2^{3})^{5} \cdot (2^{2})^{2}\right) = 2^{24} : (2^{15} \cdot 2^{4}) = 2^{24} : 2^{19} = \mathbf{2^{5}}$
+                \item $\dfrac{2^{5} \cdot 3^{2} \cdot (2^{2})^{-1}}{2^{3} \cdot (3^{2})^{-1}} = \dfrac{2^{5} \cdot 3^{2} \cdot 2^{-2}}{2^{3} \cdot 3^{-2}} = \dfrac{2^{3} \cdot 3^{2}}{2^{3} \cdot 3^{-2}} = 2^{0} \cdot 3^{4} = \mathbf{3^{4}}$
+                \item $\left(\dfrac{1}{2}\right)^{3} : \left(\left(\dfrac{1}{2}\right)^{2}\right)^{2} = \left(\dfrac{1}{2}\right)^{3} : \left(\dfrac{1}{2}\right)^{4} = \left(\dfrac{1}{2}\right)^{-1} = \mathbf{2^{1}}$ (o simplemente $\mathbf{2}$)
+            \end{enumerate}
+        \end{solucion}
+
+    \item \textbf{Simplifica empleando las propiedades de las potencias, y expresa el resultado con exponentes positivos:}
+        \begin{enumerate}[label=\alph*)]
+            \item $\dfrac{3^{-2} \cdot (-7)^{2} \cdot 3 \cdot 7^{-4} \cdot (-3)^{5}}{(-7)^{3} \cdot 3^{-1} \cdot 7^{-5} \cdot 3^{4}}$
+            \item $\dfrac{2^{3} \cdot 8^{-3} \cdot 12^{-1} \cdot (-3)^{-2}}{6^{2} \cdot 16^{-2} \cdot 3^{-3}}$
+        \end{enumerate}
+        \begin{solucion}
+            \begin{enumerate}[label=\alph*)]
+                \item Determinamos el signo global: $(-7)^2 > 0$, $(-3)^5 < 0$, $(-7)^3 < 0$. Como hay un negativo arriba y otro abajo, el resultado es positivo ($-/- = +$). Agrupamos bases:
+                $$= \dfrac{3^{-2+1+5} \cdot 7^{2-4}}{3^{-1+4} \cdot 7^{3-5}} = \dfrac{3^{4} \cdot 7^{-2}}{3^{3} \cdot 7^{-2}} = 3^{4-3} \cdot 7^{-2-(-2)} = 3^{1} \cdot 7^{0} = \mathbf{3}$$
+                \item Descomponemos en factores primos ($8=2^3, 12=2^2\cdot 3, 6=2\cdot 3, 16=2^4$) y notamos que $(-3)^{-2} = 3^{-2}$:
+                $$= \dfrac{2^{3} \cdot (2^{3})^{-3} \cdot (2^{2} \cdot 3)^{-1} \cdot 3^{-2}}{(2 \cdot 3)^{2} \cdot (2^{4})^{-2} \cdot 3^{-3}} = \dfrac{2^{3} \cdot 2^{-9} \cdot 2^{-2} \cdot 3^{-1} \cdot 3^{-2}}{2^{2} \cdot 3^{2} \cdot 2^{-8} \cdot 3^{-3}} = \dfrac{2^{-8} \cdot 3^{-3}}{2^{-6} \cdot 3^{-1}} = 2^{-2} \cdot 3^{-2} = \mathbf{\dfrac{1}{2^{2} \cdot 3^{2}}}$$
+            \end{enumerate}
+        \end{solucion}
+
+    \item \textbf{Simplifica empleando las propiedades de las potencias:}
+        \begin{enumerate}[label=\alph*)]
+            \item $\dfrac{[(2^{3}:3^{3}):(3^{-2}:2^{-2})]:6^{-2}}{[(4^{3}:7^{3}):3^{3}]:(6^{-1}:6^{-4})}$
+            \item $\dfrac{9^{2} \cdot 3^{-3} \cdot 25}{125 \cdot 81}$
+            \item $\dfrac{9^{5} \cdot 3^{-3} \cdot 25^{2}}{125 \cdot 27^{3}}$
+            \item $\dfrac{81^{3} \cdot 3^{-3} \cdot 25^{-2}}{125^{-3} \cdot 27^{3}}$
+        \end{enumerate}
+        \begin{solucion}
+            \begin{enumerate}[label=\alph*)]
+                \item Operamos numerador y denominador por separado pasando divisiones a fracciones:
+                \begin{align*}
+                \text{Numerador: } & \left(\dfrac{2^{3}}{3^{3}} : \dfrac{3^{-2}}{2^{-2}}\right) : 6^{-2} = \left(\dfrac{2^{3} \cdot 2^{-2}}{3^{3} \cdot 3^{-2}}\right) : (2 \cdot 3)^{-2} = \dfrac{2^{1}}{3^{1}} : (2^{-2} \cdot 3^{-2}) = \dfrac{2^{1}}{3^{1} \cdot 2^{-2} \cdot 3^{-2}} = 2^{3} \cdot 3^{1} \\
+                \text{Denominador: } & \left(\dfrac{4^{3}}{7^{3}} : 3^{3}\right) : 6^{3} = \dfrac{(2^{2})^{3}}{7^{3} \cdot 3^{3}} : (2^{3} \cdot 3^{3}) = \dfrac{2^{6}}{2^{3} \cdot 3^{6} \cdot 7^{3}} = \dfrac{2^{3}}{3^{6} \cdot 7^{3}} \\
+                \text{Total: } & \dfrac{2^{3} \cdot 3^{1}}{\frac{2^{3}}{3^{6} \cdot 7^{3}}} = \mathbf{3^{7} \cdot 7^{3}}
+                \end{align*}
+                \item $\dfrac{(3^{2})^{2} \cdot 3^{-3} \cdot 5^{2}}{5^{3} \cdot 3^{4}} = \dfrac{3^{4} \cdot 3^{-3} \cdot 5^{2}}{5^{3} \cdot 3^{4}} = \dfrac{3^{1} \cdot 5^{2}}{3^{4} \cdot 5^{3}} = 3^{-3} \cdot 5^{-1} = \mathbf{\dfrac{1}{3^{3} \cdot 5}}$
+                \item $\dfrac{(3^{2})^{5} \cdot 3^{-3} \cdot (5^{2})^{2}}{5^{3} \cdot (3^{3})^{3}} = \dfrac{3^{10} \cdot 3^{-3} \cdot 5^{4}}{5^{3} \cdot 3^{9}} = \dfrac{3^{7} \cdot 5^{4}}{3^{9} \cdot 5^{3}} = 3^{-2} \cdot 5^{1} = \mathbf{\dfrac{5}{3^{2}}}$
+                \item $\dfrac{(3^{4})^{3} \cdot 3^{-3} \cdot (5^{2})^{-2}}{(5^{3})^{-3} \cdot (3^{3})^{3}} = \dfrac{3^{12} \cdot 3^{-3} \cdot 5^{-4}}{5^{-9} \cdot 3^{9}} = \dfrac{3^{9} \cdot 5^{-4}}{3^{9} \cdot 5^{-9}} = 3^{0} \cdot 5^{5} = \mathbf{5^{5}}$
+            \end{enumerate}
+        \end{solucion}
+
+    \item \textbf{Los terrenos de dos parcelas miden $3^{8}$ y $3^{4}$ metros cuadrados, respectivamente. Mohamed duda si la primera parcela es el doble que la segunda o no. De no ser doble, ¿cuántas veces es mayor la primera que la segunda?}
+        \begin{solucion}
+            Dividimos el área de la primera parcela entre la de la segunda:
+            $$\dfrac{3^{8}}{3^{4}} = 3^{8-4} = 3^{4} = \mathbf{81\text{ veces}}$$
+            No es el doble; la primera parcela es \textbf{81 veces mayor} que la segunda.
+        \end{solucion}
+
+    \item \textbf{La masa de la Luna es de $7,34 \cdot 10^{22}$ kg, y la de la Tierra, de $5,98 \cdot 10^{24}$ kg. ¿A cuántas Lunas equivale la masa de la Tierra?}
+        \begin{solucion}
+            Dividimos la masa de la Tierra entre la masa de la Luna:
+            $$\dfrac{5,98 \cdot 10^{24}}{7,34 \cdot 10^{22}} = \dfrac{5,98}{7,34} \cdot 10^{24-22} \approx 0,8147 \cdot 10^{2} = \mathbf{81,47\text{ Lunas}}$$
+        \end{solucion}
+
+    \item \textbf{Si el área del huerto cuadrado de mi abuelo es la mitad que el de mi tío, que tiene $200\text{ m}^{2}$, ¿cuánto mide el lado del huerto de mi abuelo?}
+        \begin{solucion}
+            Área del huerto del abuelo: $\dfrac{200}{2} = 100\text{ m}^{2}$. \\
+            Como es un cuadrado ($A = l^{2}$), el lado mide: $l = \sqrt{100} = \mathbf{10\text{ metros}}$.
+        \end{solucion}
+
+    \item \textbf{La unidad de memoria de un ordenador es el byte. Un kilobyte (kB) son $2^{10} = 1.024$ bytes, un megabyte (MB) son $2^{10}\text{ kB}$, un gigabyte (GB) equivale a $2^{10}\text{ MB}$ y un terabyte (TB) equivale a $2^{10}\text{ GB}$. Expresa en forma de potencia y en notación científica los bytes que tiene mi disco duro extraíble de $36\text{ TB}$.}
+        \begin{solucion}
+            $1\text{ TB} = 2^{10}\text{ GB} = 2^{20}\text{ MB} = 2^{30}\text{ kB} = 2^{40}\text{ bytes}$.
+            \begin{itemize}
+                \item \textbf{En forma de potencia:} $36 \cdot 2^{40} = (2^{2} \cdot 3^{2}) \cdot 2^{40} = \mathbf{2^{42} \cdot 3^{2}\text{ bytes}}$.
+                \item \textbf{En notación científica:} $36 \cdot 1.099.511.627.776 \approx \mathbf{3,96 \cdot 10^{13}\text{ bytes}}$.
+            \end{itemize}
+        \end{solucion}
+
+    \item \textbf{Queremos construir un cubo de cartón cuyo volumen sea $6\text{ m}^{3}$. ¿Qué superficie de cartón se necesita? Expresa el resultado en forma radical.}
+        \begin{solucion}
+            El volumen de un cubo es $V = a^{3} = 6 \implies \text{arista } a = \sqrt[3]{6}\text{ m}$. \\
+            Un cubo tiene 6 caras cuadradas, por lo que la superficie total es $S = 6 \cdot a^{2}$:
+            $$S = 6 \cdot (\sqrt[3]{6})^{2} = \mathbf{6\sqrt[3]{36}\text{ m}^{2}} \quad (\text{o } \sqrt[3]{6^{5}} = \sqrt[3]{7776}\text{ m}^{2})$$
+        \end{solucion}
+
+    \item \textbf{Extrae todos los factores posibles de los siguientes radicales:}
+        \begin{enumerate}[label=\alph*)]
+            \item $\sqrt{81 \cdot a^{5} \cdot b \cdot c^{6}}$
+            \item $\sqrt[3]{125 \cdot a^{9} \cdot b^{17} \cdot c^{25}}$
+        \end{enumerate}
+        \begin{solucion}
+            \begin{enumerate}[label=\alph*)]
+                \item $\sqrt{9^{2} \cdot a^{4} \cdot a \cdot b \cdot c^{6}} = \mathbf{9 a^{2} c^{3} \sqrt{ab}}$
+                \item $\sqrt[3]{5^{3} \cdot a^{9} \cdot b^{15} \cdot b^{2} \cdot c^{24} \cdot c} = \mathbf{5 a^{3} b^{5} c^{8} \sqrt[3]{b^{2}c}}$
+            \end{enumerate}
+        \end{solucion}
+
+    \item \textbf{Efectúa las siguientes multiplicaciones y divisiones con radicales:}
+        \begin{enumerate}[label=\alph*)]
+            \item $14\sqrt{12} : 7\sqrt{3}$
+            \item $\sqrt{2} \cdot \sqrt{8}$
+            \item $\sqrt[3]{9} \cdot \sqrt[3]{3}$
+            \item $\sqrt[3]{2} \cdot \sqrt{3}$
+            \item $\sqrt[3]{2} \cdot \sqrt[3]{32}$
+        \end{enumerate}
+        \begin{solucion}
+            \begin{enumerate}[label=\alph*)]
+                \item $\dfrac{14}{7}\sqrt{\dfrac{12}{3}} = 2\sqrt{4} = 2 \cdot 2 = \mathbf{4}$
+                \item $\sqrt{2 \cdot 8} = \sqrt{16} = \mathbf{4}$
+                \item $\sqrt[3]{9 \cdot 3} = \sqrt[3]{27} = \mathbf{3}$
+                \item Reducimos a índice común ($\text{m.c.m.}(3,2) = 6$): $\sqrt[6]{2^{2}} \cdot \sqrt[6]{3^{3}} = \sqrt[6]{4 \cdot 27} = \mathbf{\sqrt[6]{108}}$
+                \item $\sqrt[3]{2 \cdot 32} = \sqrt[3]{64} = \mathbf{4}$
+            \end{enumerate}
+        \end{solucion}
+
+    \item \textbf{Extrae los factores que se puedan de los siguientes radicales:}
+        \begin{enumerate}[label=\alph*)]
+            \item $\sqrt[3]{\dfrac{8}{729} b^{5} c^{7} m^{14}}$
+            \item $\sqrt{\dfrac{81}{32} z^{6} y^{7} x^{17}}$
+            \item $\sqrt[3]{\dfrac{216}{343} m^{12} b^{15} c}$
+            \item $\sqrt[4]{\dfrac{1}{243} b^{7} m^{45} c^{18} x^{5}}$
+        \end{enumerate}
+        \begin{solucion}
+            \begin{enumerate}[label=\alph*)]
+                \item $\sqrt[3]{\dfrac{2^{3}}{9^{3}} b^{3} b^{2} c^{6} c m^{12} m^{2}} = \mathbf{\dfrac{2}{9} b c^{2} m^{4} \sqrt[3]{b^{2} c m^{2}}}$
+                \item $\sqrt{\dfrac{9^{2}}{4^{2} \cdot 2} z^{6} y^{6} y x^{16} x} = \mathbf{\dfrac{9}{4} z^{3} y^{3} x^{8} \sqrt{\dfrac{yx}{2}}}$ \quad (Racionalizado: $\mathbf{\dfrac{9}{8} z^{3} y^{3} x^{8} \sqrt{2yx}}$)
+                \item $\sqrt[3]{\dfrac{6^{3}}{7^{3}} m^{12} b^{15} c} = \mathbf{\dfrac{6}{7} m^{4} b^{5} \sqrt[3]{c}}$
+                \item $\sqrt[4]{\dfrac{1}{3^{4} \cdot 3} b^{4} b^{3} m^{44} m c^{16} c^{2} x^{4} x} = \mathbf{\dfrac{1}{3} b m^{11} c^{4} x \sqrt[4]{\dfrac{b^{3} m c^{2} x}{3}}}$
+            \end{enumerate}
+        \end{solucion}
+
+    \item \textbf{Considera las potencias $2^{-2}$, $2^{-3}$ y $2^{-5}$:}
+        \begin{enumerate}[label=\alph*)]
+            \item ¿Cuál es la mayor?
+            \item ¿Cómo varía el valor de la potencia a medida que aumenta el valor absoluto del exponente negativo?
+            \item Responde a las cuestiones anteriores para $0,7^{-3}$, $0,7^{-4}$ y $0,7^{-5}$.
+        \end{enumerate}
+        \begin{solucion}
+            \begin{enumerate}[label=\alph*)]
+                \item $2^{-2} = \frac{1}{4} = 0,25$; $2^{-3} = \frac{1}{8} = 0,125$; $2^{-5} = \frac{1}{32} = 0,03125$. La mayor es $\mathbf{2^{-2}}$.
+                \item Cuando la base es mayor que 1 ($2 > 1$), al aumentar el valor absoluto del exponente negativo, el valor de la potencia \textbf{disminuye} (se acerca a cero).
+                \item Como la base es menor que 1 ($0,7 = \frac{7}{10}$), al invertirla obtenemos una base mayor que 1:
+                $0,7^{-3} = (\frac{10}{7})^{3} \approx 2,92$; $0,7^{-4} = (\frac{10}{7})^{4} \approx 4,17$; $0,7^{-5} = (\frac{10}{7})^{5} \approx 5,95$. \\
+                La mayor es $\mathbf{0,7^{-5}}$, y al aumentar el valor absoluto del exponente negativo, el valor de la potencia \textbf{aumenta}.
+            \end{enumerate}
+        \end{solucion}
+
+    \item \textbf{Efectúa las siguientes sumas y restas de radicales:}
+        \begin{enumerate}[label=\alph*)]
+            \item $2\sqrt{20} + 4\sqrt{80} - 5\sqrt{180} + 3\sqrt{125}$
+            \item $\dfrac{1}{4}\sqrt{128} + 6\sqrt{512} - \dfrac{1}{2}\sqrt{32} - 3\sqrt{98}$
+            \item $\dfrac{3}{2}\sqrt{45} - \dfrac{\sqrt{20}}{3} + 4\sqrt{125} - 2\sqrt{5}$
+        \end{enumerate}
+        \begin{solucion}
+            \begin{enumerate}[label=\alph*)]
+                \item $2\sqrt{4\cdot 5} + 4\sqrt{16\cdot 5} - 5\sqrt{36\cdot 5} + 3\sqrt{25\cdot 5} = 4\sqrt{5} + 16\sqrt{5} - 30\sqrt{5} + 15\sqrt{5} = \mathbf{5\sqrt{5}}$
+                \item $\dfrac{1}{4}\sqrt{64\cdot 2} + 6\sqrt{256\cdot 2} - \dfrac{1}{2}\sqrt{16\cdot 2} - 3\sqrt{49\cdot 2} = 2\sqrt{2} + 96\sqrt{2} - 2\sqrt{2} - 21\sqrt{2} = \mathbf{75\sqrt{2}}$
+                \item $\dfrac{3}{2}\sqrt{9\cdot 5} - \dfrac{\sqrt{4\cdot 5}}{3} + 4\sqrt{25\cdot 5} - 2\sqrt{5} = \dfrac{9}{2}\sqrt{5} - \dfrac{2}{3}\sqrt{5} + 20\sqrt{5} - 2\sqrt{5} = \left(\dfrac{27 - 4 + 108}{6}\right)\sqrt{5} = \mathbf{\dfrac{131}{6}\sqrt{5}}$
+            \end{enumerate}
+        \end{solucion}
+
+    \item \textbf{Calcula los valores de $a, b, c, d$ en las siguientes igualdades:}
+        \begin{enumerate}[label=\alph*)]
+            \item $\sqrt{10^{4} \cdot 14^{6} \cdot 81^{12}} = 2^{a} \cdot 3^{b} \cdot 5^{c} \cdot 7^{d}$
+            \item $\sqrt[3]{100^{9} \cdot 98^{9} \cdot 81^{15}} = 2^{a} \cdot 3^{b} \cdot 5^{c} \cdot 7^{d}$
+        \end{enumerate}
+        \begin{solucion}
+            \begin{enumerate}[label=\alph*)]
+                \item $\sqrt{(2\cdot 5)^{4} \cdot (2\cdot 7)^{6} \cdot (3^{4})^{12}} = \sqrt{2^{10} \cdot 3^{48} \cdot 5^{4} \cdot 7^{6}} = 2^{5} \cdot 3^{24} \cdot 5^{2} \cdot 7^{3} \implies \mathbf{a=5,\; b=24,\; c=2,\; d=3}$
+                \item $\sqrt[3]{(2^{2}\cdot 5^{2})^{9} \cdot (2\cdot 7^{2})^{9} \cdot (3^{4})^{15}} = \sqrt[3]{2^{27} \cdot 3^{60} \cdot 5^{18} \cdot 7^{18}} = 2^{9} \cdot 3^{20} \cdot 5^{6} \cdot 7^{6} \implies \mathbf{a=9,\; b=20,\; c=6,\; d=6}$
+            \end{enumerate}
+        \end{solucion}
+
+    \item \textbf{Efectúa las operaciones con notación científica:}
+        \begin{enumerate}[label=\alph*)]
+            \item $5,3 \cdot 10^{11} - 1,2 \cdot 10^{12} + 7,2 \cdot 10^{10} = $
+            \item $4,2 \cdot 10^{-6} - 8,2 \cdot  10^{-7} + 1,8 \cdot 10^{-5} = $
+            \item $(2,25 \cdot 10^{22}) \cdot (4 \cdot 10^{-15}) : (3 \cdot 10^{-3})=$
+            \item $(1,4 \cdot 10^{-7}) : (5 \cdot 10^{-5}) =$ 
+        \end{enumerate}
+        \begin{solucion}
+            \begin{enumerate}[label=\alph*)]
+                \item $(0,53 - 1,2 + 0,072) \cdot 10^{12} = -0,598 \cdot 10^{12} = \mathbf{-5,98 \cdot 10^{11}}$
+                \item $(0,42 - 0,082 + 1,8) \cdot 10^{-5} = \mathbf{2,138 \cdot 10^{-5}}$
+                \item $\dfrac{2,25 \cdot 4}{3} \cdot 10^{22 - 15 - (-3)} = \dfrac{9}{3} \cdot 10^{10} = \mathbf{3 \cdot 10^{10}}$
+                \item $\dfrac{1,4}{5} \cdot 10^{-7 - (-5)} = 0,28 \cdot 10^{-2} = \mathbf{2,8 \cdot 10^{-3}}$
+            \end{enumerate}
+        \end{solucion}
+
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\begin{center}
+    \Large\textbf{\color{primary} TEMA 3: CÁLCULOS CON PORCENTAJES (SOLUCIONARIO)}
+\end{center}
+
+\begin{enumerate}
+    \item \textbf{¿Qué porcentaje es?}
+        \begin{enumerate}[label=\alph*)]
+            \item El 40\% del 40\%
+            \item El 25\% del 20\%
+            \item El 30\% del 120\%
+            \item El 150\% del 20\%
+        \end{enumerate}
+        \begin{solucion}
+            \begin{multicols}{2}
+            \begin{enumerate}[label=\alph*)]
+                \item $0,40 \cdot 0,40 = 0,16 \implies \mathbf{16\%}$
+                \item $0,25 \cdot 0,20 = 0,05 \implies \mathbf{5\%}$
+                \item $0,30 \cdot 1,20 = 0,36 \implies \mathbf{36\%}$
+                \item $1,50 \cdot 0,20 = 0,30 \implies \mathbf{30\%}$
+            \end{enumerate}
+            \end{multicols}
+        \end{solucion}
+
+    \item \textbf{En la clase de 3º, han aprobado todas las asignaturas 24 estudiantes, que son el 75\% del total. ¿Cuántos estudiantes hay en la clase?}
+        \begin{solucion}
+            $0,75 \cdot x = 24 \implies x = \dfrac{24}{0,75} = \mathbf{32\text{ estudiantes}}$.
+        \end{solucion}
+
+    \item \textbf{En un partido de balonmano, una jugadora A ha marcado 2/5 de 30 intentos, otra jugadora B, 6 de 16 y una tercera jugadora C, el 36\% de 25 intentos.}
+        \begin{enumerate}[label=\alph*)]
+            \item ¿Cuántos goles ha marcado cada una?
+            \item ¿Qué porcentaje de goles respecto al total de sus intentos ha marcado cada una?
+        \end{enumerate}
+        \begin{solucion}
+            \begin{enumerate}[label=\alph*)]
+                \item \textbf{Goles:} Jugadora A: $\frac{2}{5} \cdot 30 = \mathbf{12\text{ goles}}$; Jugadora B: $\mathbf{6\text{ goles}}$; Jugadora C: $0,36 \cdot 25 = \mathbf{9\text{ goles}}$.
+                \item \textbf{Porcentajes:} Jugadora A: $\frac{2}{5} = \mathbf{40\%}$; Jugadora B: $\frac{6}{16} = 0,375 = \mathbf{37,5\%}$; Jugadora C: $\mathbf{36\%}$.
+            \end{enumerate}
+        \end{solucion}
+
+    \item \textbf{El precio de un videojuego subió un 28\% y después lo rebajaron un 30\%. Si el precio inicial era de 58€ calcula el precio final.}
+        \begin{solucion}
+            $\text{Precio final} = 58 \cdot 1,28 \cdot 0,70 = \mathbf{51,97\text{ €}}$ (exacto: $51,968\text{ €}$).
+        \end{solucion}
+
+    \item \textbf{El precio de un ordenador portátil a principios de mes era de $640\text{ €}$. A lo largo del mes su precio ha subido un $15\%$. ¿Cuánto cuesta el ordenador ahora?}
+        \begin{solucion}
+            $640 \cdot 1,15 = \mathbf{736\text{ €}}$.
+        \end{solucion}
+
+    \item \textbf{En una ciudad había $45\,200$ estudiantes matriculados el curso pasado. Este año el número de matriculados ha disminuido un $8\%$. ¿Cuántos estudiantes hay matriculados ahora?}
+        \begin{solucion}
+            $45\,200 \cdot 0,92 = \mathbf{41\,584\text{ estudiantes}}$.
+        \end{solucion}
+
+    \item \textbf{El precio de una batidora, después de cargarle el $21\%$ de IVA, es de $72{,}6\text{ €}$. ¿Cuál es el precio antes de esos impuestos?}
+        \begin{solucion}
+            $x \cdot 1,21 = 72,6 \implies x = \dfrac{72,6}{1,21} = \mathbf{60\text{ €}}$.
+        \end{solucion}
+
+    \item \textbf{Al estirar una goma elástica, su longitud aumenta un $30\%$ y en esta posición mide $104\text{ cm}$. ¿Cuánto mide sin estirar?}
+        \begin{solucion}
+            $x \cdot 1,30 = 104 \implies x = \dfrac{104}{1,30} = \mathbf{80\text{ cm}}$.
+        \end{solucion}
+
+    \item \textbf{En unas rebajas en las que se hace el $30\%$ de descuento, Roberto ha comprado una cámara por $50{,}4\text{ €}$. ¿Cuál era el precio inicial?}
+        \begin{solucion}
+            $x \cdot 0,70 = 50,4 \implies x = \dfrac{50,4}{0,70} = \mathbf{72\text{ €}}$.
+        \end{solucion}
+
+    \item \textbf{Una cartera ha repartido el $36\%$ de las cartas que tenía. Aún le quedan $1\,184$. ¿Cuántas tenía antes de empezar el reparto?}
+        \begin{solucion}
+            Si repartió el $36\%$, le queda el $64\%$ ($0,64$):
+            $$0,64 \cdot x = 1\,184 \implies x = \dfrac{1\,184}{0,64} = \mathbf{1\,850\text{ cartas}}$$
+        \end{solucion}
+
+    \item \textbf{Un comercio aumenta el precio de sus productos un $30\%$ y después, pretendiendo dejarlo al precio inicial, los rebaja un $30\%$. ¿Es correcto?}
+        \begin{enumerate}[label=\alph*)]
+            \item Un ordenador costaba inicialmente $1\,000\text{ €}$. ¿Cuánto costará en cada paso del proceso?
+            \item ¿Cuál es la variación porcentual que sufren los artículos respecto al precio inicial?
+        \end{enumerate}
+        \begin{solucion}
+            \textbf{No es correcto}, porque el segundo porcentaje se aplica sobre una cantidad mayor.
+            \begin{enumerate}[label=\alph*)]
+                \item Tras subir un $30\%$: $1\,000 \cdot 1,30 = \mathbf{1\,300\text{ €}}$. Tras rebajar un $30\%$: $1\,300 \cdot 0,70 = \mathbf{910\text{ €}}$.
+                \item Índice de variación total: $1,30 \cdot 0,70 = 0,91 \implies 1 - 0,91 = 0,09$. Sufren una \textbf{disminución del $9\%$}.
+            \end{enumerate}
+        \end{solucion}
+
+    \item \textbf{Un capital de $42\,000\text{ €}$ se deposita en un banco al $5\%$ de interés compuesto anual. ¿En cuánto se habrá convertido al cabo de un año, de dos y de tres años?}
+        \begin{solucion}
+            
+            \begin{itemize}
+                \item \textbf{Al cabo de 1 año:} $42\,000 \cdot 1,05^{1} = \mathbf{44\,100\text{ €}}$
+                \item \textbf{Al cabo de 2 años:} $42\,000 \cdot 1,05^{2} = \mathbf{46\,305\text{ €}}$
+                \item \textbf{Al cabo de 3 años:} $42\,000 \cdot 1,05^{3} = \mathbf{48\,620,25\text{ €}}$
+            \end{itemize}
+        \end{solucion}
+
+\end{enumerate}
+
+\end{document}
