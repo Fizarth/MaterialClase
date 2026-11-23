@@ -1,0 +1,152 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-noquot]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{multicol} % <--- PAQUETE AÑADIDO PARA MULTICOLUMNAS
+\usepackage{tikz}
+\usetikzlibrary{patterns,arrows.meta}
+
+% Desactivar atajos conflictivos de babel en el preámbulo
+\spanishdeactivate{<>}
+
+% Configuración de márgenes (reducidos ligeramente para aprovechar mejor el papel)
+\geometry{top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm}
+
+% Definición de colores
+\definecolor{numcolor}{rgb}{0.1, 0.4, 0.7}
+\definecolor{mainblue}{rgb}{0.1, 0.4, 0.7}
+\definecolor{boxbg}{rgb}{0.93, 0.95, 0.98}
+
+% Estilo de cajas de sección
+\newcommand{\sectionbox}[1]{%
+  \vspace{0.15cm}\noindent
+  \fcolorbox{mainblue}{boxbg}{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{\textbf{\color{mainblue}\small #1}}}%
+  \vspace{0.2cm}%
+}
+
+% Ajustes de separación entre columnas y listas para ahorrar espacio
+\setlength{\columnsep}{1cm}
+\setlist[enumerate]{itemsep=4pt, topsep=2pt, leftmargin=*}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Identidades notables con raíces}}\\[0.2cm]
+\end{center}
+
+\sectionbox{
+    $(A + B)^2 = A^2 + 2AB + B^2$ \hfill
+    $(A - B)^2 = A^2 - 2AB + B^2$ \hfill
+    $(A + B)(A - B) = A^2 - B^2$ 
+}
+
+\textbf{1. Desarrolla y simplifica las siguientes operaciones con radicales:}
+
+\begin{multicols}{2} % <--- INICIO DE 2 COLUMNAS (cambia a {3} si quieres 3 columnas)
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \item $\left(2\sqrt{2}\right)^2 =$
+    \item $\left(3\sqrt{5}\right)^2 =$
+    \item $\left(1 + \sqrt{2}\right)^2 =$
+    \item $\left(\sqrt{2} + \sqrt{3}\right)^2 =$
+    \item $\left(\sqrt{3} - \sqrt{2}\right)^2 =$
+    \item $\left(\sqrt{2} + 1\right)\left(\sqrt{2} - 1\right) =$
+    \item $\left(\sqrt{3} + \sqrt{2}\right)\left(\sqrt{3} - \sqrt{2}\right) =$
+    \item $\left(1 + \sqrt{2}\right)\left(1 - \sqrt{8}\right) =$
+    \item $\left(2 - \sqrt{3}\right)\left(1 + \sqrt{12}\right) =$
+    \item $2\sqrt{3} \cdot 3\sqrt{2} =$
+    \item $2\sqrt{8} \cdot 8\sqrt{2} =$
+    \item $3\sqrt{6} \cdot 2\sqrt{3} =$
+    \item $2\sqrt{15} \cdot 3\sqrt{15} =$
+    \item $\left(5\sqrt{3}\right)^2 =$
+    \item $\left(5 + \sqrt{3}\right)^2 =$
+    \item $\left(5 - \sqrt{3}\right)^2 =$
+    \item $\left(5 + \sqrt{3}\right)\left(5 - \sqrt{3}\right) =$
+    \item $\left(\sqrt{5} + \sqrt{3}\right)^2 =$
+    \item $\left(\sqrt{5} - \sqrt{3}\right)^2 =$
+    \item $\left(3\sqrt{2} + 2\sqrt{3}\right)^2 =$
+    \item $\left(2\sqrt{3} + 3\sqrt{2}\right)\left(2\sqrt{3} - 3\sqrt{2}\right) =$
+    \item $\sqrt{2}\left(\sqrt{2} - 4\right) =$
+    \item $\left(2 - \sqrt{3}\right)\sqrt{3} =$
+    \item $\left(3\sqrt{2} + 2\right)\left(2\sqrt{3} - \sqrt{6}\right) =$
+    \item $\left(2\sqrt{5} - 5\right)\sqrt{5} =$
+    \item $\left(\sqrt{2} - 3\sqrt{3}\right)\left(\sqrt{2} + 5\sqrt{3}\right) =$
+    \item $\left(2\sqrt{8} + 3\sqrt{2}\right)\left(3\sqrt{8} - 2\sqrt{2}\right) =$
+    \item $\left(2\sqrt{5} - 5\sqrt{2}\right)\left(2\sqrt{5} + 5\sqrt{2}\right) =$
+    \item $\left(2\sqrt{5} - 5\sqrt{2}\right)\left(3\sqrt{2} + 2\right) =$
+    \item $\left(2\sqrt{27} - 3\right)\left(1 + \sqrt{3}\right) =$
+    \item $\left(3\sqrt{8} - 4\sqrt{2}\right)\left(2\sqrt{2} - 5\sqrt{8}\right) =$
+    \item $\left(\sqrt{6} + \sqrt{5}\right)^2 + \left(\sqrt{6} - \sqrt{5}\right)^2 =$
+    \item $\left(\sqrt{7} + \sqrt{3}\right)^2 \left(5 - \sqrt{21}\right) =$
+    \item $\left(3\sqrt{8} + 2\sqrt{2}\right)\left(2\sqrt{8} - 3\sqrt{2}\right) =$
+    \item $\left(2\sqrt{3} - 3\sqrt{2}\right)^2 =$
+    \item $\left(\sqrt{2} + \sqrt{3} - \sqrt{5}\right)\left(\sqrt{3} - \sqrt{2}\right) =$
+\end{enumerate}
+\end{multicols} % <--- FIN DE COLUMNAS
+
+
+\textbf{2. Desarrolla y simplifica las siguientes expresiones aplicando las identidades notables:}
+
+\begin{multicols}{2}
+\begin{enumerate}[label=\textbf{\alph*)}]
+    % Nivel básico: binomios al cuadrado y suma por diferencia con x
+    \item $\left(x + 3\right)^2 =$
+    \item $\left(2x - 5\right)^2 =$
+    \item $\left(3x + 4\right)\left(3x - 4\right) =$
+    \item $\left(x^2 + 2\right)^2 =$
+    \item $\left(4x^2 - 3x\right)^2 =$
+    \item $\left(5x^3 + 2x\right)\left(5x^3 - 2x\right) =$
+    
+    % Nivel intermedio: coeficientes fraccionarios
+    \item $\left(\frac{x}{2} + 3\right)^2 =$
+    \item $\left(2x - \frac{1}{3}\right)^2 =$
+    \item $\left(\frac{3x}{4} + \frac{2}{5}\right)\left(\frac{3x}{4} - \frac{2}{5}\right) =$
+    
+    % Nivel intermedio-alto: identidades notables combinando x y radicales
+    \item $\left(x + \sqrt{2}\right)^2 =$
+    \item $\left(2x - \sqrt{3}\right)^2 =$
+    \item $\left(x + \sqrt{5}\right)\left(x - \sqrt{5}\right) =$
+    \item $\left(3x + 2\sqrt{2}\right)\left(3x - 2\sqrt{2}\right) =$
+    \item $\left(x\sqrt{2} + \sqrt{3}\right)^2 =$
+    \item $\left(2x\sqrt{3} - \sqrt{5}\right)^2 =$
+    \item $\left(\sqrt{x} + 4\right)^2 =$ \quad $(x \ge 0)$
+    \item $\left(\sqrt{2x} - \sqrt{3}\right)\left(\sqrt{2x} + \sqrt{3}\right) =$ \quad $(x \ge 0)$
+    
+    % Nivel avanzado: operaciones combinadas
+    \item $\left(x + \sqrt{3}\right)^2 - \left(x - \sqrt{3}\right)^2 =$
+    \item $\left(2x + \sqrt{5}\right)\left(2x - \sqrt{5}\right) + \left(x - \sqrt{5}\right)^2 =$
+    \item $\left(x\sqrt{2} + 1\right)^2 - \left(x\sqrt{2} + 3\right)\left(x\sqrt{2} - 3\right) =$
+\end{enumerate}
+\end{multicols}
+
+\vspace{0.2cm}
+\textbf{3. Desarrolla y simplifica las siguientes expresiones con radicales algebraicos (considerando radicandos $\ge 0$):}
+
+\begin{multicols}{2}
+\begin{enumerate}[label=\textbf{\alph*)}]
+    % Nivel 1: Radicandos simples con x
+    \item $\left(\sqrt{x} + 3\right)^2 =$
+    \item $\left(\sqrt{3x} - 2\right)^2 =$
+    \item $\left(2\sqrt{x} + 5\right)\left(2\sqrt{x} - 5\right) =$
+    \item $\left(\sqrt{5x} + \sqrt{2}\right)^2 =$
+    \item $\left(3\sqrt{2x} - \sqrt{3}\right)^2 =$
+
+    % Nivel 2: x dentro de ambos términos
+    \item $\left(\sqrt{x} + \sqrt{2x}\right)^2 =$
+    \item $\left(\sqrt{3x} - \sqrt{x}\right)^2 =$
+    \item $\left(\sqrt{5x} + \sqrt{3x}\right)\left(\sqrt{5x} - \sqrt{3x}\right) =$
+    \item $\left(x + \sqrt{x}\right)^2 =$
+    \item $\left(x - \sqrt{2x}\right)\left(x + \sqrt{2x}\right) =$
+
+    % Nivel 3: Radicandos compuestos (binomios dentro de la raíz)
+    \item $\left(\sqrt{x + 1} + 2\right)^2 =$
+    \item $\left(\sqrt{2x - 3} - 1\right)^2 =$
+    \item $\left(\sqrt{x + 4} + \sqrt{x}\right)\left(\sqrt{x + 4} - \sqrt{x}\right) =$
+    \item $\left(\sqrt{x + 1} + \sqrt{x - 1}\right)^2 =$
+    \item $\left(\sqrt{2x + 1} - \sqrt{2x - 1}\right)^2 =$
+\end{enumerate}
+\end{multicols}
+
+\end{document}
